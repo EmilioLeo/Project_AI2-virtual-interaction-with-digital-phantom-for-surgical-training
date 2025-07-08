@@ -1,0 +1,52 @@
+# =============== #
+# Unity generated #
+# =============== #
+
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/Assets/AssetStoreTools*
+UnityGenerated/
+
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+ExportedObj/
+*.svd
+*.userprefs
+*.csproj
+*.pidb
+*.suo
+*.sln
+*.user
+*.unityproj
+*.booproj
+*.tmp
+
+# ===================================== #
+# Unity3D generated meta files #
+# ===================================== #
+*.pidb.meta
+
+
+# ======================================= #
+# Unity3D Generated File On Crash Reports #
+# ======================================= #
+sysinfo.txt
+
+# ======================================= #
+# Unity3D Libraries and packages		  #
+# ======================================= #
+/Assets/UnityTestTools*
+
+
+# ===================================== #
+# StarworkGC generated #
+# ===================================== #
+/Assets/Tests*
+/Changelogs/*.txt
+Assets/StreamingAssets/Configuration/*
+!Assets/StreamingAssets/Configuration/*.txt.example
+!Assets/StreamingAssets/Configuration/*.txt.example.meta
