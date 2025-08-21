@@ -754,6 +754,18 @@ PrefabInstance:
       propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
       value: 1801810542
       objectReference: {fileID: 0}
+    - target: {fileID: 2578437241110279549, guid: b8dadcd16adf4f84a81c4b08f90a349a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2578437241110279549, guid: b8dadcd16adf4f84a81c4b08f90a349a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2578437241110279549, guid: b8dadcd16adf4f84a81c4b08f90a349a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2597274955068851162, guid: b8dadcd16adf4f84a81c4b08f90a349a, type: 3}
       propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
       value: 1801810542
@@ -1875,6 +1887,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8dadcd16adf4f84a81c4b08f90a349a, type: 3}
+--- !u!1 &8257080 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6268365057193227446, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
+  m_PrefabInstance: {fileID: 1076405524}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &17691472
 GameObject:
   m_ObjectHideFlags: 0
@@ -2160,15 +2177,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62f9c1b97564bf548a3c0204cee0ee8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bluetoothButton: {fileID: 368686251}
-  statusButton: {fileID: 464039706}
-  calibrationButton: {fileID: 1698042151}
-  actuationButton: {fileID: 352054679}
-  blePanel: {fileID: 294748210}
-  statusPanel: {fileID: 1899554876}
-  calibrationManager: {fileID: 1043664645}
-  actuationPanel: {fileID: 2106021796}
-  StandaloneActive: 0
 --- !u!114 &24927175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2181,11 +2189,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01e9fbc4fb2a6e94e814db7842e53ad5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wristPanel: {fileID: 24927174}
-  BluetoothPanel: 1
-  StatusDisplay: 1
-  ActuationPanel: 1
-  WristPanel: 0
 --- !u!114 &24927176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2417,12 +2420,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ebdc6f4a556bfb46bd4cc07206e3a4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mesh: {fileID: 29051013}
-  idleMaterial: {fileID: 2100000, guid: 030693cb5f9b23243a590a2e4589d5b3, type: 2}
-  calibrationMaterial: {fileID: 2100000, guid: e197d2dd18d2e9c48ab06664b9eaf597, type: 2}
-  successMaterial: {fileID: 2100000, guid: 6285367c41702d94f84dc3e70004c930, type: 2}
-  failedMaterial: {fileID: 2100000, guid: ea8fc2d2ac0cd6147b68e300ce3a6620, type: 2}
-  state: 0
 --- !u!1 &31891041
 GameObject:
   m_ObjectHideFlags: 0
@@ -2460,9 +2457,9 @@ RectTransform:
   - {fileID: 1894381012}
   m_Father: {fileID: 943643825}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -300}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 250}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &31891043
@@ -2515,13 +2512,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb4bc4cda642b14d9563bfe49579282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fingerNameText: {fileID: 132058006}
-  forceValue: {fileID: 524665005}
-  temperatureValue: {fileID: 1829862772}
-  textureTypeValue: {fileID: 592510280}
-  textureVelocityValue: {fileID: 1631554385}
-  textureVolumeValue: {fileID: 1619661532}
-  _hapticObject: {fileID: 0}
 --- !u!1 &32853891
 GameObject:
   m_ObjectHideFlags: 0
@@ -3154,10 +3144,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1850257858}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 555.22, y: -25}
-  m_SizeDelta: {x: 269.56, y: 50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &70387435
 MonoBehaviour:
@@ -3649,9 +3639,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59def25038541d143aab5810a1dab568, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upperPart: {fileID: 1425544846}
-  bottomPart: {fileID: 1267718540}
-  animatedPart: {fileID: 122727575}
 --- !u!1 &84611237
 GameObject:
   m_ObjectHideFlags: 0
@@ -5238,9 +5225,9 @@ RectTransform:
   - {fileID: 770455779}
   m_Father: {fileID: 452995854}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 304.29797, y: -140.94322}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 150, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &161447995
@@ -5499,10 +5486,10 @@ RectTransform:
   - {fileID: 1481888410}
   m_Father: {fileID: 1056297027}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 187.5, y: -270}
-  m_SizeDelta: {x: 375, y: 540}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &169370240
 MonoBehaviour:
@@ -5516,54 +5503,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b021a2152817b14c83bc0d2583dfa2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tracker: {fileID: 1899554876}
-  _handSide: 0
-  MacAddressText: {fileID: 479033269}
-  BatteryLevelText: {fileID: 1489942465}
-  ChargingImage: {fileID: 993670135}
-  BatteryImage: {fileID: 1283319080}
-  NoBatteryImage: {fileID: 171739952}
-  InfoPanel: {fileID: 1481888409}
-  CalibrationText: {fileID: 414181204}
-  BatteryPercentagePanel: {fileID: 639631876}
-  NoBatteryPanel: {fileID: 345824617}
-  CalibrationFadeOutTimeSeconds: 10
-  ThumbStatusLight: {fileID: 850998543}
-  IndexStatusLight: {fileID: 1120476784}
-  MiddleStatusLight: {fileID: 1523438215}
-  AnnularStatusLight: {fileID: 1958278683}
-  PinkyStatusLight: {fileID: 75727867}
-  PalmStatusLight: {fileID: 1676766628}
-  HandImage: {fileID: 1911693330}
-  OkColor:
-    r: 0.7960785
-    g: 1
-    b: 0
-    a: 1
-  ErrorColor:
-    r: 1
-    g: 0
-    b: 0
-    a: 1
-  DisconnectedColor:
-    r: 0.5
-    g: 0.5
-    b: 0.5
-    a: 1
-  NormalColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  calibrationTracker: {fileID: 0}
-  calibrationStatus: 0
-  _clientConnected: 0
-  _deviceConnected: 0
-  _sessionRunning: 0
-  _touchDiverStatusReceived: 0
-  _touchDiverProStatusReceived: 0
-  _standaloneAndroidActive: 0
-  _firmwareVersion: 
 --- !u!222 &169370241
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6259,7 +6198,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 730}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &194927162
 MonoBehaviour:
@@ -6460,33 +6399,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b179482ae61a0264283a0dd3cb80ad6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _handSides: 2
-  _actuationPoints: 8
-  _distanceForceTarget: {fileID: 1433836006}
-  _temperature:
-    _value: 0.5
-    _active: 0
-  _force:
-    _value: 0
-    _active: 0
-  _texture:
-    _textureType: 1
-    _active: 0
-    _forcedVelocity: 0
-    _velocity: 0
-    _volume: 100
-  _handController: {fileID: 0}
-  _touchedObjects: []
-  _graspedTouchableObjectForce: 0
-  _graspedObject: {fileID: 0}
-  _isGrasping: 0
-  _isAffectedByTrigger: 0
-  _nonTriggerTouchedObjects: 0
-  _lastPosition: {x: 0, y: 0, z: 0}
-  _lastTime: 0
-  _isUsedByHandController: 0
-  isActuating: 0
-  _lastTocuhableObject: {fileID: 0}
 --- !u!114 &213070350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6499,17 +6411,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6773b19a66062e441bee169fcd94bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _handSide: 1
-  _actuationPoint: 3
-  _isGrasping: 0
-  _isBlocked: 0
-  _blockedClosureValue: 0
-  _safeUnblockSeconds: 0
-  _graspedObject: {fileID: 0}
-  <Closure>k__BackingField:
-    _value: 0
-  <Abduction>k__BackingField:
-    _value: 0
 --- !u!1 &215752918
 GameObject:
   m_ObjectHideFlags: 0
@@ -6772,6 +6673,55 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &221562261
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 221562262}
+  - component: {fileID: 221562263}
+  m_Layer: 0
+  m_Name: SimulationManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &221562262
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 221562261}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1956097937}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &221562263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 221562261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b64299b6f330c6459298593d22dedc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vertebraC5: {fileID: 1058993703}
+  vertebraC6: {fileID: 8257080}
+  discoC5C6: {fileID: 625574510}
+  yellowTransparent: {fileID: 2100000, guid: 277e219cedf74de43b538299c8bfe48e, type: 2}
+  redTransparent: {fileID: 2100000, guid: c1bf9d15ce950024291207cc11248255, type: 2}
 --- !u!1 &225636594
 GameObject:
   m_ObjectHideFlags: 0
@@ -6804,9 +6754,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1219964071}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 390, y: -50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &225636596
@@ -6989,9 +6939,9 @@ RectTransform:
   - {fileID: 1287477392}
   m_Father: {fileID: 943643825}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -1300}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 250}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &238787787
@@ -7044,13 +6994,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb4bc4cda642b14d9563bfe49579282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fingerNameText: {fileID: 617550506}
-  forceValue: {fileID: 2072502552}
-  temperatureValue: {fileID: 311188718}
-  textureTypeValue: {fileID: 2730163}
-  textureVelocityValue: {fileID: 75186824}
-  textureVolumeValue: {fileID: 1840977289}
-  _hapticObject: {fileID: 0}
 --- !u!1 &239777427
 GameObject:
   m_ObjectHideFlags: 0
@@ -7326,8 +7269,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 019ab9327f233c143aa7b4fcccfbde9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resetCalibration: 282
-  calibrationManager: {fileID: 1043664645}
 --- !u!1 &260784414
 GameObject:
   m_ObjectHideFlags: 0
@@ -7531,23 +7472,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74132df12e9fdf549aaf17ac78338937, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _weArtHandControllerRight: {fileID: 0}
-  _weArtHandControllerLeft: {fileID: 0}
-  _weArtHapticObjects: []
-  _deviceFirst: {fileID: 1573861246}
-  _deviceSecond: {fileID: 1200432324}
-  _projectLogLevel: 0
-  <_bleConnectionPanel>k__BackingField: {fileID: 0}
-  _calibrationManager: {fileID: 0}
-  _weArtTrackingCalibration: {fileID: 0}
-  <IsCalibrated>k__BackingField: 0
-  _allowGestures: 0
-  _clientPort: 13031
-  _startAutomatically: 1
-  _startCalibrationAutomatically: 0
-  _startRawDataAutomatically: 0
-  _debugMessages: 0
-  _deviceGeneration: 0
 --- !u!114 &280005359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7560,23 +7484,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31a294e45f6d8304aaa271021e45cc4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _OnCalibrationStart:
-    m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 1
-  _OnCalibrationFinish:
-    m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 1
-  _OnCalibrationResultSuccess:
-    m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 1
-  _OnCalibrationResultFail:
-    m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 1
-  _handlingQueue: 0
 --- !u!4 &280005360
 Transform:
   m_ObjectHideFlags: 0
@@ -7625,9 +7532,9 @@ RectTransform:
   - {fileID: 719947074}
   m_Father: {fileID: 194927161}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 75, y: -100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &283843524
@@ -7787,27 +7694,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b8ba36940f04b44e9b352351b97f84e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchDiverInfoPrefab: {fileID: 3062033721455071136, guid: 168be50ca3f993c4b93acffe6d28589e, type: 3}
-  deviceContainer: {fileID: 2118097167}
-  scrollUpButton: {fileID: 815192676}
-  scrollDownButton: {fileID: 420639300}
-  scrollBar: {fileID: 1686303631}
-  slidingArea: {fileID: 1924330916}
-  autoConnectionText: {fileID: 441794067}
-  _deviceHolders: []
-  _rememberedDevices:
-    DeviceMacAddresses: []
-    HandSides: 
-  _canvasGroup: {fileID: 0}
-  _isHidden: 0
-  "_\u0441onnectionProcessing": 0
-  _rememberedDataPath: 
-  _isDeviceHolderCreating: 0
-  _minScrollStep: 0
-  _maxDevicesAtDisplay: 2
-  _maxScrollStep: 0
-  _currentScrollStep: 0
-  _scrollValueStep: 1
 --- !u!225 &294748211
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -9080,27 +8966,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3c374dedfee06141b40f0cf6ab4905b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teleportHandSide: 1
-  prepareGesture: 2
-  launchGesture: 3
-  teleportTargetOk: {fileID: 607755808}
-  teleportTargetObstacles: {fileID: 79718045}
-  playerController: {fileID: 0}
-  teleportTarget: 0
-  teleportLayer:
-    m_Bits: 0
-  teleportName: Floor
-  laserOriginLeft: {fileID: 291202151}
-  laserOriginRight: {fileID: 1767991169}
-  _handController: {fileID: 0}
-  _laser: {fileID: 0}
-  _recognizeTimer: 0
-  _cameraView: {fileID: 0}
-  _laserOrigin: {fileID: 0}
-  _teleportInitialRotation: {x: 0, y: 0, z: 0}
-  _targetPos: {x: 0, y: 0, z: 0}
-  _isTeleporting: 0
-  _isGestureRecognized: 0
 --- !u!1 &334166908
 GameObject:
   m_ObjectHideFlags: 0
@@ -9135,10 +9000,10 @@ RectTransform:
   - {fileID: 867889879}
   m_Father: {fileID: 717063792}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 345, y: -91.666664}
-  m_SizeDelta: {x: 690, y: 50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &334166910
 MonoBehaviour:
@@ -9289,33 +9154,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b179482ae61a0264283a0dd3cb80ad6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _handSides: 2
-  _actuationPoints: 4
-  _distanceForceTarget: {fileID: 940358712}
-  _temperature:
-    _value: 0.5
-    _active: 0
-  _force:
-    _value: 0
-    _active: 0
-  _texture:
-    _textureType: 1
-    _active: 0
-    _forcedVelocity: 0
-    _velocity: 0
-    _volume: 100
-  _handController: {fileID: 0}
-  _touchedObjects: []
-  _graspedTouchableObjectForce: 0
-  _graspedObject: {fileID: 0}
-  _isGrasping: 0
-  _isAffectedByTrigger: 0
-  _nonTriggerTouchedObjects: 0
-  _lastPosition: {x: 0, y: 0, z: 0}
-  _lastTime: 0
-  _isUsedByHandController: 0
-  isActuating: 0
-  _lastTocuhableObject: {fileID: 0}
 --- !u!114 &336996077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9328,17 +9166,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6773b19a66062e441bee169fcd94bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _handSide: 1
-  _actuationPoint: 2
-  _isGrasping: 0
-  _isBlocked: 0
-  _blockedClosureValue: 0
-  _safeUnblockSeconds: 0
-  _graspedObject: {fileID: 0}
-  <Closure>k__BackingField:
-    _value: 0
-  <Abduction>k__BackingField:
-    _value: 0
 --- !u!1 &342268305
 GameObject:
   m_ObjectHideFlags: 0
@@ -9933,9 +9760,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1219964071}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 220, y: -50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &364071845
@@ -11711,43 +11538,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e038e331804f1a4d9c2f247c2f5cd5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _thumbOrigin: {fileID: 899648248}
-  _indexOrigin: {fileID: 531584253}
-  _middleOrigin: {fileID: 978180529}
-  _palmOrigin: {fileID: 1966601244}
-  _annularOrigin: {fileID: 1698958906}
-  _pinkyOrigin: {fileID: 433645060}
-  _thumbOffset: {fileID: 1294578126}
-  _indexOffset: {fileID: 84917470}
-  _middleOffset: {fileID: 181745156}
-  _annularOffset: {fileID: 344146188}
-  _pinkyOffset: {fileID: 1966652402}
-  _palmOffset: {fileID: 969732501}
-  _thumbThimbleHaptic: {fileID: 0}
-  _indexThimbleHaptic: {fileID: 0}
-  _middleThimbleHaptic: {fileID: 0}
-  _palmThimbleHaptic: {fileID: 0}
-  _annularThimbleHaptic: {fileID: 0}
-  _pinkyThimbleHaptic: {fileID: 0}
-  _thumbThimbleTracking: {fileID: 0}
-  _indexThimbleTracking: {fileID: 0}
-  _middleThimbleTracking: {fileID: 0}
-  _annularThimbleTracking: {fileID: 0}
-  _pinkyThimbleTracking: {fileID: 0}
-  _thumbHapticPosition: {x: 0, y: 0, z: 0}
-  _indexHapticPosition: {x: 0, y: 0, z: 0}
-  _middleHapticPosition: {x: 0, y: 0, z: 0}
-  _annularHapticPosition: {x: 0, y: 0, z: 0}
-  _pinkyHapticPosition: {x: 0, y: 0, z: 0}
-  _palmHapticPosition: {x: 0, y: 0, z: 0}
-  _thumbHapticExplorationPosition: {x: 0, y: 0, z: 0}
-  _indexHapticExplorationPosition: {x: 0, y: 0, z: 0}
-  _middleHapticExplorationPosition: {x: 0, y: 0, z: 0}
-  _annularHapticExplorationPosition: {x: 0, y: 0, z: 0}
-  _pinkyHapticExplorationPosition: {x: 0, y: 0, z: 0}
-  _palmHapticExplorationPosition: {x: 0, y: 0, z: 0}
-  _handController: {fileID: 0}
-  _graspingSystem: {fileID: 0}
 --- !u!114 &450391509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11760,68 +11550,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15f31043ade750a4b933ab3e82664229, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _grasper: {fileID: 358296963}
-  _snapGraspProximityTransform: {fileID: 499906071}
-  _thumbProximityColider: {fileID: 473298657}
-  _indexProximityColider: {fileID: 1820821235}
-  _middleProximityColider: {fileID: 804613340}
-  _annularProximityColider: {fileID: 1272320124}
-  _pinkyProximityColider: {fileID: 1906258175}
-  _handController: {fileID: 0}
-  _surfaceExploration: {fileID: 0}
-  _graspedObject: {fileID: 0}
-  _graspingState: 1
-  _thumbThimbleTracking: {fileID: 0}
-  _indexThimbleTracking: {fileID: 0}
-  _middleThimbleTracking: {fileID: 0}
-  _annularThimbleTracking: {fileID: 0}
-  _pinkyThimbleTracking: {fileID: 0}
-  _thumbThimbleHaptic: {fileID: 0}
-  _indexThimbleHaptic: {fileID: 0}
-  _middleThimbleHaptic: {fileID: 0}
-  _palmThimbleHaptic: {fileID: 0}
-  _annularThimbleHaptic: {fileID: 0}
-  _pinkyThimbleHaptic: {fileID: 0}
-  _thumbContactTouchables: []
-  _indexContactTouchables: []
-  _middleContactTouchables: []
-  _annularContactTouchables: []
-  _pinkyContactTouchables: []
-  _palmContactTouchables: []
-  _thumbProximityTouchables: []
-  _indexProximityTouchables: []
-  _middleProximityTouchables: []
-  _annularProximityTouchables: []
-  _pinkyProximityTouchables: []
-  _thumbBlockingTouchables: []
-  _indexBlockingTouchables: []
-  _middleBlockingTouchables: []
-  _annularBlockingTouchables: []
-  _pinkyBlockingTouchables: []
-  _isThumbTryingToGrasp: 0
-  _isIndexTryingToGrasp: 0
-  _isMiddleTryingToGrasp: 0
-  _isAnnularTryingToGrasp: 0
-  _isPinkyTryingToGrasp: 0
-  _isGraspingWithPalm: 0
-  _notAllowedToGrabSeconds: 0
-  _notAllowedToGrabSecondsMax: 1
-  _intentionalGraspThreshold: 0.1
-  _tryingToGraspThreshhold: 0.1
-  _lastThumbClosure: 0
-  _lastIndexClosure: 0
-  _lastMiddleClosure: 0
-  _lastAnnularClosure: 0
-  _lastPinkyClosure: 0
-  _handSide: 0
-  _otherHand: {fileID: 0}
-  _otherGraspingSystem: {fileID: 0}
-  _deviceTrackingObject: {fileID: 0}
-  _snapGraspObjectsInProximity: []
-  _snapGraspColliders: []
-  _snapGraspClosestTouchable: {fileID: 0}
-  _snapGraspPose: {fileID: 0}
-  _snapGraspingThreshold: 0.05
 --- !u!114 &450391510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11834,44 +11562,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd115c4e3957a444ebe48139b630656b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _openedHandState: {fileID: 7400000, guid: 367e250a120ecb74cb0766e878f95e06, type: 2}
-  _closedHandState: {fileID: 7400000, guid: 04cb37caadf3d1b4293e3a68c5fabf76, type: 2}
-  _abductionHandState: {fileID: 7400000, guid: caa8eabb9741e80458f9cb84ed76f06b, type: 2}
-  _thumbMask: {fileID: 31900000, guid: f59935c52cf14f24b80d146868e997a9, type: 2}
-  _indexMask: {fileID: 31900000, guid: 0e7e6dfac7dc0d940b5f25883fd35773, type: 2}
-  _middleMask: {fileID: 31900000, guid: 2c554e80d8878c64bb8a3d450c97960f, type: 2}
-  _ringMask: {fileID: 31900000, guid: 9046d4b4dfdaa6247815d659947afd17, type: 2}
-  _pinkyMask: {fileID: 31900000, guid: c110a81dc06a82344b5184b5d74424a9, type: 2}
-  _thumbThimbleTracking: {fileID: 479370064}
-  _indexThimbleTracking: {fileID: 336996077}
-  _middleThimbleTracking: {fileID: 213070350}
-  _annularThimbleTracking: {fileID: 1171491605}
-  _pinkyThimbleTracking: {fileID: 456334584}
-  _thumbThimbleHaptic: {fileID: 479370063}
-  _indexThimbleHaptic: {fileID: 336996076}
-  _middleThimbleHaptic: {fileID: 213070349}
-  _palmThimbleHaptic: {fileID: 1332023067}
-  _annularThimbleHaptic: {fileID: 1171491604}
-  _pinkyThimbleHaptic: {fileID: 456334586}
-  _handSkinnedMeshRenderer: {fileID: 2071319468}
-  _logoHandPanel: {fileID: 323302823}
-  _ghostHandInvisibleMaterial: {fileID: 2100000, guid: 4b997204eb5ac8248849a53408302946, type: 2}
-  _ghostHandTransparentMaterial: {fileID: 2100000, guid: ae1a2632024a96a4cb21240df9276dc0, type: 2}
-  _useCustomPoses: 0
-  _animator: {fileID: 0}
-  _fingers: []
-  _thimbles: []
-  _handSide: 1
-  _fingersAnimationSpeed: 10
-  _thumbAnimationSpeed: 20
-  _fingersSlideSpeed: 1.5
-  _extraFingerSpeed: 10
-  _safeUnlockFrames: 0.2
-  _slowFingerAnimationTime: 0
-  _slowFingerAnimationTimeMax: 1
-  _graspingSystem: {fileID: 0}
-  _surfaceExploration: {fileID: 0}
-  _otherHand: {fileID: 0}
 --- !u!54 &450391511
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11933,28 +11623,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 658af5532e47d1d458fdd7569e5b0ac8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _ghostHandDeviceTracking: {fileID: 0}
-  _updateMethod: 1
-  _trackingSource: {fileID: 0}
-  _positionOffset: {x: 0.09, y: -0.07, z: -0.02}
-  _rotationOffset: {x: 149, y: 193.5, z: -96.2}
-  _ghostHandRenderer: {fileID: 0}
-  _showGhostHand: 0
-  _ghostHandShowDistance: 0.05
-  _handAnchoredOffsetOrigin: {fileID: 528409802}
-  _ghostHandAnchoredOffsetOrigin: {fileID: 1905313997}
-  _handController: {fileID: 0}
-  _invisibleMaterial: {fileID: 0}
-  _visibleMaterial: {fileID: 0}
-  _handFollowSpeed: 0.3
-  _handFollowPowerDuringGrab: 3
-  _isAnchored: 0
-  _anchoredLocalPosition: {x: 0, y: 0, z: 0}
-  _anchoredLocalRotation: {x: 0, y: 0, z: 0, w: 0}
-  _safeReleaseSeconds: 0
-  _maxSafeReleaseSeconds: 0.25
-  _safeReleaseVelocityPower: 0.2
-  _safeReleaseRotationPower: 10
 --- !u!1 &452995853
 GameObject:
   m_ObjectHideFlags: 0
@@ -12092,17 +11760,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6773b19a66062e441bee169fcd94bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _handSide: 1
-  _actuationPoint: 6
-  _isGrasping: 0
-  _isBlocked: 0
-  _blockedClosureValue: 0
-  _safeUnblockSeconds: 0
-  _graspedObject: {fileID: 0}
-  <Closure>k__BackingField:
-    _value: 0
-  <Abduction>k__BackingField:
-    _value: 0
 --- !u!136 &456334585
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -12138,33 +11795,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b179482ae61a0264283a0dd3cb80ad6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _handSides: 2
-  _actuationPoints: 64
-  _distanceForceTarget: {fileID: 1443730546}
-  _temperature:
-    _value: 0.5
-    _active: 0
-  _force:
-    _value: 0
-    _active: 0
-  _texture:
-    _textureType: 0
-    _active: 0
-    _forcedVelocity: 0
-    _velocity: 0
-    _volume: 100
-  _handController: {fileID: 0}
-  _touchedObjects: []
-  _graspedTouchableObjectForce: 0
-  _graspedObject: {fileID: 0}
-  _isGrasping: 0
-  _isAffectedByTrigger: 0
-  _nonTriggerTouchedObjects: 0
-  _lastPosition: {x: 0, y: 0, z: 0}
-  _lastTime: 0
-  _isUsedByHandController: 0
-  isActuating: 0
-  _lastTocuhableObject: {fileID: 0}
 --- !u!4 &456334587
 Transform:
   m_ObjectHideFlags: 0
@@ -12212,10 +11842,10 @@ RectTransform:
   - {fileID: 284017680}
   m_Father: {fileID: 2089323715}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 285.15, y: -33.333332}
-  m_SizeDelta: {x: 178.3, y: 66.666664}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 178.3, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &462205530
 CanvasRenderer:
@@ -12879,33 +12509,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b179482ae61a0264283a0dd3cb80ad6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _handSides: 2
-  _actuationPoints: 2
-  _distanceForceTarget: {fileID: 1564249546}
-  _temperature:
-    _value: 0.5
-    _active: 0
-  _force:
-    _value: 0
-    _active: 0
-  _texture:
-    _textureType: 1
-    _active: 0
-    _forcedVelocity: 0
-    _velocity: 0
-    _volume: 100
-  _handController: {fileID: 0}
-  _touchedObjects: []
-  _graspedTouchableObjectForce: 0
-  _graspedObject: {fileID: 0}
-  _isGrasping: 0
-  _isAffectedByTrigger: 0
-  _nonTriggerTouchedObjects: 0
-  _lastPosition: {x: 0, y: 0, z: 0}
-  _lastTime: 0
-  _isUsedByHandController: 0
-  isActuating: 0
-  _lastTocuhableObject: {fileID: 0}
 --- !u!114 &479370064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12918,17 +12521,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6773b19a66062e441bee169fcd94bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _handSide: 1
-  _actuationPoint: 1
-  _isGrasping: 0
-  _isBlocked: 0
-  _blockedClosureValue: 0
-  _safeUnblockSeconds: 0
-  _graspedObject: {fileID: 0}
-  <Closure>k__BackingField:
-    _value: 0
-  <Abduction>k__BackingField:
-    _value: 0
 --- !u!1 &480058830
 GameObject:
   m_ObjectHideFlags: 0
@@ -13065,43 +12657,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e038e331804f1a4d9c2f247c2f5cd5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _thumbOrigin: {fileID: 512620879}
-  _indexOrigin: {fileID: 436132668}
-  _middleOrigin: {fileID: 839320661}
-  _palmOrigin: {fileID: 1131782955}
-  _annularOrigin: {fileID: 1709368562}
-  _pinkyOrigin: {fileID: 788291095}
-  _thumbOffset: {fileID: 1571123317}
-  _indexOffset: {fileID: 773262570}
-  _middleOffset: {fileID: 169864001}
-  _annularOffset: {fileID: 1916822424}
-  _pinkyOffset: {fileID: 1992647819}
-  _palmOffset: {fileID: 742655447}
-  _thumbThimbleHaptic: {fileID: 0}
-  _indexThimbleHaptic: {fileID: 0}
-  _middleThimbleHaptic: {fileID: 0}
-  _palmThimbleHaptic: {fileID: 0}
-  _annularThimbleHaptic: {fileID: 0}
-  _pinkyThimbleHaptic: {fileID: 0}
-  _thumbThimbleTracking: {fileID: 0}
-  _indexThimbleTracking: {fileID: 0}
-  _middleThimbleTracking: {fileID: 0}
-  _annularThimbleTracking: {fileID: 0}
-  _pinkyThimbleTracking: {fileID: 0}
-  _thumbHapticPosition: {x: 0, y: 0, z: 0}
-  _indexHapticPosition: {x: 0, y: 0, z: 0}
-  _middleHapticPosition: {x: 0, y: 0, z: 0}
-  _annularHapticPosition: {x: 0, y: 0, z: 0}
-  _pinkyHapticPosition: {x: 0, y: 0, z: 0}
-  _palmHapticPosition: {x: 0, y: 0, z: 0}
-  _thumbHapticExplorationPosition: {x: 0, y: 0, z: 0}
-  _indexHapticExplorationPosition: {x: 0, y: 0, z: 0}
-  _middleHapticExplorationPosition: {x: 0, y: 0, z: 0}
-  _annularHapticExplorationPosition: {x: 0, y: 0, z: 0}
-  _pinkyHapticExplorationPosition: {x: 0, y: 0, z: 0}
-  _palmHapticExplorationPosition: {x: 0, y: 0, z: 0}
-  _handController: {fileID: 0}
-  _graspingSystem: {fileID: 0}
 --- !u!114 &485428331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13114,68 +12669,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15f31043ade750a4b933ab3e82664229, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _grasper: {fileID: 2062726537}
-  _snapGraspProximityTransform: {fileID: 1255022895}
-  _thumbProximityColider: {fileID: 23958530}
-  _indexProximityColider: {fileID: 755584091}
-  _middleProximityColider: {fileID: 1066787400}
-  _annularProximityColider: {fileID: 350657384}
-  _pinkyProximityColider: {fileID: 1530011106}
-  _handController: {fileID: 0}
-  _surfaceExploration: {fileID: 0}
-  _graspedObject: {fileID: 0}
-  _graspingState: 1
-  _thumbThimbleTracking: {fileID: 0}
-  _indexThimbleTracking: {fileID: 0}
-  _middleThimbleTracking: {fileID: 0}
-  _annularThimbleTracking: {fileID: 0}
-  _pinkyThimbleTracking: {fileID: 0}
-  _thumbThimbleHaptic: {fileID: 0}
-  _indexThimbleHaptic: {fileID: 0}
-  _middleThimbleHaptic: {fileID: 0}
-  _palmThimbleHaptic: {fileID: 0}
-  _annularThimbleHaptic: {fileID: 0}
-  _pinkyThimbleHaptic: {fileID: 0}
-  _thumbContactTouchables: []
-  _indexContactTouchables: []
-  _middleContactTouchables: []
-  _annularContactTouchables: []
-  _pinkyContactTouchables: []
-  _palmContactTouchables: []
-  _thumbProximityTouchables: []
-  _indexProximityTouchables: []
-  _middleProximityTouchables: []
-  _annularProximityTouchables: []
-  _pinkyProximityTouchables: []
-  _thumbBlockingTouchables: []
-  _indexBlockingTouchables: []
-  _middleBlockingTouchables: []
-  _annularBlockingTouchables: []
-  _pinkyBlockingTouchables: []
-  _isThumbTryingToGrasp: 0
-  _isIndexTryingToGrasp: 0
-  _isMiddleTryingToGrasp: 0
-  _isAnnularTryingToGrasp: 0
-  _isPinkyTryingToGrasp: 0
-  _isGraspingWithPalm: 0
-  _notAllowedToGrabSeconds: 0
-  _notAllowedToGrabSecondsMax: 1
-  _intentionalGraspThreshold: 0.1
-  _tryingToGraspThreshhold: 0.1
-  _lastThumbClosure: 0
-  _lastIndexClosure: 0
-  _lastMiddleClosure: 0
-  _lastAnnularClosure: 0
-  _lastPinkyClosure: 0
-  _handSide: 0
-  _otherHand: {fileID: 0}
-  _otherGraspingSystem: {fileID: 0}
-  _deviceTrackingObject: {fileID: 0}
-  _snapGraspObjectsInProximity: []
-  _snapGraspColliders: []
-  _snapGraspClosestTouchable: {fileID: 0}
-  _snapGraspPose: {fileID: 0}
-  _snapGraspingThreshold: 0.05
 --- !u!114 &485428332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13188,44 +12681,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd115c4e3957a444ebe48139b630656b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _openedHandState: {fileID: 7400000, guid: 367e250a120ecb74cb0766e878f95e06, type: 2}
-  _closedHandState: {fileID: 7400000, guid: 04cb37caadf3d1b4293e3a68c5fabf76, type: 2}
-  _abductionHandState: {fileID: 7400000, guid: caa8eabb9741e80458f9cb84ed76f06b, type: 2}
-  _thumbMask: {fileID: 31900000, guid: f59935c52cf14f24b80d146868e997a9, type: 2}
-  _indexMask: {fileID: 31900000, guid: 0e7e6dfac7dc0d940b5f25883fd35773, type: 2}
-  _middleMask: {fileID: 31900000, guid: 2c554e80d8878c64bb8a3d450c97960f, type: 2}
-  _ringMask: {fileID: 31900000, guid: 9046d4b4dfdaa6247815d659947afd17, type: 2}
-  _pinkyMask: {fileID: 31900000, guid: c110a81dc06a82344b5184b5d74424a9, type: 2}
-  _thumbThimbleTracking: {fileID: 2000512378}
-  _indexThimbleTracking: {fileID: 1005546840}
-  _middleThimbleTracking: {fileID: 1243958048}
-  _annularThimbleTracking: {fileID: 1707810489}
-  _pinkyThimbleTracking: {fileID: 1848795349}
-  _thumbThimbleHaptic: {fileID: 2000512377}
-  _indexThimbleHaptic: {fileID: 1005546839}
-  _middleThimbleHaptic: {fileID: 1243958047}
-  _palmThimbleHaptic: {fileID: 1802537460}
-  _annularThimbleHaptic: {fileID: 1707810488}
-  _pinkyThimbleHaptic: {fileID: 1848795351}
-  _handSkinnedMeshRenderer: {fileID: 828948488}
-  _logoHandPanel: {fileID: 169105211}
-  _ghostHandInvisibleMaterial: {fileID: 2100000, guid: 4b997204eb5ac8248849a53408302946, type: 2}
-  _ghostHandTransparentMaterial: {fileID: 2100000, guid: ae1a2632024a96a4cb21240df9276dc0, type: 2}
-  _useCustomPoses: 0
-  _animator: {fileID: 0}
-  _fingers: []
-  _thimbles: []
-  _handSide: 0
-  _fingersAnimationSpeed: 10
-  _thumbAnimationSpeed: 20
-  _fingersSlideSpeed: 1.5
-  _extraFingerSpeed: 10
-  _safeUnlockFrames: 0.2
-  _slowFingerAnimationTime: 0
-  _slowFingerAnimationTimeMax: 1
-  _graspingSystem: {fileID: 0}
-  _surfaceExploration: {fileID: 0}
-  _otherHand: {fileID: 0}
 --- !u!54 &485428333
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13287,28 +12742,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 658af5532e47d1d458fdd7569e5b0ac8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _ghostHandDeviceTracking: {fileID: 0}
-  _updateMethod: 0
-  _trackingSource: {fileID: 0}
-  _positionOffset: {x: -0.07, y: -0.06, z: -0.02}
-  _rotationOffset: {x: 30, y: -2.1, z: -82.1}
-  _ghostHandRenderer: {fileID: 1976998934}
-  _showGhostHand: 0
-  _ghostHandShowDistance: 0.05
-  _handAnchoredOffsetOrigin: {fileID: 828742304}
-  _ghostHandAnchoredOffsetOrigin: {fileID: 806232452}
-  _handController: {fileID: 0}
-  _invisibleMaterial: {fileID: 0}
-  _visibleMaterial: {fileID: 0}
-  _handFollowSpeed: 0.3
-  _handFollowPowerDuringGrab: 3
-  _isAnchored: 0
-  _anchoredLocalPosition: {x: 0, y: 0, z: 0}
-  _anchoredLocalRotation: {x: 0, y: 0, z: 0, w: 0}
-  _safeReleaseSeconds: 0
-  _maxSafeReleaseSeconds: 0.25
-  _safeReleaseVelocityPower: 0.2
-  _safeReleaseRotationPower: 10
 --- !u!1 &496325826
 GameObject:
   m_ObjectHideFlags: 0
@@ -13341,9 +12774,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1219964071}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 560, y: -50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &496325828
@@ -13533,10 +12966,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 334166909}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 204.05185, y: -24.655638}
-  m_SizeDelta: {x: 413.80353, y: 50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &519182814
 MonoBehaviour:
@@ -14061,9 +13494,9 @@ RectTransform:
   m_Father: {fileID: 716746544}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -9.25, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &533851866
 MonoBehaviour:
@@ -14630,9 +14063,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4da0571e7ad2bc499a6868db527a493, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _button: {fileID: 0}
-  _collider: {fileID: 0}
-  _rectTransform: {fileID: 0}
 --- !u!65 &559595983
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15359,9 +14789,9 @@ RectTransform:
   - {fileID: 1846909531}
   m_Father: {fileID: 943643825}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 421, y: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 842, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &605334474
@@ -15450,9 +14880,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59def25038541d143aab5810a1dab568, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upperPart: {fileID: 539744449}
-  bottomPart: {fileID: 855673523}
-  animatedPart: {fileID: 668511778}
 --- !u!1 &608604615
 GameObject:
   m_ObjectHideFlags: 0
@@ -15655,10 +15082,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1556701385}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 255.98647, y: -24.655638}
-  m_SizeDelta: {x: 519.1235, y: 50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &615851020
 MonoBehaviour:
@@ -15932,9 +15359,9 @@ RectTransform:
   - {fileID: 880572769}
   m_Father: {fileID: 943643825}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -1050}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 250}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &620873793
@@ -15987,13 +15414,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb4bc4cda642b14d9563bfe49579282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fingerNameText: {fileID: 216216920}
-  forceValue: {fileID: 1353534390}
-  temperatureValue: {fileID: 758358038}
-  textureTypeValue: {fileID: 320388177}
-  textureVelocityValue: {fileID: 1427741172}
-  textureVolumeValue: {fileID: 161447997}
-  _hapticObject: {fileID: 0}
 --- !u!1 &621535076
 GameObject:
   m_ObjectHideFlags: 0
@@ -16162,6 +15582,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 624273576}
   m_CullTransparentMesh: 1
+--- !u!1 &625574510 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7567505094835022155, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
+  m_PrefabInstance: {fileID: 1076405524}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &625610334
 GameObject:
   m_ObjectHideFlags: 0
@@ -16630,10 +16055,10 @@ RectTransform:
   - {fileID: 1489942464}
   m_Father: {fileID: 1198796552}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 92.97, y: -33.333332}
-  m_SizeDelta: {x: 185.94, y: 66.666664}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 185.94, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &639631877
 CanvasRenderer:
@@ -16757,9 +16182,9 @@ RectTransform:
   - {fileID: 84611238}
   m_Father: {fileID: 943643825}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 250}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &641111992
@@ -16812,13 +16237,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb4bc4cda642b14d9563bfe49579282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fingerNameText: {fileID: 2016829369}
-  forceValue: {fileID: 1484300697}
-  temperatureValue: {fileID: 876219685}
-  textureTypeValue: {fileID: 521748778}
-  textureVelocityValue: {fileID: 1601035692}
-  textureVolumeValue: {fileID: 538046873}
-  _hapticObject: {fileID: 0}
 --- !u!1 &642827563
 GameObject:
   m_ObjectHideFlags: 0
@@ -17404,10 +16822,10 @@ RectTransform:
   - {fileID: 2089323715}
   m_Father: {fileID: 1842121101}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 187.5, y: -100}
-  m_SizeDelta: {x: 375, y: 66.666664}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &677693598
 MonoBehaviour:
@@ -17805,9 +17223,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 452995854}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 304.29797, y: -67.97161}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 587.75354, y: 95.94322}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &702131109
@@ -17921,7 +17339,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: -1725}
-  m_SizeDelta: {x: -50, y: 1550}
+  m_SizeDelta: {x: -50, y: 0}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &707225384
 MonoBehaviour:
@@ -18908,9 +18326,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47b5f71a07455f246acb49b87ad7a453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackingGestures: []
-  _leftHand: {fileID: 0}
-  _rightHand: {fileID: 0}
 --- !u!1 &737473008
 GameObject:
   m_ObjectHideFlags: 0
@@ -19691,9 +19106,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4da0571e7ad2bc499a6868db527a493, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _button: {fileID: 0}
-  _collider: {fileID: 0}
-  _rectTransform: {fileID: 0}
 --- !u!65 &770258493
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21555,10 +20967,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 334166909}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 549.0519, y: -24.655638}
-  m_SizeDelta: {x: 285.8335, y: 50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &867889880
 MonoBehaviour:
@@ -22622,9 +22034,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4da0571e7ad2bc499a6868db527a493, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _button: {fileID: 0}
-  _collider: {fileID: 0}
-  _rectTransform: {fileID: 0}
 --- !u!65 &902798882
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22679,10 +22088,10 @@ RectTransform:
   - {fileID: 1198796552}
   m_Father: {fileID: 1481888410}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 187.5, y: -100}
-  m_SizeDelta: {x: 375, y: 66.666664}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &905039134
 MonoBehaviour:
@@ -23466,7 +22875,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 700, y: 1550}
+  m_SizeDelta: {x: 700, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &943643826
 MonoBehaviour:
@@ -23548,10 +22957,10 @@ RectTransform:
   - {fileID: 1572411274}
   m_Father: {fileID: 717063792}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 345, y: -326.66666}
-  m_SizeDelta: {x: 690, y: 120}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &944368910
 CanvasRenderer:
@@ -24434,33 +23843,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b179482ae61a0264283a0dd3cb80ad6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _handSides: 1
-  _actuationPoints: 4
-  _distanceForceTarget: {fileID: 25876067}
-  _temperature:
-    _value: 0.5
-    _active: 0
-  _force:
-    _value: 0
-    _active: 0
-  _texture:
-    _textureType: 1
-    _active: 0
-    _forcedVelocity: 0
-    _velocity: 0
-    _volume: 100
-  _handController: {fileID: 0}
-  _touchedObjects: []
-  _graspedTouchableObjectForce: 0
-  _graspedObject: {fileID: 0}
-  _isGrasping: 0
-  _isAffectedByTrigger: 0
-  _nonTriggerTouchedObjects: 0
-  _lastPosition: {x: 0, y: 0, z: 0}
-  _lastTime: 0
-  _isUsedByHandController: 0
-  isActuating: 0
-  _lastTocuhableObject: {fileID: 0}
 --- !u!114 &1005546840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24473,17 +23855,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6773b19a66062e441bee169fcd94bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _handSide: 0
-  _actuationPoint: 2
-  _isGrasping: 0
-  _isBlocked: 0
-  _blockedClosureValue: 0
-  _safeUnblockSeconds: 0
-  _graspedObject: {fileID: 0}
-  <Closure>k__BackingField:
-    _value: 0
-  <Abduction>k__BackingField:
-    _value: 0
 --- !u!1 &1008170651
 GameObject:
   m_ObjectHideFlags: 0
@@ -24593,10 +23964,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1556701385}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 600.98645, y: -24.655638}
-  m_SizeDelta: {x: 180.51349, y: 50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1013063927
 MonoBehaviour:
@@ -24870,9 +24241,9 @@ RectTransform:
   - {fileID: 1520207121}
   m_Father: {fileID: 1098515914}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -300}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 250}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1020392118
@@ -24925,13 +24296,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb4bc4cda642b14d9563bfe49579282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fingerNameText: {fileID: 1799359673}
-  forceValue: {fileID: 428609768}
-  temperatureValue: {fileID: 1431220755}
-  textureTypeValue: {fileID: 1362129554}
-  textureVelocityValue: {fileID: 680851765}
-  textureVolumeValue: {fileID: 323758713}
-  _hapticObject: {fileID: 0}
 --- !u!1 &1031637062
 GameObject:
   m_ObjectHideFlags: 0
@@ -25029,10 +24393,10 @@ RectTransform:
   - {fileID: 479033268}
   m_Father: {fileID: 1481888410}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 187.5, y: -166.66666}
-  m_SizeDelta: {x: 375, y: 66.666664}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1034336113
 CanvasRenderer:
@@ -25160,28 +24524,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0e298ea683f88d40a49623d80170dfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weArtController: {fileID: 280005358}
-  handCalibrationRoot: {fileID: 2125876447}
-  triggerRightHand: {fileID: 888920803}
-  triggerLeftHand: {fileID: 571920397}
-  holoHandL: {fileID: 29051014}
-  holoHandR: {fileID: 1091136847}
-  weArtControllerRightHand: {fileID: 450391507}
-  weArtControllerLeftHand: {fileID: 485428329}
-  WEARTRightHand: {fileID: 450391506}
-  WEARTLeftHand: {fileID: 485428328}
-  infoField: {fileID: 1333379950}
-  audioEvents: {onStart: {fileID: 8300000, guid: 6fd434ea165586d4f98a0af4d85ba774, type: 3}, onFailed: {fileID: 8300000, guid: 672e83ea761482547aaea5068ea84136, type: 3}, onSuccess: {fileID: 8300000, guid: 771dea589b637494cad0db63df385236, type: 3}, source: {fileID: 1043664646}}
-  maxHands: 0
-  dominantHand: 1
-  _calibrationTimeout: 5
-  trackingCalibration: {fileID: 0}
-  isCalibrated: 0
-  nTriggerHands: 0
-  isAligned: 0
-  ignore_calibration: 0
-  t_timeout: 0
-  StandaloneActive: 0
 --- !u!82 &1043664646
 AudioSource:
   m_ObjectHideFlags: 0
@@ -25291,13 +24633,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c13a07f5105ba64ba7d23005c69a38e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnStart: Please align your hand/s here for calibration
-  OnHandEnter: Keep your hands still!
-  OnHandExit: You moved you hand. Please reposition you hand/s...
-  OnSuccess: Great! Calibration is finished
-  OnCalibrationError: Calibration was failed. Please retry to reposition your hand/s...
-  OnRequestTwoHands: Please hold both hands simultaneously aligned for calibration
-  OnTimeout: Timeout error. Please retry
 --- !u!4 &1043664648
 Transform:
   m_ObjectHideFlags: 0
@@ -25395,23 +24730,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d37931161893efd4ea0627dd7f729d88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tracker: {fileID: 1899554876}
-  MiddlewareStatusText: {fileID: 867889880}
-  MiddlewareStatusCodeText: {fileID: 1231697089}
-  MiddlewareVersionText: {fileID: 70387435}
-  ConnectionTypeText: {fileID: 1013063927}
-  ErrorDescriptionText: {fileID: 1389932580}
-  ErrorDescriptionPanel: {fileID: 1572411273}
-  ActuationEnabledIcon: {fileID: 2142459094}
-  AutoConnectionIcon: {fileID: 364071843}
-  RawDataLogIcon: {fileID: 225636594}
-  SensorOnMaskIcon: {fileID: 496325826}
-  DeviceGeneration: {fileID: 68302717}
-  _weartAppConnected: 0
-  StandaloneAndroidActive: 0
-  _middlewareStatusReceived: 0
-  _weartAppStatusReceived: 0
-  _needToUpdate: 0
 --- !u!222 &1051510947
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -25452,10 +24770,10 @@ RectTransform:
   - {fileID: 414181203}
   m_Father: {fileID: 1481888410}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 187.5, y: -33.333332}
-  m_SizeDelta: {x: 375, y: 66.666664}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1052368480
 CanvasRenderer:
@@ -25538,6 +24856,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1056297026}
   m_CullTransparentMesh: 1
+--- !u!1 &1058993703 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -803357299108230656, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
+  m_PrefabInstance: {fileID: 1076405524}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1061213272
 GameObject:
   m_ObjectHideFlags: 0
@@ -25833,33 +25156,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8387804231115053558, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6945121635553091466, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4057339907619863177, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -2021178655527167927, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 51.073948
+      value: 431.47318
       objectReference: {fileID: 0}
     - target: {fileID: -2021178655527167927, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 393.74722
+      value: 249.69211
       objectReference: {fileID: 0}
     - target: {fileID: -2021178655527167927, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.2640438
+      value: 111.45702
       objectReference: {fileID: 0}
     - target: {fileID: -2021178655527167927, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.54180807
+      value: -0.5979438
       objectReference: {fileID: 0}
     - target: {fileID: -2021178655527167927, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.4615689
+      value: -0.12669782
       objectReference: {fileID: 0}
     - target: {fileID: -2021178655527167927, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.5346997
+      value: 0.77427113
       objectReference: {fileID: 0}
     - target: {fileID: -2021178655527167927, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.45551568
+      value: -0.1640585
       objectReference: {fileID: 0}
     - target: {fileID: -2021178655527167927, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -25873,9 +25208,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -29.498
       objectReference: {fileID: 0}
+    - target: {fileID: -1709085863041204024, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -569249123642468386, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
       propertyPath: m_Name
       value: Untitled
+      objectReference: {fileID: 0}
+    - target: {fileID: 2298747675472819809, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6136403722592890483, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8443344811535790516, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -25883,6 +25238,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
       insertIndex: -1
       addedObject: {fileID: 181776954}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 221562262}
     - targetCorrespondingSourceObject: {fileID: -2021178655527167927, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
       insertIndex: -1
       addedObject: {fileID: 125819402}
@@ -26539,12 +25897,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ebdc6f4a556bfb46bd4cc07206e3a4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mesh: {fileID: 1091136846}
-  idleMaterial: {fileID: 2100000, guid: 030693cb5f9b23243a590a2e4589d5b3, type: 2}
-  calibrationMaterial: {fileID: 2100000, guid: e197d2dd18d2e9c48ab06664b9eaf597, type: 2}
-  successMaterial: {fileID: 2100000, guid: 6285367c41702d94f84dc3e70004c930, type: 2}
-  failedMaterial: {fileID: 2100000, guid: ea8fc2d2ac0cd6147b68e300ce3a6620, type: 2}
-  state: 0
 --- !u!1 &1091582564
 GameObject:
   m_ObjectHideFlags: 0
@@ -26623,7 +25975,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 900, y: 0}
-  m_SizeDelta: {x: 700, y: 1550}
+  m_SizeDelta: {x: 700, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1098515915
 MonoBehaviour:
@@ -27103,9 +26455,9 @@ RectTransform:
   - {fileID: 1230320858}
   m_Father: {fileID: 1098515914}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -1050}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 250}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1145385177
@@ -27158,13 +26510,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb4bc4cda642b14d9563bfe49579282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fingerNameText: {fileID: 1090058589}
-  forceValue: {fileID: 1637809238}
-  temperatureValue: {fileID: 1787114975}
-  textureTypeValue: {fileID: 670882182}
-  textureVelocityValue: {fileID: 1768506183}
-  textureVolumeValue: {fileID: 1755508596}
-  _hapticObject: {fileID: 0}
 --- !u!1 &1153859404
 GameObject:
   m_ObjectHideFlags: 0
@@ -27396,33 +26741,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b179482ae61a0264283a0dd3cb80ad6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _handSides: 2
-  _actuationPoints: 32
-  _distanceForceTarget: {fileID: 860237567}
-  _temperature:
-    _value: 0.5
-    _active: 0
-  _force:
-    _value: 0
-    _active: 0
-  _texture:
-    _textureType: 0
-    _active: 0
-    _forcedVelocity: 0
-    _velocity: 0
-    _volume: 100
-  _handController: {fileID: 0}
-  _touchedObjects: []
-  _graspedTouchableObjectForce: 0
-  _graspedObject: {fileID: 0}
-  _isGrasping: 0
-  _isAffectedByTrigger: 0
-  _nonTriggerTouchedObjects: 0
-  _lastPosition: {x: 0, y: 0, z: 0}
-  _lastTime: 0
-  _isUsedByHandController: 0
-  isActuating: 0
-  _lastTocuhableObject: {fileID: 0}
 --- !u!114 &1171491605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27435,17 +26753,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6773b19a66062e441bee169fcd94bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _handSide: 1
-  _actuationPoint: 5
-  _isGrasping: 0
-  _isBlocked: 0
-  _blockedClosureValue: 0
-  _safeUnblockSeconds: 0
-  _graspedObject: {fileID: 0}
-  <Closure>k__BackingField:
-    _value: 0
-  <Abduction>k__BackingField:
-    _value: 0
 --- !u!1 &1173464097
 GameObject:
   m_ObjectHideFlags: 0
@@ -27560,9 +26867,9 @@ RectTransform:
   - {fileID: 1188946557}
   m_Father: {fileID: 943643825}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -550}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 250}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1179952197
@@ -27615,13 +26922,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb4bc4cda642b14d9563bfe49579282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fingerNameText: {fileID: 1241057703}
-  forceValue: {fileID: 1693155198}
-  temperatureValue: {fileID: 843148247}
-  textureTypeValue: {fileID: 1501071575}
-  textureVelocityValue: {fileID: 1441018269}
-  textureVolumeValue: {fileID: 149615848}
-  _hapticObject: {fileID: 0}
 --- !u!1 &1181066274
 GameObject:
   m_ObjectHideFlags: 0
@@ -27673,22 +26973,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 900b68d74cc8c4145a332903ea2b0cd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _openedHandState: {fileID: 7400000, guid: 367e250a120ecb74cb0766e878f95e06, type: 2}
-  _closedHandState: {fileID: 7400000, guid: 04cb37caadf3d1b4293e3a68c5fabf76, type: 2}
-  _abductionHandState: {fileID: 7400000, guid: caa8eabb9741e80458f9cb84ed76f06b, type: 2}
-  _animator: {fileID: 0}
-  _fingers: []
-  _thimbles: []
-  _thumbThimbleTracking: {fileID: 479370064}
-  _indexThimbleTracking: {fileID: 336996077}
-  _middleThimbleTracking: {fileID: 213070350}
-  _annularThimbleTracking: {fileID: 1171491605}
-  _pinkyThimbleTracking: {fileID: 456334584}
-  _thumbMask: {fileID: 31900000, guid: f59935c52cf14f24b80d146868e997a9, type: 2}
-  _indexMask: {fileID: 31900000, guid: 0e7e6dfac7dc0d940b5f25883fd35773, type: 2}
-  _middleMask: {fileID: 31900000, guid: 2c554e80d8878c64bb8a3d450c97960f, type: 2}
-  _ringMask: {fileID: 31900000, guid: 9046d4b4dfdaa6247815d659947afd17, type: 2}
-  _pinkyMask: {fileID: 31900000, guid: c110a81dc06a82344b5184b5d74424a9, type: 2}
 --- !u!95 &1181066277
 Animator:
   serializedVersion: 7
@@ -28072,9 +27356,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4da0571e7ad2bc499a6868db527a493, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _button: {fileID: 0}
-  _collider: {fileID: 0}
-  _rectTransform: {fileID: 0}
 --- !u!65 &1197356333
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28199,10 +27480,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78167bd2c2c4ac74aaa99a62e68f583e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _handSide: 0
-  _deviceID: 1
-  oldDataFirst: []
-  oldDataSecond: []
 --- !u!4 &1200432325
 Transform:
   m_ObjectHideFlags: 0
@@ -28684,10 +27961,10 @@ RectTransform:
   - {fileID: 496325827}
   m_Father: {fileID: 717063792}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 345, y: -463.3333}
-  m_SizeDelta: {x: 690, y: 120}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1219964072
 MonoBehaviour:
@@ -29238,10 +28515,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1270125827}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 578.87775, y: -24.655638}
-  m_SizeDelta: {x: 225.3485, y: 50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1231697089
 MonoBehaviour:
@@ -29660,33 +28937,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b179482ae61a0264283a0dd3cb80ad6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _handSides: 1
-  _actuationPoints: 8
-  _distanceForceTarget: {fileID: 1859920943}
-  _temperature:
-    _value: 0.5
-    _active: 0
-  _force:
-    _value: 0
-    _active: 0
-  _texture:
-    _textureType: 1
-    _active: 0
-    _forcedVelocity: 0
-    _velocity: 0
-    _volume: 100
-  _handController: {fileID: 0}
-  _touchedObjects: []
-  _graspedTouchableObjectForce: 0
-  _graspedObject: {fileID: 0}
-  _isGrasping: 0
-  _isAffectedByTrigger: 0
-  _nonTriggerTouchedObjects: 0
-  _lastPosition: {x: 0, y: 0, z: 0}
-  _lastTime: 0
-  _isUsedByHandController: 0
-  isActuating: 0
-  _lastTocuhableObject: {fileID: 0}
 --- !u!114 &1243958048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29699,17 +28949,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6773b19a66062e441bee169fcd94bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _handSide: 0
-  _actuationPoint: 3
-  _isGrasping: 0
-  _isBlocked: 0
-  _blockedClosureValue: 0
-  _safeUnblockSeconds: 0
-  _graspedObject: {fileID: 0}
-  <Closure>k__BackingField:
-    _value: 0
-  <Abduction>k__BackingField:
-    _value: 0
 --- !u!1 &1244429537
 GameObject:
   m_ObjectHideFlags: 0
@@ -29935,10 +29174,10 @@ RectTransform:
   - {fileID: 1231697088}
   m_Father: {fileID: 717063792}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 345, y: -225}
-  m_SizeDelta: {x: 690, y: 50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1270125828
 MonoBehaviour:
@@ -31734,33 +30973,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b179482ae61a0264283a0dd3cb80ad6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _handSides: 2
-  _actuationPoints: 16
-  _distanceForceTarget: {fileID: 32853892}
-  _temperature:
-    _value: 0.5
-    _active: 0
-  _force:
-    _value: 0
-    _active: 0
-  _texture:
-    _textureType: 0
-    _active: 0
-    _forcedVelocity: 0
-    _velocity: 0
-    _volume: 100
-  _handController: {fileID: 0}
-  _touchedObjects: []
-  _graspedTouchableObjectForce: 0
-  _graspedObject: {fileID: 0}
-  _isGrasping: 0
-  _isAffectedByTrigger: 0
-  _nonTriggerTouchedObjects: 0
-  _lastPosition: {x: 0, y: 0, z: 0}
-  _lastTime: 0
-  _isUsedByHandController: 0
-  isActuating: 0
-  _lastTocuhableObject: {fileID: 0}
 --- !u!1 &1333379949
 GameObject:
   m_ObjectHideFlags: 0
@@ -31793,20 +31005,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbc358685cf410c459e69ecdf69d97bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  window: {fileID: 452995853}
-  startWindow: {fileID: 1642794303}
-  startWindowPC: {fileID: 1878773925}
-  startAutomaticCalibrationWindow: {fileID: 194770630}
-  textInfo: {fileID: 702131110}
-  loadingCircle: {fileID: 977799972}
-  calibrationExample: {fileID: 1982797355}
-  textTime: {fileID: 770455781}
-  icon: {fileID: 1159143776}
-  spriteSuccess: {fileID: 21300000, guid: d19ca0f0abf662a49946d6f1386ddbea, type: 3}
-  spriteFailed: {fileID: 21300000, guid: a2a201df8ec6b694cb9db2ba586a8588, type: 3}
-  spriteWarning: {fileID: 21300000, guid: b678e468a5d2085478c8c47c78a5d8c1, type: 3}
-  loading: 0
-  _icon: {fileID: 0}
 --- !u!224 &1333379951
 RectTransform:
   m_ObjectHideFlags: 0
@@ -31963,9 +31161,9 @@ RectTransform:
   - {fileID: 398262872}
   m_Father: {fileID: 1098515914}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -800}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 250}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1340673891
@@ -32018,13 +31216,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb4bc4cda642b14d9563bfe49579282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fingerNameText: {fileID: 707777448}
-  forceValue: {fileID: 119128920}
-  temperatureValue: {fileID: 1728575764}
-  textureTypeValue: {fileID: 625610336}
-  textureVelocityValue: {fileID: 1704114947}
-  textureVolumeValue: {fileID: 1655153713}
-  _hapticObject: {fileID: 0}
 --- !u!1 &1351449061
 GameObject:
   m_ObjectHideFlags: 0
@@ -32624,22 +31815,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 900b68d74cc8c4145a332903ea2b0cd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _openedHandState: {fileID: 7400000, guid: 367e250a120ecb74cb0766e878f95e06, type: 2}
-  _closedHandState: {fileID: 7400000, guid: 04cb37caadf3d1b4293e3a68c5fabf76, type: 2}
-  _abductionHandState: {fileID: 7400000, guid: caa8eabb9741e80458f9cb84ed76f06b, type: 2}
-  _animator: {fileID: 0}
-  _fingers: []
-  _thimbles: []
-  _thumbThimbleTracking: {fileID: 2000512378}
-  _indexThimbleTracking: {fileID: 1005546840}
-  _middleThimbleTracking: {fileID: 1243958048}
-  _annularThimbleTracking: {fileID: 1707810489}
-  _pinkyThimbleTracking: {fileID: 1848795349}
-  _thumbMask: {fileID: 31900000, guid: f59935c52cf14f24b80d146868e997a9, type: 2}
-  _indexMask: {fileID: 31900000, guid: 0e7e6dfac7dc0d940b5f25883fd35773, type: 2}
-  _middleMask: {fileID: 31900000, guid: 2c554e80d8878c64bb8a3d450c97960f, type: 2}
-  _ringMask: {fileID: 31900000, guid: 9046d4b4dfdaa6247815d659947afd17, type: 2}
-  _pinkyMask: {fileID: 31900000, guid: c110a81dc06a82344b5184b5d74424a9, type: 2}
 --- !u!95 &1394824989
 Animator:
   serializedVersion: 7
@@ -33229,10 +32404,10 @@ RectTransform:
   - {fileID: 1842121101}
   m_Father: {fileID: 1056297027}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 562.5, y: -270}
-  m_SizeDelta: {x: 375, y: 540}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1422018744
 MonoBehaviour:
@@ -33246,54 +32421,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b021a2152817b14c83bc0d2583dfa2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tracker: {fileID: 1899554876}
-  _handSide: 1
-  MacAddressText: {fileID: 2062103066}
-  BatteryLevelText: {fileID: 43412893}
-  ChargingImage: {fileID: 1760457119}
-  BatteryImage: {fileID: 1529143573}
-  NoBatteryImage: {fileID: 1318633045}
-  InfoPanel: {fileID: 1842121100}
-  CalibrationText: {fileID: 430932672}
-  BatteryPercentagePanel: {fileID: 2096501220}
-  NoBatteryPanel: {fileID: 2082800557}
-  CalibrationFadeOutTimeSeconds: 10
-  ThumbStatusLight: {fileID: 229104032}
-  IndexStatusLight: {fileID: 373746054}
-  MiddleStatusLight: {fileID: 2052479553}
-  AnnularStatusLight: {fileID: 78557296}
-  PinkyStatusLight: {fileID: 104679475}
-  PalmStatusLight: {fileID: 1675795587}
-  HandImage: {fileID: 1729758948}
-  OkColor:
-    r: 0.7960785
-    g: 1
-    b: 0
-    a: 1
-  ErrorColor:
-    r: 1
-    g: 0
-    b: 0
-    a: 1
-  DisconnectedColor:
-    r: 0.5
-    g: 0.5
-    b: 0.5
-    a: 1
-  NormalColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  calibrationTracker: {fileID: 0}
-  calibrationStatus: 0
-  _clientConnected: 0
-  _deviceConnected: 0
-  _sessionRunning: 0
-  _touchDiverStatusReceived: 0
-  _touchDiverProStatusReceived: 0
-  _standaloneAndroidActive: 0
-  _firmwareVersion: 
 --- !u!222 &1422018745
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -33836,10 +32963,10 @@ RectTransform:
   - {fileID: 430932671}
   m_Father: {fileID: 1842121101}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 187.5, y: -33.333332}
-  m_SizeDelta: {x: 375, y: 66.666664}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1436217699
 CanvasRenderer:
@@ -34094,9 +33221,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4da0571e7ad2bc499a6868db527a493, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _button: {fileID: 0}
-  _collider: {fileID: 0}
-  _rectTransform: {fileID: 0}
 --- !u!65 &1441535495
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34736,13 +33860,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb4bc4cda642b14d9563bfe49579282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fingerNameText: {fileID: 301024669}
-  forceValue: {fileID: 1711111930}
-  temperatureValue: {fileID: 1577171560}
-  textureTypeValue: {fileID: 1638440852}
-  textureVelocityValue: {fileID: 1221278481}
-  textureVolumeValue: {fileID: 1919757146}
-  _hapticObject: {fileID: 0}
 --- !u!224 &1492524861
 RectTransform:
   m_ObjectHideFlags: 0
@@ -34761,9 +33878,9 @@ RectTransform:
   - {fileID: 1240747585}
   m_Father: {fileID: 1098515914}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -1300}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 250}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1492524862
@@ -35733,9 +34850,9 @@ RectTransform:
   - {fileID: 1835293950}
   m_Father: {fileID: 1098515914}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -550}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 250}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1532255634
@@ -35788,13 +34905,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb4bc4cda642b14d9563bfe49579282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fingerNameText: {fileID: 95935121}
-  forceValue: {fileID: 608782939}
-  temperatureValue: {fileID: 1085394850}
-  textureTypeValue: {fileID: 563447480}
-  textureVelocityValue: {fileID: 1871207961}
-  textureVolumeValue: {fileID: 997070913}
-  _hapticObject: {fileID: 0}
 --- !u!1 &1533415146
 GameObject:
   m_ObjectHideFlags: 0
@@ -36134,10 +35244,10 @@ RectTransform:
   - {fileID: 1013063926}
   m_Father: {fileID: 717063792}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 345, y: -158.33333}
-  m_SizeDelta: {x: 690, y: 50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1556701386
 MonoBehaviour:
@@ -36205,10 +35315,10 @@ RectTransform:
   - {fileID: 858777139}
   m_Father: {fileID: 1198796552}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 285.12, y: -33.333332}
-  m_SizeDelta: {x: 178.3, y: 66.666664}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 178.3, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1562670733
 CanvasRenderer:
@@ -36560,10 +35670,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78167bd2c2c4ac74aaa99a62e68f583e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _handSide: 1
-  _deviceID: 0
-  oldDataFirst: []
-  oldDataSecond: []
 --- !u!1 &1574478594
 GameObject:
   m_ObjectHideFlags: 0
@@ -36873,10 +35979,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1270125827}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 233.87775, y: -24.655638}
-  m_SizeDelta: {x: 474.28848, y: 50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1579467794
 MonoBehaviour:
@@ -37940,10 +37046,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1850257858}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 210.22, y: -25}
-  m_SizeDelta: {x: 420.44, y: 50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1627027709
 MonoBehaviour:
@@ -39385,9 +38491,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4da0571e7ad2bc499a6868db527a493, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _button: {fileID: 0}
-  _collider: {fileID: 0}
-  _rectTransform: {fileID: 0}
 --- !u!65 &1666724444
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40507,33 +39610,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b179482ae61a0264283a0dd3cb80ad6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _handSides: 1
-  _actuationPoints: 32
-  _distanceForceTarget: {fileID: 549619624}
-  _temperature:
-    _value: 0.5
-    _active: 0
-  _force:
-    _value: 0
-    _active: 0
-  _texture:
-    _textureType: 0
-    _active: 0
-    _forcedVelocity: 0
-    _velocity: 0
-    _volume: 100
-  _handController: {fileID: 0}
-  _touchedObjects: []
-  _graspedTouchableObjectForce: 0
-  _graspedObject: {fileID: 0}
-  _isGrasping: 0
-  _isAffectedByTrigger: 0
-  _nonTriggerTouchedObjects: 0
-  _lastPosition: {x: 0, y: 0, z: 0}
-  _lastTime: 0
-  _isUsedByHandController: 0
-  isActuating: 0
-  _lastTocuhableObject: {fileID: 0}
 --- !u!114 &1707810489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40546,17 +39622,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6773b19a66062e441bee169fcd94bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _handSide: 0
-  _actuationPoint: 5
-  _isGrasping: 0
-  _isBlocked: 0
-  _blockedClosureValue: 0
-  _safeUnblockSeconds: 0
-  _graspedObject: {fileID: 0}
-  <Closure>k__BackingField:
-    _value: 0
-  <Abduction>k__BackingField:
-    _value: 0
 --- !u!1 &1709368561
 GameObject:
   m_ObjectHideFlags: 0
@@ -41029,9 +40094,9 @@ RectTransform:
   - {fileID: 2049945619}
   m_Father: {fileID: 1098515914}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 421, y: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 842, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1731809464
@@ -42732,33 +41797,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b179482ae61a0264283a0dd3cb80ad6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _handSides: 1
-  _actuationPoints: 16
-  _distanceForceTarget: {fileID: 1975314748}
-  _temperature:
-    _value: 0.5
-    _active: 0
-  _force:
-    _value: 0
-    _active: 0
-  _texture:
-    _textureType: 0
-    _active: 0
-    _forcedVelocity: 0
-    _velocity: 0
-    _volume: 100
-  _handController: {fileID: 0}
-  _touchedObjects: []
-  _graspedTouchableObjectForce: 0
-  _graspedObject: {fileID: 0}
-  _isGrasping: 0
-  _isAffectedByTrigger: 0
-  _nonTriggerTouchedObjects: 0
-  _lastPosition: {x: 0, y: 0, z: 0}
-  _lastTime: 0
-  _isUsedByHandController: 0
-  isActuating: 0
-  _lastTocuhableObject: {fileID: 0}
 --- !u!1 &1803907168
 GameObject:
   m_ObjectHideFlags: 0
@@ -43583,9 +42621,9 @@ RectTransform:
   - {fileID: 1981103346}
   m_Father: {fileID: 1098515914}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 250}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1845384018
@@ -43638,13 +42676,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb4bc4cda642b14d9563bfe49579282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fingerNameText: {fileID: 1743735943}
-  forceValue: {fileID: 893027868}
-  temperatureValue: {fileID: 1628566653}
-  textureTypeValue: {fileID: 1293595707}
-  textureVelocityValue: {fileID: 1325083919}
-  textureVolumeValue: {fileID: 624273578}
-  _hapticObject: {fileID: 0}
 --- !u!1 &1846909530
 GameObject:
   m_ObjectHideFlags: 0
@@ -43812,17 +42843,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6773b19a66062e441bee169fcd94bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _handSide: 0
-  _actuationPoint: 6
-  _isGrasping: 0
-  _isBlocked: 0
-  _blockedClosureValue: 0
-  _safeUnblockSeconds: 0
-  _graspedObject: {fileID: 0}
-  <Closure>k__BackingField:
-    _value: 0
-  <Abduction>k__BackingField:
-    _value: 0
 --- !u!136 &1848795350
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -43858,33 +42878,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b179482ae61a0264283a0dd3cb80ad6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _handSides: 1
-  _actuationPoints: 64
-  _distanceForceTarget: {fileID: 467499712}
-  _temperature:
-    _value: 0.5
-    _active: 0
-  _force:
-    _value: 0
-    _active: 0
-  _texture:
-    _textureType: 0
-    _active: 0
-    _forcedVelocity: 0
-    _velocity: 0
-    _volume: 100
-  _handController: {fileID: 0}
-  _touchedObjects: []
-  _graspedTouchableObjectForce: 0
-  _graspedObject: {fileID: 0}
-  _isGrasping: 0
-  _isAffectedByTrigger: 0
-  _nonTriggerTouchedObjects: 0
-  _lastPosition: {x: 0, y: 0, z: 0}
-  _lastTime: 0
-  _isUsedByHandController: 0
-  isActuating: 0
-  _lastTocuhableObject: {fileID: 0}
 --- !u!4 &1848795352
 Transform:
   m_ObjectHideFlags: 0
@@ -43934,10 +42927,10 @@ RectTransform:
   - {fileID: 70387434}
   m_Father: {fileID: 717063792}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 345, y: -25}
-  m_SizeDelta: {x: 690, y: 50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1850257859
 MonoBehaviour:
@@ -44916,20 +43909,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adad765737fe13942b662e2c6a90f388, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnMiddlewareStatus:
-    m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 1
-  OnWeartAppStatus:
-    m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 1
-  OnTouchDiverProStatus:
-    m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 1
-  _receivedNewConnectedDeviceData: 0
-  _currentStatus: 0
 --- !u!114 &1899554877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46315,10 +45294,10 @@ RectTransform:
   - {fileID: 2062103065}
   m_Father: {fileID: 1842121101}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 187.5, y: -166.66666}
-  m_SizeDelta: {x: 375, y: 66.666664}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1969333070
 CanvasRenderer:
@@ -46403,15 +45382,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 203ca0dc742dd6149afa8f98fac0d099, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _leftSnapPoses: []
-  _rightSnapPoses: []
-  _closestGraspPose: {fileID: 0}
-  _closeGraspPoseList: []
-  _subtractedVector: {x: 0, y: 0, z: 0}
-  _distance: 0
-  _closestDistance: 0
-  _newClosestDistance: 0
-  selectPoseList: []
 --- !u!1 &1975314747
 GameObject:
   m_ObjectHideFlags: 0
@@ -46665,9 +45635,9 @@ RectTransform:
   - {fileID: 1404986377}
   m_Father: {fileID: 452995854}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 304.29797, y: -344.13818}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 578.7287, y: 356.38992}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1982797357
@@ -47081,33 +46051,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b179482ae61a0264283a0dd3cb80ad6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _handSides: 1
-  _actuationPoints: 2
-  _distanceForceTarget: {fileID: 873834773}
-  _temperature:
-    _value: 0.5
-    _active: 0
-  _force:
-    _value: 0
-    _active: 0
-  _texture:
-    _textureType: 1
-    _active: 0
-    _forcedVelocity: 0
-    _velocity: 0
-    _volume: 100
-  _handController: {fileID: 0}
-  _touchedObjects: []
-  _graspedTouchableObjectForce: 0
-  _graspedObject: {fileID: 0}
-  _isGrasping: 0
-  _isAffectedByTrigger: 0
-  _nonTriggerTouchedObjects: 0
-  _lastPosition: {x: 0, y: 0, z: 0}
-  _lastTime: 0
-  _isUsedByHandController: 0
-  isActuating: 0
-  _lastTocuhableObject: {fileID: 0}
 --- !u!114 &2000512378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47120,17 +46063,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6773b19a66062e441bee169fcd94bb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _handSide: 0
-  _actuationPoint: 1
-  _isGrasping: 0
-  _isBlocked: 0
-  _blockedClosureValue: 0
-  _safeUnblockSeconds: 0
-  _graspedObject: {fileID: 0}
-  <Closure>k__BackingField:
-    _value: 0
-  <Abduction>k__BackingField:
-    _value: 0
 --- !u!1 &2002295461
 GameObject:
   m_ObjectHideFlags: 0
@@ -47726,9 +46658,9 @@ RectTransform:
   - {fileID: 662012591}
   m_Father: {fileID: 943643825}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -800}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 250}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &2018968595
@@ -47781,13 +46713,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb4bc4cda642b14d9563bfe49579282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fingerNameText: {fileID: 413708153}
-  forceValue: {fileID: 1893907497}
-  temperatureValue: {fileID: 188830615}
-  textureTypeValue: {fileID: 1398459014}
-  textureVelocityValue: {fileID: 745540890}
-  textureVolumeValue: {fileID: 959239920}
-  _hapticObject: {fileID: 0}
 --- !u!1 &2024845353
 GameObject:
   m_ObjectHideFlags: 0
@@ -49667,10 +48592,10 @@ RectTransform:
   - {fileID: 43412892}
   m_Father: {fileID: 2089323715}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 93, y: -33.333332}
-  m_SizeDelta: {x: 186, y: 66.666664}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 186, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2096501221
 CanvasRenderer:
@@ -49788,22 +48713,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c380f53dd971d3e4ca79bb6b9295de52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftHandObject: {fileID: 485428332}
-  rightHandObject: {fileID: 450391510}
-  leftActuationElements:
-  - {fileID: 641111994}
-  - {fileID: 31891045}
-  - {fileID: 1179952199}
-  - {fileID: 2018968597}
-  - {fileID: 620873795}
-  - {fileID: 238787789}
-  rightActuationElements:
-  - {fileID: 1845384020}
-  - {fileID: 1020392120}
-  - {fileID: 1532255636}
-  - {fileID: 1340673893}
-  - {fileID: 1145385179}
-  - {fileID: 1492524860}
 --- !u!114 &2106021797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49816,13 +48725,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da5b1736079e51b4f97016a589bda44b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  behaviour: 2
-  callBillboardKey: 264
-  keepInitialHeight: 1
-  xOffset: 0.7
-  yOffset: 0
-  cameraTransform: {fileID: 0}
-  initialYValue: 0
 --- !u!223 &2106021798
 Canvas:
   m_ObjectHideFlags: 0
@@ -50029,7 +48931,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 5}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &2118097168
 MonoBehaviour:
@@ -50411,9 +49313,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1219964071}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 65, y: -50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 70, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2142459096
