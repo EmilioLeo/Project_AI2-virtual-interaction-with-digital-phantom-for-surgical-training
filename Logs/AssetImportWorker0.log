@@ -1,32 +1,32 @@
 Using pre-set license
 Built from '6000.1/staging' branch; Version is '6000.1.9f1 (ed7b183fd33d) revision 15563544'; Using compiler version '194234433'; Build Type 'Release'
-OS: 'Windows 11  (10.0.26100) 64bit Core' Language: 'it' Physical Memory: 16263 MB
+OS: 'Windows 11  (10.0.26100) 64bit Core' Language: 'it' Physical Memory: 7967 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
-Date: 2025-08-22T19:41:21Z
+Date: 2025-08-26T08:45:10Z
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\6000.1.9f1\Editor\Unity.exe
+C:\Users\39346\Desktop\unity\6000.1.9f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/emilio/MR_ProjectAI2
+C:/Users/39346/Desktop/Medical_Robotics/Project_AI2-virtual-interaction-with-digital-phantom-for-surgical-training
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54588
+38641
 -job-worker-count
-5
+3
 -background-job-worker-count
 8
 -gc-helper-count
 1
 -name
 AssetImport
-Successfully changed project path to: C:/Users/emilio/MR_ProjectAI2
-C:/Users/emilio/MR_ProjectAI2
+Successfully changed project path to: C:/Users/39346/Desktop/Medical_Robotics/Project_AI2-virtual-interaction-with-digital-phantom-for-surgical-training
+C:/Users/39346/Desktop/Medical_Robotics/Project_AI2-virtual-interaction-with-digital-phantom-for-surgical-training
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-allocator-temp-initial-block-size-main=262144"
     "memorysetup-allocator-temp-initial-block-size-worker=262144"
@@ -62,17 +62,13 @@ C:/Users/emilio/MR_ProjectAI2
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [14988]  Target information:
+Player connection [20932]  Target information:
 
-Player connection [14988]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 1526528289 [EditorId] 1526528289 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-U4SS03QQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [20932]  * "[IP] 192.168.1.163 [Port] 0 [Flags] 2 [Guid] 207853819 [EditorId] 207853819 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-NSAHQC6D) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [14988]  * "[IP] 169.254.182.183 [Port] 0 [Flags] 2 [Guid] 1526528289 [EditorId] 1526528289 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-U4SS03QQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
-
-Player connection [14988]  * "[IP] 192.168.1.38 [Port] 0 [Flags] 2 [Guid] 1526528289 [EditorId] 1526528289 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-U4SS03QQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
-
-Player connection [14988] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [14988] Host joined alternative multi-casting on [225.0.0.222:34997]...
-JobSystem: Creating JobQueue using job-worker-count value 5
+Player connection [20932] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [20932] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 3
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
@@ -83,61 +79,61 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 3.25 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 15.31 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.1.9f1 (ed7b183fd33d)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.1.9f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/emilio/MR_ProjectAI2/Assets
+[Subsystems] Discovering subsystems at path C:/Users/39346/Desktop/unity/6000.1.9f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/39346/Desktop/Medical_Robotics/Project_AI2-virtual-interaction-with-digital-phantom-for-surgical-training/Assets
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f91)
-    Vendor:   NVIDIA
-    VRAM:     3949 MB
-    Driver:   31.0.15.3598
+    Renderer: Intel(R) UHD Graphics (ID=0x8a56)
+    Vendor:   Intel
+    VRAM:     3983 MB
+    Driver:   27.20.100.9664
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.1.9f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.1.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.1.9f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56488
+Mono path[0] = 'C:/Users/39346/Desktop/unity/6000.1.9f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Users/39346/Desktop/unity/6000.1.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Users/39346/Desktop/unity/6000.1.9f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56644
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.1.9f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.1.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004175 seconds.
-- Loaded All Assemblies, in  0.653 seconds
+Register platform support module: C:/Users/39346/Desktop/unity/6000.1.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Users/39346/Desktop/unity/6000.1.9f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Registered in 0.013802 seconds.
+- Loaded All Assemblies, in  1.133 seconds
+Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.551 seconds
-Domain Reload Profiling: 1202ms
-	BeginReloadAssembly (228ms)
+- Finished resetting the current domain, in  1.014 seconds
+Domain Reload Profiling: 2143ms
+	BeginReloadAssembly (370ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (2ms)
-	RebuildCommonClasses (59ms)
-	RebuildNativeTypeToScriptingClass (21ms)
-	initialDomainReloadingComplete (88ms)
-	LoadAllAssembliesAndSetupDomain (253ms)
-		LoadAssemblies (223ms)
+	RebuildCommonClasses (99ms)
+	RebuildNativeTypeToScriptingClass (33ms)
+	initialDomainReloadingComplete (134ms)
+	LoadAllAssembliesAndSetupDomain (491ms)
+		LoadAssemblies (368ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (249ms)
-			TypeCache.Refresh (247ms)
-				TypeCache.ScanAssembly (225ms)
+		AnalyzeDomain (476ms)
+			TypeCache.Refresh (472ms)
+				TypeCache.ScanAssembly (441ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (552ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (1016ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (501ms)
+		SetupLoadedEditorAssemblies (939ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (68ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (122ms)
-			ProcessInitializeOnLoadAttributes (201ms)
-			ProcessInitializeOnLoadMethodAttributes (105ms)
+			InitializePlatformSupportModulesInManaged (206ms)
+			SetLoadedEditorAssemblies (12ms)
+			BeforeProcessingInitializeOnLoad (181ms)
+			ProcessInitializeOnLoadAttributes (415ms)
+			ProcessInitializeOnLoadMethodAttributes (125ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -146,65 +142,93 @@ Domain Reload Profiling: 1202ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.504 seconds
-Refreshing native plugins compatible for Editor in 2.49 ms, found 3 plugins.
+DirectoryNotFoundException: Could not find a part of the path "C:\Users\39346\Desktop\Medical_Robotics\Project_AI2-virtual-interaction-with-digital-phantom-for-surgical-training\Library\PackageCache\com.unity.visualscripting@6279e2b7c485\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll"
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <d6e80b37d98246a5859a00c653f9fdf3>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <d6e80b37d98246a5859a00c653f9fdf3>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at Mono.Cecil.ModuleDefinition.GetFileStream (System.String fileName, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00006] in <a6860a9f6366437387ebdc1f225b7fd4>:0 
+  at Mono.Cecil.ModuleDefinition.ReadModule (System.String fileName, Mono.Cecil.ReaderParameters parameters) [0x00008] in <a6860a9f6366437387ebdc1f225b7fd4>:0 
+  at Mono.Cecil.AssemblyDefinition.ReadAssembly (System.String fileName, Mono.Cecil.ReaderParameters parameters) [0x00000] in <a6860a9f6366437387ebdc1f225b7fd4>:0 
+  at UnityEditor.AssemblyValidation.LoadAssemblyDefinitions (System.String[] assemblyPaths, System.String[] searchPaths) [0x00048] in <f027a8df36c54c51b6e201bed8ecb82d>:0 
+  at UnityEditor.AssemblyValidation.ValidateAssemblies (System.String[] assemblyPaths, System.Boolean enableLogging) [0x00007] in <f027a8df36c54c51b6e201bed8ecb82d>:0 
+
+- Loaded All Assemblies, in  1.832 seconds
+Refreshing native plugins compatible for Editor in 4.06 ms, found 3 plugins.
+Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.509 seconds
-Domain Reload Profiling: 3007ms
-	BeginReloadAssembly (308ms)
+- Finished resetting the current domain, in  2.217 seconds
+Domain Reload Profiling: 4041ms
+	BeginReloadAssembly (515ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (9ms)
+		DisableScriptedObjects (22ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (49ms)
-	RebuildCommonClasses (65ms)
-	RebuildNativeTypeToScriptingClass (22ms)
-	initialDomainReloadingComplete (84ms)
-	LoadAllAssembliesAndSetupDomain (1016ms)
-		LoadAssemblies (709ms)
+		CreateAndSetChildDomain (69ms)
+	RebuildCommonClasses (85ms)
+	RebuildNativeTypeToScriptingClass (35ms)
+	initialDomainReloadingComplete (105ms)
+	LoadAllAssembliesAndSetupDomain (1084ms)
+		LoadAssemblies (756ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (496ms)
-			TypeCache.Refresh (383ms)
-				TypeCache.ScanAssembly (356ms)
-			BuildScriptInfoCaches (86ms)
+		AnalyzeDomain (639ms)
+			TypeCache.Refresh (451ms)
+				TypeCache.ScanAssembly (421ms)
+			BuildScriptInfoCaches (158ms)
 			ResolveRequiredComponents (22ms)
-	FinalizeReload (1510ms)
+	FinalizeReload (2218ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1163ms)
+		SetupLoadedEditorAssemblies (1681ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (4ms)
-			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (240ms)
-			ProcessInitializeOnLoadAttributes (814ms)
-			ProcessInitializeOnLoadMethodAttributes (91ms)
-			AfterProcessingInitializeOnLoad (7ms)
-			EditorAssembliesLoaded (0ms)
+			InitializePlatformSupportModulesInManaged (34ms)
+			SetLoadedEditorAssemblies (18ms)
+			BeforeProcessingInitializeOnLoad (455ms)
+			ProcessInitializeOnLoadAttributes (1031ms)
+			ProcessInitializeOnLoadMethodAttributes (135ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (15ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 5.17 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (12ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 3.47 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 218 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6148 unused Assets / (5.0 MB). Loaded Objects now: 6853.
-Memory consumption went from 164.3 MB to 159.2 MB.
-Total: 20.511300 ms (FindLiveObjects: 2.337300 ms CreateObjectMapping: 3.776100 ms MarkObjects: 9.883300 ms  DeleteObjects: 4.512600 ms)
+Unloading 6005 unused Assets / (4.3 MB). Loaded Objects now: 6734.
+Memory consumption went from 164.2 MB to 160.0 MB.
+Total: 18.994300 ms (FindLiveObjects: 2.524900 ms CreateObjectMapping: 1.230800 ms MarkObjects: 10.571000 ms  DeleteObjects: 4.664200 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 23245.181606 seconds.
-  path: Assets/TreatmentSetup.cs
-  artifactKey: Guid(2b64299b6f330c6459298593d22dedc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TreatmentSetup.cs using Guid(2b64299b6f330c6459298593d22dedc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4412c12fdb6c45cbc4e43e90ff08e0bc') in 0.0080504 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 227959.953194 seconds.
+  path: Assets/New Material.mat
+  artifactKey: Guid(8a6d64c50d8263649ba52e25a11209a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Material.mat using Guid(8a6d64c50d8263649ba52e25a11209a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd313728bba2ca2c2fb7c64f7cfd2a100') in 1.2886187 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 38.231503 seconds.
+  path: Assets/SurgicalInstruments/ToolsChirurgici.fbx
+  artifactKey: Guid(68d576d3624fcc04988ef4d494ba428d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SurgicalInstruments/ToolsChirurgici.fbx using Guid(68d576d3624fcc04988ef4d494ba428d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'df6895a6f04248be4e7803d6f01c5807') in 0.4590121 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 40
 
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.076 seconds
-Refreshing native plugins compatible for Editor in 1.56 ms, found 3 plugins.
+DirectoryNotFoundException: Could not find a part of the path "C:\Users\39346\Desktop\Medical_Robotics\Project_AI2-virtual-interaction-with-digital-phantom-for-surgical-training\Library\PackageCache\com.unity.visualscripting@6279e2b7c485\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll"
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <d6e80b37d98246a5859a00c653f9fdf3>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <d6e80b37d98246a5859a00c653f9fdf3>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at Mono.Cecil.ModuleDefinition.GetFileStream (System.String fileName, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00006] in <a6860a9f6366437387ebdc1f225b7fd4>:0 
+  at Mono.Cecil.ModuleDefinition.ReadModule (System.String fileName, Mono.Cecil.ReaderParameters parameters) [0x00008] in <a6860a9f6366437387ebdc1f225b7fd4>:0 
+  at Mono.Cecil.AssemblyDefinition.ReadAssembly (System.String fileName, Mono.Cecil.ReaderParameters parameters) [0x00000] in <a6860a9f6366437387ebdc1f225b7fd4>:0 
+  at UnityEditor.AssemblyValidation.LoadAssemblyDefinitions (System.String[] assemblyPaths, System.String[] searchPaths) [0x00048] in <f027a8df36c54c51b6e201bed8ecb82d>:0 
+  at UnityEditor.AssemblyValidation.ValidateAssemblies (System.String[] assemblyPaths, System.Boolean enableLogging) [0x00007] in <f027a8df36c54c51b6e201bed8ecb82d>:0 
+
+- Loaded All Assemblies, in  2.147 seconds
+Refreshing native plugins compatible for Editor in 8.15 ms, found 3 plugins.
 Assertion failed on expression: 'pred(*previous, *i)'
 Assertion failed on expression: 'pred(*previous, *i)'
 Assertion failed on expression: 'pred(*previous, *i)'
@@ -3397,144 +3421,55 @@ Assertion failed on expression: 'pred(*previous, *i)'
 Assertion failed on expression: 'pred(*previous, *i)'
 Assertion failed on expression: 'pred(*previous, *i)'
 Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
-Assertion failed on expression: 'pred(*previous, *i)'
+Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.229 seconds
-Domain Reload Profiling: 2310ms
-	BeginReloadAssembly (302ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
+- Finished resetting the current domain, in  3.990 seconds
+Domain Reload Profiling: 6145ms
+	BeginReloadAssembly (1063ms)
+		ExecutionOrderSort (1ms)
+		DisableScriptedObjects (227ms)
 		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (72ms)
-	RebuildCommonClasses (56ms)
-	RebuildNativeTypeToScriptingClass (17ms)
-	initialDomainReloadingComplete (36ms)
-	LoadAllAssembliesAndSetupDomain (670ms)
-		LoadAssemblies (478ms)
+		ReleaseScriptingObjects (2ms)
+		CreateAndSetChildDomain (358ms)
+	RebuildCommonClasses (77ms)
+	RebuildNativeTypeToScriptingClass (33ms)
+	initialDomainReloadingComplete (60ms)
+	LoadAllAssembliesAndSetupDomain (920ms)
+		LoadAssemblies (629ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (329ms)
-			TypeCache.Refresh (12ms)
-				TypeCache.ScanAssembly (1ms)
-			BuildScriptInfoCaches (279ms)
-			ResolveRequiredComponents (26ms)
-	FinalizeReload (1230ms)
+		AnalyzeDomain (554ms)
+			TypeCache.Refresh (29ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (475ms)
+			ResolveRequiredComponents (25ms)
+	FinalizeReload (3991ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (937ms)
+		SetupLoadedEditorAssemblies (3133ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (191ms)
-			ProcessInitializeOnLoadAttributes (630ms)
-			ProcessInitializeOnLoadMethodAttributes (99ms)
-			AfterProcessingInitializeOnLoad (10ms)
-			EditorAssembliesLoaded (0ms)
+			InitializePlatformSupportModulesInManaged (58ms)
+			SetLoadedEditorAssemblies (28ms)
+			BeforeProcessingInitializeOnLoad (852ms)
+			ProcessInitializeOnLoadAttributes (1887ms)
+			ProcessInitializeOnLoadMethodAttributes (282ms)
+			AfterProcessingInitializeOnLoad (25ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (31ms)
-Refreshing native plugins compatible for Editor in 2.61 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (72ms)
+Refreshing native plugins compatible for Editor in 9.12 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 23 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6144 unused Assets / (4.8 MB). Loaded Objects now: 6870.
-Memory consumption went from 138.1 MB to 133.3 MB.
-Total: 14.703400 ms (FindLiveObjects: 1.145800 ms CreateObjectMapping: 1.538500 ms MarkObjects: 8.090700 ms  DeleteObjects: 3.926300 ms)
+Unloading 6002 unused Assets / (5.3 MB). Loaded Objects now: 6815.
+Memory consumption went from 138.5 MB to 133.3 MB.
+Total: 39.499700 ms (FindLiveObjects: 2.563900 ms CreateObjectMapping: 2.563500 ms MarkObjects: 18.657300 ms  DeleteObjects: 15.710700 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time since last request: 60.265146 seconds.
-  path: Assets/TreatmentSetup.cs
-  artifactKey: Guid(2b64299b6f330c6459298593d22dedc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TreatmentSetup.cs using Guid(2b64299b6f330c6459298593d22dedc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '860c1db221396c36f840d13edaf6a95d') in 0.0105059 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 791.032347 seconds.
+  path: Assets/M_DiscoRed.mat
+  artifactKey: Guid(c1bf9d15ce950024291207cc11248255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M_DiscoRed.mat using Guid(c1bf9d15ce950024291207cc11248255) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3b9dae03bea6f7a1b3c34ed9a6da6c44') in 1.2424351 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 

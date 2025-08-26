@@ -2,7 +2,7 @@ Using pre-set license
 Built from '6000.1/staging' branch; Version is '6000.1.9f1 (ed7b183fd33d) revision 15563544'; Using compiler version '194234433'; Build Type 'Release'
 OS: 'Windows 11  (10.0.26100) 64bit Core' Language: 'it' Physical Memory: 7967 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
-Date: 2025-08-25T10:19:19Z
+Date: 2025-08-25T10:39:43Z
 
 COMMAND LINE ARGUMENTS:
 C:\Users\39346\Desktop\unity\6000.1.9f1\Editor\Unity.exe
@@ -10,11 +10,11 @@ C:\Users\39346\Desktop\unity\6000.1.9f1\Editor\Unity.exe
 -batchMode
 -noUpm
 -name
-AssetImportWorker1
+AssetImportWorker2
 -projectPath
 C:/Users/39346/Desktop/Medical_Robotics/Project_AI2-virtual-interaction-with-digital-phantom-for-surgical-training
 -logFile
-Logs/AssetImportWorker1.log
+Logs/AssetImportWorker2.log
 -srvPort
 9795
 -job-worker-count
@@ -62,12 +62,12 @@ C:/Users/39346/Desktop/Medical_Robotics/Project_AI2-virtual-interaction-with-dig
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [21596]  Target information:
+Player connection [18416]  Target information:
 
-Player connection [21596]  * "[IP] 192.168.1.163 [Port] 0 [Flags] 2 [Guid] 2215926379 [EditorId] 2215926379 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-NSAHQC6D) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [18416]  * "[IP] 192.168.1.163 [Port] 0 [Flags] 2 [Guid] 408587913 [EditorId] 408587913 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-NSAHQC6D) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [21596] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [21596] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [18416] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [18416] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 3
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -79,7 +79,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 37.43 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 14.54 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.1.9f1 (ed7b183fd33d)
 [Subsystems] Discovering subsystems at path C:/Users/39346/Desktop/unity/6000.1.9f1/Editor/Data/Resources/UnitySubsystems
@@ -95,45 +95,45 @@ Initialize mono
 Mono path[0] = 'C:/Users/39346/Desktop/unity/6000.1.9f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Users/39346/Desktop/unity/6000.1.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Users/39346/Desktop/unity/6000.1.9f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56980
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56476
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Users/39346/Desktop/unity/6000.1.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Users/39346/Desktop/unity/6000.1.9f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
-Registered in 0.006411 seconds.
-- Loaded All Assemblies, in  1.243 seconds
+Registered in 0.009926 seconds.
+- Loaded All Assemblies, in  1.413 seconds
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.740 seconds
-Domain Reload Profiling: 1974ms
-	BeginReloadAssembly (652ms)
+- Finished resetting the current domain, in  1.298 seconds
+Domain Reload Profiling: 2703ms
+	BeginReloadAssembly (565ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (3ms)
-	RebuildCommonClasses (76ms)
-	RebuildNativeTypeToScriptingClass (23ms)
-	initialDomainReloadingComplete (106ms)
-	LoadAllAssembliesAndSetupDomain (376ms)
-		LoadAssemblies (641ms)
+		CreateAndSetChildDomain (7ms)
+	RebuildCommonClasses (143ms)
+	RebuildNativeTypeToScriptingClass (35ms)
+	initialDomainReloadingComplete (158ms)
+	LoadAllAssembliesAndSetupDomain (503ms)
+		LoadAssemblies (555ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (371ms)
-			TypeCache.Refresh (367ms)
-				TypeCache.ScanAssembly (342ms)
+		AnalyzeDomain (486ms)
+			TypeCache.Refresh (484ms)
+				TypeCache.ScanAssembly (431ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (740ms)
+	FinalizeReload (1299ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (646ms)
+		SetupLoadedEditorAssemblies (1134ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (183ms)
-			SetLoadedEditorAssemblies (16ms)
-			BeforeProcessingInitializeOnLoad (123ms)
-			ProcessInitializeOnLoadAttributes (198ms)
-			ProcessInitializeOnLoadMethodAttributes (126ms)
+			InitializePlatformSupportModulesInManaged (352ms)
+			SetLoadedEditorAssemblies (28ms)
+			BeforeProcessingInitializeOnLoad (270ms)
+			ProcessInitializeOnLoadAttributes (344ms)
+			ProcessInitializeOnLoadMethodAttributes (140ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -152,110 +152,65 @@ DirectoryNotFoundException: Could not find a part of the path "C:\Users\39346\De
   at UnityEditor.AssemblyValidation.LoadAssemblyDefinitions (System.String[] assemblyPaths, System.String[] searchPaths) [0x00048] in <f027a8df36c54c51b6e201bed8ecb82d>:0 
   at UnityEditor.AssemblyValidation.ValidateAssemblies (System.String[] assemblyPaths, System.Boolean enableLogging) [0x00007] in <f027a8df36c54c51b6e201bed8ecb82d>:0 
 
-- Loaded All Assemblies, in  2.270 seconds
-Refreshing native plugins compatible for Editor in 8.68 ms, found 3 plugins.
+- Loaded All Assemblies, in  2.032 seconds
+Refreshing native plugins compatible for Editor in 1.94 ms, found 3 plugins.
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  4.580 seconds
-Domain Reload Profiling: 6842ms
-	BeginReloadAssembly (327ms)
+- Finished resetting the current domain, in  2.317 seconds
+Domain Reload Profiling: 4298ms
+	BeginReloadAssembly (467ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (12ms)
+		DisableScriptedObjects (26ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (59ms)
-	RebuildCommonClasses (71ms)
-	RebuildNativeTypeToScriptingClass (49ms)
-	initialDomainReloadingComplete (88ms)
-	LoadAllAssembliesAndSetupDomain (1726ms)
-		LoadAssemblies (936ms)
+		CreateAndSetChildDomain (66ms)
+	RebuildCommonClasses (99ms)
+	RebuildNativeTypeToScriptingClass (31ms)
+	initialDomainReloadingComplete (136ms)
+	LoadAllAssembliesAndSetupDomain (1243ms)
+		LoadAssemblies (788ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (965ms)
-			TypeCache.Refresh (566ms)
-				TypeCache.ScanAssembly (511ms)
-			BuildScriptInfoCaches (338ms)
-			ResolveRequiredComponents (46ms)
-	FinalizeReload (4582ms)
+		AnalyzeDomain (692ms)
+			TypeCache.Refresh (493ms)
+				TypeCache.ScanAssembly (454ms)
+			BuildScriptInfoCaches (166ms)
+			ResolveRequiredComponents (26ms)
+	FinalizeReload (2320ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (3419ms)
+		SetupLoadedEditorAssemblies (1754ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (73ms)
-			SetLoadedEditorAssemblies (34ms)
-			BeforeProcessingInitializeOnLoad (874ms)
-			ProcessInitializeOnLoadAttributes (2010ms)
-			ProcessInitializeOnLoadMethodAttributes (392ms)
-			AfterProcessingInitializeOnLoad (34ms)
-			EditorAssembliesLoaded (1ms)
+			InitializePlatformSupportModulesInManaged (26ms)
+			SetLoadedEditorAssemblies (11ms)
+			BeforeProcessingInitializeOnLoad (357ms)
+			ProcessInitializeOnLoadAttributes (1130ms)
+			ProcessInitializeOnLoadMethodAttributes (218ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (21ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 5.62 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (14ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 3.36 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 218 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 6005 unused Assets / (4.1 MB). Loaded Objects now: 6734.
-Memory consumption went from 164.2 MB to 160.1 MB.
-Total: 20.703700 ms (FindLiveObjects: 2.951600 ms CreateObjectMapping: 2.771800 ms MarkObjects: 11.396600 ms  DeleteObjects: 3.580000 ms)
+Memory consumption went from 164.3 MB to 160.2 MB.
+Total: 29.724200 ms (FindLiveObjects: 3.474300 ms CreateObjectMapping: 2.186300 ms MarkObjects: 19.940400 ms  DeleteObjects: 4.119800 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 147212.695790 seconds.
-  path: Assets
-  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c391582d739b6e62a5220f35cbb167ac') in 0.0353541 seconds
+  Time since last request: 149162.750993 seconds.
+  path: Assets/SurgicalInstruments/retractor v1
+  artifactKey: Guid(4e9becb27282a294183c7127ff15c30e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SurgicalInstruments/retractor v1 using Guid(4e9becb27282a294183c7127ff15c30e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6480766a4e261d8faa44828f11448211') in 0.4326338 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 53.116649 seconds.
-  path: Assets/SurgicalInstruments/textures/text_norma.png
-  artifactKey: Guid(21aec51faec7a14458aa02ee98c26458) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SurgicalInstruments/textures/text_norma.png using Guid(21aec51faec7a14458aa02ee98c26458) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6bf9b031d2e2939f207d32ac2501c7dd') in 0.6046119 seconds
+  Time since last request: 4.502071 seconds.
+  path: Assets/SurgicalInstruments/retractor v1/retractor base.jpg
+  artifactKey: Guid(5c6651a12cd49504eac334dad483ffe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SurgicalInstruments/retractor v1/retractor base.jpg using Guid(5c6651a12cd49504eac334dad483ffe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b4dec874b3ceb750c3624250bbbef9ec') in 0.716928 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
-========================================================================
-Received Import Request.
-  Time since last request: 1153.680280 seconds.
-  path: Assets/SurgicalInstruments/archive instumenti/archive instumenti/Textures/instrumenty-metallic.png
-  artifactKey: Guid(ab694000378d57d4e8e8e0d1bf955a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SurgicalInstruments/archive instumenti/archive instumenti/Textures/instrumenty-metallic.png using Guid(ab694000378d57d4e8e8e0d1bf955a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9023c820f691d6b0f29a5753f913242a') in 0.5978027 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.003515 seconds.
-  path: Assets/SurgicalInstruments/archive instumenti/archive instumenti/Textures/stol-normaal.png
-  artifactKey: Guid(345fcb751de9ce2489a19113b681fa55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SurgicalInstruments/archive instumenti/archive instumenti/Textures/stol-normaal.png using Guid(345fcb751de9ce2489a19113b681fa55) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '601b393a4f3557567a9313d5d419e26b') in 0.1454398 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000110 seconds.
-  path: Assets/SurgicalInstruments/archive instumenti/archive instumenti/Textures/stol-metal.png
-  artifactKey: Guid(01d12c41a6cbf3846964a0cc16c8cdef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SurgicalInstruments/archive instumenti/archive instumenti/Textures/stol-metal.png using Guid(01d12c41a6cbf3846964a0cc16c8cdef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '609bedf856d3347a07e37e4ffbeb9745') in 0.0622407 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/SurgicalInstruments/archive instumenti/archive instumenti/Textures/tkan-color.png
-  artifactKey: Guid(2ca5e23d3885a0a43ba97e104f9c5e9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SurgicalInstruments/archive instumenti/archive instumenti/Textures/tkan-color.png using Guid(2ca5e23d3885a0a43ba97e104f9c5e9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3763d82000c3305a81c305bb540dd61f') in 0.1785192 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000090 seconds.
-  path: Assets/SurgicalInstruments/archive instumenti/archive instumenti/Textures/tkan-roug.png
-  artifactKey: Guid(4b0c2bafdfb590e4ba6049893b1eb0f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SurgicalInstruments/archive instumenti/archive instumenti/Textures/tkan-roug.png using Guid(4b0c2bafdfb590e4ba6049893b1eb0f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ff48912ec1b14f8ff4407ee167383d55') in 0.0742173 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
