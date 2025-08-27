@@ -1,32 +1,32 @@
 Using pre-set license
 Built from '6000.1/staging' branch; Version is '6000.1.9f1 (ed7b183fd33d) revision 15563544'; Using compiler version '194234433'; Build Type 'Release'
-OS: 'Windows 11  (10.0.26100) 64bit Core' Language: 'it' Physical Memory: 7967 MB
+OS: 'Windows 11  (10.0.26100) 64bit Core' Language: 'it' Physical Memory: 31801 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
-Date: 2025-08-25T10:19:19Z
+Date: 2025-08-27T12:37:57Z
 
 COMMAND LINE ARGUMENTS:
-C:\Users\39346\Desktop\unity\6000.1.9f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\6000.1.9f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/39346/Desktop/Medical_Robotics/Project_AI2-virtual-interaction-with-digital-phantom-for-surgical-training
+C:/Users/Emilio/Desktop/MR/Project_AI2-virtual-interaction-with-digital-phantom-for-surgical-training
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-9795
+58822
 -job-worker-count
-3
+11
 -background-job-worker-count
 8
 -gc-helper-count
 1
 -name
 AssetImport
-Successfully changed project path to: C:/Users/39346/Desktop/Medical_Robotics/Project_AI2-virtual-interaction-with-digital-phantom-for-surgical-training
-C:/Users/39346/Desktop/Medical_Robotics/Project_AI2-virtual-interaction-with-digital-phantom-for-surgical-training
+Successfully changed project path to: C:/Users/Emilio/Desktop/MR/Project_AI2-virtual-interaction-with-digital-phantom-for-surgical-training
+C:/Users/Emilio/Desktop/MR/Project_AI2-virtual-interaction-with-digital-phantom-for-surgical-training
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-allocator-temp-initial-block-size-main=262144"
     "memorysetup-allocator-temp-initial-block-size-worker=262144"
@@ -62,13 +62,13 @@ C:/Users/39346/Desktop/Medical_Robotics/Project_AI2-virtual-interaction-with-dig
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [11012]  Target information:
+Player connection [11020]  Target information:
 
-Player connection [11012]  * "[IP] 192.168.1.163 [Port] 0 [Flags] 2 [Guid] 1154811417 [EditorId] 1154811417 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-NSAHQC6D) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [11020]  * "[IP] 192.168.1.25 [Port] 0 [Flags] 2 [Guid] 3887472014 [EditorId] 3887472014 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-8EFKHO3) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [11012] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [11012] Host joined alternative multi-casting on [225.0.0.222:34997]...
-JobSystem: Creating JobQueue using job-worker-count value 3
+Player connection [11020] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [11020] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 11
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
@@ -79,61 +79,59 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 37.24 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.96 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.1.9f1 (ed7b183fd33d)
-[Subsystems] Discovering subsystems at path C:/Users/39346/Desktop/unity/6000.1.9f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/39346/Desktop/Medical_Robotics/Project_AI2-virtual-interaction-with-digital-phantom-for-surgical-training/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.1.9f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Emilio/Desktop/MR/Project_AI2-virtual-interaction-with-digital-phantom-for-surgical-training/Assets
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: Intel(R) UHD Graphics (ID=0x8a56)
-    Vendor:   Intel
-    VRAM:     3983 MB
-    Driver:   27.20.100.9664
+    Renderer: NVIDIA GeForce RTX 5070 Ti (ID=0x2c05)
+    Vendor:   NVIDIA
+    VRAM:     15907 MB
+    Driver:   32.0.15.7688
 Initialize mono
-Mono path[0] = 'C:/Users/39346/Desktop/unity/6000.1.9f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Users/39346/Desktop/unity/6000.1.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Users/39346/Desktop/unity/6000.1.9f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56088
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.1.9f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.1.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.1.9f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56944
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Users/39346/Desktop/unity/6000.1.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Register platform support module: C:/Users/39346/Desktop/unity/6000.1.9f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
-Registered in 0.007973 seconds.
-- Loaded All Assemblies, in  1.025 seconds
-Native extension for UWP target not found
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.1.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001100 seconds.
+- Loaded All Assemblies, in  0.218 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.765 seconds
-Domain Reload Profiling: 1789ms
-	BeginReloadAssembly (414ms)
+- Finished resetting the current domain, in  0.218 seconds
+Domain Reload Profiling: 435ms
+	BeginReloadAssembly (68ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (3ms)
-	RebuildCommonClasses (97ms)
-	RebuildNativeTypeToScriptingClass (30ms)
-	initialDomainReloadingComplete (117ms)
-	LoadAllAssembliesAndSetupDomain (364ms)
-		LoadAssemblies (404ms)
+		CreateAndSetChildDomain (0ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (28ms)
+	LoadAllAssembliesAndSetupDomain (89ms)
+		LoadAssemblies (67ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (356ms)
-			TypeCache.Refresh (353ms)
-				TypeCache.ScanAssembly (324ms)
+		AnalyzeDomain (87ms)
+			TypeCache.Refresh (86ms)
+				TypeCache.ScanAssembly (78ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (767ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (218ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (702ms)
+		SetupLoadedEditorAssemblies (189ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (219ms)
-			SetLoadedEditorAssemblies (12ms)
-			BeforeProcessingInitializeOnLoad (125ms)
-			ProcessInitializeOnLoadAttributes (263ms)
-			ProcessInitializeOnLoadMethodAttributes (82ms)
+			InitializePlatformSupportModulesInManaged (29ms)
+			SetLoadedEditorAssemblies (2ms)
+			BeforeProcessingInitializeOnLoad (37ms)
+			ProcessInitializeOnLoadAttributes (86ms)
+			ProcessInitializeOnLoadMethodAttributes (34ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -142,243 +140,56 @@ Domain Reload Profiling: 1789ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-DirectoryNotFoundException: Could not find a part of the path "C:\Users\39346\Desktop\Medical_Robotics\Project_AI2-virtual-interaction-with-digital-phantom-for-surgical-training\Library\PackageCache\com.unity.visualscripting@6279e2b7c485\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll"
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <d6e80b37d98246a5859a00c653f9fdf3>:0 
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <d6e80b37d98246a5859a00c653f9fdf3>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
-  at Mono.Cecil.ModuleDefinition.GetFileStream (System.String fileName, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00006] in <a6860a9f6366437387ebdc1f225b7fd4>:0 
-  at Mono.Cecil.ModuleDefinition.ReadModule (System.String fileName, Mono.Cecil.ReaderParameters parameters) [0x00008] in <a6860a9f6366437387ebdc1f225b7fd4>:0 
-  at Mono.Cecil.AssemblyDefinition.ReadAssembly (System.String fileName, Mono.Cecil.ReaderParameters parameters) [0x00000] in <a6860a9f6366437387ebdc1f225b7fd4>:0 
-  at UnityEditor.AssemblyValidation.LoadAssemblyDefinitions (System.String[] assemblyPaths, System.String[] searchPaths) [0x00048] in <f027a8df36c54c51b6e201bed8ecb82d>:0 
-  at UnityEditor.AssemblyValidation.ValidateAssemblies (System.String[] assemblyPaths, System.Boolean enableLogging) [0x00007] in <f027a8df36c54c51b6e201bed8ecb82d>:0 
-
-- Loaded All Assemblies, in  2.278 seconds
-Refreshing native plugins compatible for Editor in 5.68 ms, found 3 plugins.
-Native extension for UWP target not found
+- Loaded All Assemblies, in  0.446 seconds
+Refreshing native plugins compatible for Editor in 0.66 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  4.581 seconds
-Domain Reload Profiling: 6844ms
-	BeginReloadAssembly (328ms)
+- Finished resetting the current domain, in  0.474 seconds
+Domain Reload Profiling: 918ms
+	BeginReloadAssembly (107ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (11ms)
+		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (54ms)
-	RebuildCommonClasses (66ms)
-	RebuildNativeTypeToScriptingClass (27ms)
-	initialDomainReloadingComplete (105ms)
-	LoadAllAssembliesAndSetupDomain (1736ms)
-		LoadAssemblies (966ms)
+		CreateAndSetChildDomain (24ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (22ms)
+	LoadAllAssembliesAndSetupDomain (285ms)
+		LoadAssemblies (198ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (954ms)
-			TypeCache.Refresh (546ms)
-				TypeCache.ScanAssembly (490ms)
-			BuildScriptInfoCaches (351ms)
-			ResolveRequiredComponents (43ms)
-	FinalizeReload (4583ms)
+		AnalyzeDomain (141ms)
+			TypeCache.Refresh (100ms)
+				TypeCache.ScanAssembly (91ms)
+			BuildScriptInfoCaches (33ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (475ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (3409ms)
+		SetupLoadedEditorAssemblies (348ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (59ms)
-			SetLoadedEditorAssemblies (33ms)
-			BeforeProcessingInitializeOnLoad (873ms)
-			ProcessInitializeOnLoadAttributes (2027ms)
-			ProcessInitializeOnLoadMethodAttributes (385ms)
-			AfterProcessingInitializeOnLoad (31ms)
-			EditorAssembliesLoaded (1ms)
+			InitializePlatformSupportModulesInManaged (1ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (80ms)
+			ProcessInitializeOnLoadAttributes (232ms)
+			ProcessInitializeOnLoadMethodAttributes (29ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (29ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 5.99 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (4ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 2.61 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 218 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6005 unused Assets / (4.5 MB). Loaded Objects now: 6734.
-Memory consumption went from 164.3 MB to 159.8 MB.
-Total: 20.346800 ms (FindLiveObjects: 3.843700 ms CreateObjectMapping: 1.047900 ms MarkObjects: 11.220700 ms  DeleteObjects: 4.230900 ms)
+Unloading 216 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6005 unused Assets / (2.6 MB). Loaded Objects now: 6713.
+Memory consumption went from 168.3 MB to 165.8 MB.
+Total: 12.096900 ms (FindLiveObjects: 1.305900 ms CreateObjectMapping: 1.213900 ms MarkObjects: 6.703300 ms  DeleteObjects: 2.872700 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 147214.743856 seconds.
-  path: Assets/SurgicalInstruments
-  artifactKey: Guid(7e57da0dc608e254da52748f16233dec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SurgicalInstruments using Guid(7e57da0dc608e254da52748f16233dec) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8e95ad1593bb4b92250eb7f33592cdcd') in 0.0084846 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 51.105549 seconds.
-  path: Assets/SurgicalInstruments/textures
-  artifactKey: Guid(dd70fe7055534954fbe201f3c4eacc4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SurgicalInstruments/textures using Guid(dd70fe7055534954fbe201f3c4eacc4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cc5c71d235a2e6749e33cd0b7e649e2f') in 0.0046967 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000096 seconds.
-  path: Assets/SurgicalInstruments/textures/text_disp.png
-  artifactKey: Guid(48f416515d5db7e44af4a6a97b2a4de8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SurgicalInstruments/textures/text_disp.png using Guid(48f416515d5db7e44af4a6a97b2a4de8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a4d6e4312623cfb83c03b50897bf10eb') in 0.5004532 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.787280 seconds.
-  path: Assets/SurgicalInstruments/source
-  artifactKey: Guid(caf224e0a08cdd24b984e778c689489c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SurgicalInstruments/source using Guid(caf224e0a08cdd24b984e778c689489c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e3923de1921af3c955c97fd94842a725') in 0.0040958 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000088 seconds.
-  path: Assets/SurgicalInstruments/source/SUrGICAL_INSTRUMENT.fbx
-  artifactKey: Guid(a37a3dba5dda0a640ada0378813f199e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SurgicalInstruments/source/SUrGICAL_INSTRUMENT.fbx using Guid(a37a3dba5dda0a640ada0378813f199e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fc357ed570de5974f471c1ed6c637aa2') in 2.8066553 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 294.755763 seconds.
-  path: Assets/New Material.mat
-  artifactKey: Guid(8a6d64c50d8263649ba52e25a11209a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Material.mat using Guid(8a6d64c50d8263649ba52e25a11209a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '14da347aeb696d2109d859298ec06637') in 0.1790878 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 750.446536 seconds.
-  path: Assets/SurgicalInstruments/source 1
-  artifactKey: Guid(682716572d87e3a4d84e7ae1d459c2cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SurgicalInstruments/source 1 using Guid(682716572d87e3a4d84e7ae1d459c2cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '52ace0326d3db1001748281a3b1d93a3') in 0.0454698 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.874983 seconds.
-  path: Assets/SurgicalInstruments/source 1/archive instumenti.7z
-  artifactKey: Guid(5f86ae9894bd89e448feacae78114096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SurgicalInstruments/source 1/archive instumenti.7z using Guid(5f86ae9894bd89e448feacae78114096) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '717201be9ef613e49fef2ca5728b44a3') in 0.0632739 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 85.211161 seconds.
-  path: Assets/SurgicalInstruments/archive instumenti
-  artifactKey: Guid(46c2f7744f2cc0c4695bf95447b08691) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SurgicalInstruments/archive instumenti using Guid(46c2f7744f2cc0c4695bf95447b08691) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e4626c9d9cd107a1856020c46aee60d0') in 0.0089042 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.361469 seconds.
-  path: Assets/SurgicalInstruments/archive instumenti/archive instumenti
-  artifactKey: Guid(6d3533000a8f8634aba47bd90b13d611) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SurgicalInstruments/archive instumenti/archive instumenti using Guid(6d3533000a8f8634aba47bd90b13d611) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e718a805d30afd86bc819ae080fa072a') in 0.0033929 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.304769 seconds.
-  path: Assets/SurgicalInstruments/archive instumenti/archive instumenti/Textures
-  artifactKey: Guid(de3e6794119e9884f9269209e67e33b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SurgicalInstruments/archive instumenti/archive instumenti/Textures using Guid(de3e6794119e9884f9269209e67e33b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '480a94417178b8a6ba5ae49316415624') in 0.0102466 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/SurgicalInstruments/archive instumenti/archive instumenti/Textures/instrumenty color.png
-  artifactKey: Guid(812843c924ac3ec4d98cce285c1b4392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SurgicalInstruments/archive instumenti/archive instumenti/Textures/instrumenty color.png using Guid(812843c924ac3ec4d98cce285c1b4392) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0cb91fec9e443c1ad55282bc3aa294c3') in 0.4032495 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000098 seconds.
-  path: Assets/SurgicalInstruments/archive instumenti/archive instumenti/Textures/koleso-color.png
-  artifactKey: Guid(4f5580bcfbafbb44f976df5a1007e18b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SurgicalInstruments/archive instumenti/archive instumenti/Textures/koleso-color.png using Guid(4f5580bcfbafbb44f976df5a1007e18b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b981199a5302b651749b2060e7d24667') in 0.060439 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000057 seconds.
-  path: Assets/SurgicalInstruments/archive instumenti/archive instumenti/Textures/koleso-roug.png
-  artifactKey: Guid(4ae3ba8890c7fce439625f0f7d70f336) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SurgicalInstruments/archive instumenti/archive instumenti/Textures/koleso-roug.png using Guid(4ae3ba8890c7fce439625f0f7d70f336) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a8c51addbb0e0edd5b9977bda8d94450') in 0.0925065 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000063 seconds.
-  path: Assets/SurgicalInstruments/archive instumenti/archive instumenti/Textures/stol-roug.png
-  artifactKey: Guid(43bfb375175299746aa0c776c652319e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SurgicalInstruments/archive instumenti/archive instumenti/Textures/stol-roug.png using Guid(43bfb375175299746aa0c776c652319e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0fdb4bdc8f6c7b283c9119dd2a6c0185') in 0.1028782 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/SurgicalInstruments/archive instumenti/archive instumenti/Textures/stol-color.png
-  artifactKey: Guid(4faccf9e84d61554cb6774696905a318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SurgicalInstruments/archive instumenti/archive instumenti/Textures/stol-color.png using Guid(4faccf9e84d61554cb6774696905a318) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd4f653c1bdd4f2950c94d833c1e093e4') in 0.0854213 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000069 seconds.
-  path: Assets/SurgicalInstruments/archive instumenti/archive instumenti/Textures/instrumenty-roughness.png
-  artifactKey: Guid(6b344bef0be095f41bbab03bd563280c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SurgicalInstruments/archive instumenti/archive instumenti/Textures/instrumenty-roughness.png using Guid(6b344bef0be095f41bbab03bd563280c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '30e10d083ef4c0491e24a1c693664d96') in 0.0689054 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000058 seconds.
-  path: Assets/SurgicalInstruments/archive instumenti/archive instumenti/Textures/tkan-normal.png
-  artifactKey: Guid(671a2d5e21e29c24fa54042d8f5a639b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SurgicalInstruments/archive instumenti/archive instumenti/Textures/tkan-normal.png using Guid(671a2d5e21e29c24fa54042d8f5a639b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3384d9dd46e1a235abd775c1c1450beb') in 0.0682108 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.795099 seconds.
-  path: Assets/SurgicalInstruments/archive instumenti/archive instumenti/main
-  artifactKey: Guid(4f9ea58a255ec2f4eab387e617d95e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SurgicalInstruments/archive instumenti/archive instumenti/main using Guid(4f9ea58a255ec2f4eab387e617d95e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd3f97c6ae31221e001be8a76824b9ae3') in 0.0052477 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/SurgicalInstruments/archive instumenti/archive instumenti/main/Hirurg instumenti.blend
-  artifactKey: Guid(6f50e97e260d3ad48a8c126e0755198c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SurgicalInstruments/archive instumenti/archive instumenti/main/Hirurg instumenti.blend using Guid(6f50e97e260d3ad48a8c126e0755198c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eb4f43740727ec8aa05860ded7008a40') in 3.4819975 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 401
-
-========================================================================
-Received Import Request.
-  Time since last request: 738.369603 seconds.
-  path: Assets/SurgicalInstruments/retractor v1/retractor metal.png
-  artifactKey: Guid(64e9170a7b85582498954986441f85c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SurgicalInstruments/retractor v1/retractor metal.png using Guid(64e9170a7b85582498954986441f85c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '768d89870d2f3df68055c66550105622') in 0.1622426 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000724 seconds.
-  path: Assets/SurgicalInstruments/retractor v1/retractor-v1.fbx
-  artifactKey: Guid(e494e80953c37c94da84414cef5f7165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SurgicalInstruments/retractor v1/retractor-v1.fbx using Guid(e494e80953c37c94da84414cef5f7165) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '98bab1f3e055545bd6c9ff4f3c62ff02') in 0.1384252 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/SurgicalInstruments/retractor v1/retractor normal.jpg
-  artifactKey: Guid(06842d2297874be4fb595fc67aee6efb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SurgicalInstruments/retractor v1/retractor normal.jpg using Guid(06842d2297874be4fb595fc67aee6efb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7e232132ec799d5ee45e6a7556f71f31') in 0.0333647 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  Time since last request: 101430.360673 seconds.
+  path: Assets/Untitled.fbx
+  artifactKey: Guid(cc2bd507364024b4b90d5d56d02b6224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Untitled.fbx using Guid(cc2bd507364024b4b90d5d56d02b6224) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '72832b2f653b5164a78d92251528620e') in 2.36716 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 222
 
