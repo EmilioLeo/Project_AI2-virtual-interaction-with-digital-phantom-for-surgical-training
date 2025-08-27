@@ -212,11 +212,11 @@
       "url": "https://packages.unity.com"
     },
     "com.weart.sdk": {
-      "version": "file:C:/Users/emilio/Desktop/Medical Robotics/WEART_SDK_Unity_v2.0.0",
+      "version": "file:C:/Users/veron/Downloads/WEART_SDK_Unity_v2.0.0",
       "depth": 0,
       "source": "local",
       "dependencies": {
-        "com.unity.textmeshpro": "5.0.0"
+        "com.unity.textmeshpro": "3.0.6"
       }
     },
     "com.unity.modules.accessibility": {
