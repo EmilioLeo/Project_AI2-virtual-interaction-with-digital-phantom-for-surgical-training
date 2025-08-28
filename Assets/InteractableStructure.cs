@@ -47,8 +47,14 @@ public class InteractableStructure : MonoBehaviour
         }
     }
 
-    void OnMouseEnter()
+    // ----------------------------
+    // Metodi pubblici per il MouseInteractionManager
+    // ----------------------------
+    public void StartDrag(Vector3 mouseWorld)
     {
+        isDragging = true;
+        dragStartWorld = mouseWorld;
+
         if (rend != null)
             rend.material.color = highlightColor;
 
@@ -56,30 +62,11 @@ public class InteractableStructure : MonoBehaviour
             uiText.text = structureName;
     }
 
-    void OnMouseExit()
+    public void Drag(Vector3 mouseWorld)
     {
-        if (!isDragging && rend != null)
-            rend.material.color = originalColor;
+        if (!isDragging || mesh == null) return;
 
-        if (uiText != null && !isDragging)
-            uiText.text = "";
-    }
-
-    void OnMouseDown()
-    {
-        isDragging = true;
-        dragStartWorld = GetMouseWorldPosition();
-
-        if (uiText != null)
-            uiText.text = structureName;
-    }
-
-    void OnMouseDrag()
-    {
-        if (mesh == null) return;
-
-        Vector3 currentMouseWorld = GetMouseWorldPosition();
-        float delta = (currentMouseWorld - dragStartWorld).x * dragSensitivity;
+        float delta = (mouseWorld - dragStartWorld).x * dragSensitivity;
         delta = Mathf.Clamp(delta, -maxOffset, maxOffset);
 
         for (int i = 0; i < vertices.Length; i++)
@@ -88,7 +75,6 @@ public class InteractableStructure : MonoBehaviour
             float weight = Mathf.Sin(t * Mathf.PI);
             Vector3 newVertex = originalVertices[i] + dragAxis.normalized * delta * Mathf.Pow(weight, falloff);
 
-            // evita NaN o vertici invalidi
             if (float.IsNaN(newVertex.x) || float.IsNaN(newVertex.y) || float.IsNaN(newVertex.z))
                 continue;
 
@@ -96,17 +82,15 @@ public class InteractableStructure : MonoBehaviour
         }
 
         mesh.vertices = vertices;
-        // Non calcolare bounds ad ogni frame per evitare errori
     }
 
-    void OnMouseUp()
+    public void EndDrag()
     {
         isDragging = false;
 
         if (rend != null)
             rend.material.color = originalColor;
 
-        // aggiorna bounds solo una volta alla fine
         if (mesh != null)
         {
             mesh.RecalculateBounds();
@@ -117,10 +101,24 @@ public class InteractableStructure : MonoBehaviour
             uiText.text = "";
     }
 
-    Vector3 GetMouseWorldPosition()
+    // ----------------------------
+    // Metodi opzionali per evidenziare all'hover
+    // ----------------------------
+    void OnMouseEnter()
     {
-        Vector3 mousePos = Input.mousePosition;
-        mousePos.z = Camera.main.WorldToScreenPoint(transform.position).z;
-        return Camera.main.ScreenToWorldPoint(mousePos);
+        if (rend != null && !isDragging)
+            rend.material.color = highlightColor;
+
+        if (uiText != null && !isDragging)
+            uiText.text = structureName;
+    }
+
+    void OnMouseExit()
+    {
+        if (!isDragging && rend != null)
+            rend.material.color = originalColor;
+
+        if (uiText != null && !isDragging)
+            uiText.text = "";
     }
 }
