@@ -3,30 +3,34 @@ using UnityEngine;
 public class Isolation_musculi_longus : MonoBehaviour
 {
     //Fixed max distance tra pos del mouse e pos del vertex
-    private float max_Radius = 35f;
-
-    // La forza con cui i vertici della mesh vengono spinti
-    private float pushForce = 20f;
+    public Color highlightColor = Color.green;
+    //max offset
+    public float maxOffset = 10.5f; 
+    private bool  isDragging=false;
 
     // La velocità  con cui il mesh ritorna alla posizione originale
-    private float returnSpeed = 1.0f;
+    //private float returnSpeed = 1.0f;
+    public Vector3 dragAxis = Vector3.right;  // Asse di deformazione
+    public float dragSensitivity = 4f;    // Sensibilità del mouse
     
+    public float falloff = 5.5f;
     //salva oggetto
     public GameObject flex_spinal;
     private Mesh mesh_flex_spinal;
     
     //salva original vertex della mesh dell'oggetto 
     private Vector3[] init_Vertices;
-    
+    private Vector3 dragStartWorld;
     //salva current vertex "modified" della mesh dell'oggetto
     private Vector3[] currentVertices;
+    private Color material;
 
     //check se mouse è sopra all'oggetto :) 
     private bool isMouseOver = false;
 
     // La posizione del mouse nello spazio 3D
     private Vector3 mouseWorldPosition;
-
+    private MeshFilter meshFilter;
     //camera che osserva se è stato selezionato un oggetto 
     Camera cam;
     
@@ -35,7 +39,9 @@ public class Isolation_musculi_longus : MonoBehaviour
        cam = Camera.main;
       
        //take mesh
-       MeshFilter meshFilter = flex_spinal.GetComponent<MeshFilter>();
+       material=flex_spinal.GetComponent<Renderer>().material.color;
+       meshFilter= flex_spinal.GetComponent<MeshFilter>();
+       
        if (meshFilter!=null)
        {
             mesh_flex_spinal=meshFilter.mesh;
@@ -46,9 +52,14 @@ public class Isolation_musculi_longus : MonoBehaviour
             //copy init state della mesh
             init_Vertices.CopyTo(currentVertices, 0);
        }
+       else
+        {
+            Debug.LogError("MeshFilter mancante su " + flex_spinal.name);
+        }
        
     }
-    void UpdateMouseWorldPosition()
+
+    private Vector3 UpdateMouseWorldPosition()
     {
         // Crea un raggio dalla posizione della telecamera al punto del mouse sullo schermo
         //Debug.Log("Camera trovata: " + cam);
@@ -61,89 +72,103 @@ public class Isolation_musculi_longus : MonoBehaviour
             { 
 
                 mouseWorldPosition = hit.point;
-                //Debug.Log("position mouse: "+mouseWorldPosition);
+               
             }
-        }else{
-            Debug.Log("muscolo non intercettato ");
         }
+        return mouseWorldPosition;
+        
     }
+
     void DeformMesh()
     {
+        float delta =0;
+        Vector3 currentMouseWorld = GetMouseWorldPosition();
+        delta = (currentMouseWorld - dragStartWorld).x * dragSensitivity;
+        delta = Mathf.Clamp(delta, -maxOffset, maxOffset);
+    
+        // 2) Determina quale metà è attiva in base al punto di inizio drag
+        float dragStartLocalX = transform.InverseTransformPoint(dragStartWorld).x;
+        int activeSide = (dragStartLocalX < 0f) ? -1 : +1; // -1 = sinistra, +1 = destra
+        Vector3 axis=Vector3.right;
+
+        
+        // 3) Applica deformazione SOLO ai vertici della metà attiva
+        float minY = mesh_flex_spinal.bounds.min.y;
+        float maxY = mesh_flex_spinal.bounds.max.y;
+
         for (int i = 0; i < init_Vertices.Length; i++)
         {
-            //Debug.Log("DEFORm");
-            //trasformiamo in World Frames (RF0)
-            Vector3 vertexWorldPos = transform.TransformPoint(init_Vertices[i]);
-            
-            //dist tra vertice e pos del mouse
-            float distance = Vector3.Distance(vertexWorldPos, mouseWorldPosition);
-            //Debug.Log("distance:"+distance);
-            //confronto la dist dall'applicazione del mouse sia maggiore di threshold max radius dell' i-esimo punto 
-            if (distance < max_Radius)
-            {
-                //TODO: apply falloff
-                //float falloff = 1f - (distance / max_Radius);
-                //calcola direzione in cui applicare la forza
-                Vector3 direction = (vertexWorldPos - mouseWorldPosition).normalized;
-                
-                //update la posizione dell'iesimo vertice data la direzione e la forza applicata 
-                currentVertices[i] = init_Vertices[i] + (direction * pushForce);
-                //Debug.Log("posso deformare new vertex:"+currentVertices[i]);
-            }
-            else
-            {   
-                currentVertices[i] = init_Vertices[i];
-            }
+            // di base: nessuna deformazione
+            //currentVertices[i] = init_Vertices[i];
+
+            // lato del vertice (sign di x)
+            float vx = init_Vertices[i].x;
+            int vertSide = (vx < 0f) ? -1 : ((vx > 0f) ? +1 : 0);
+
+            // se il vertice NON appartiene alla metà attiva, salta
+            if (vertSide == 0 || vertSide != activeSide) continue;
+
+            // peso verticale (più forte a metà altezza)
+            float t = Mathf.InverseLerp(minY, maxY, init_Vertices[i].y);
+            float weight=0f;
+            weight= Mathf.Sin(t * Mathf.PI);
+            float w = Mathf.Pow(weight, falloff);
            
            
+           
+            // deformazione lungo l'asse della metà attiva
+            currentVertices[i] = init_Vertices[i] + axis * delta * w;
         }
-
-        //aggiorna i vertici correnti a quelli della mesh
+        
         mesh_flex_spinal.vertices=currentVertices;
-        //ricalcola le normali rispetto alle facce dell'oggetto in modo tale che possa essere illuminato correttamente nella simulazione
-        mesh_flex_spinal.RecalculateNormals();
+   
     }
 
-    void ReturnToOriginalPosition()
-    {
-            for (int i = 0; i < currentVertices.Length; i++)
-            {
-            //tramite interpolazione lineare ritorno alle coordinate originali con un tempo t *returnSpeed
-            currentVertices[i] = Vector3.Lerp(currentVertices[i], init_Vertices[i], Time.deltaTime * returnSpeed);
-            }
-            mesh_flex_spinal.vertices=currentVertices;
-            mesh_flex_spinal.RecalculateNormals();
-    }
+   
 
     // Rileva quando il mouse entra o esce dal collider dell'oggetto
     void OnMouseEnter()
     {
+        if (flex_spinal.GetComponent<Renderer>() != null)
+            flex_spinal.GetComponent<Renderer>().material.color = highlightColor;
         isMouseOver = true;
     }
 
     void OnMouseExit()
     {
+        if (flex_spinal.GetComponent<Renderer>() != null)
+            flex_spinal.GetComponent<Renderer>().material.color=material;
         isMouseOver = false;
     }
-
-    void Update()
+    void OnMouseDown()
     {
+        isDragging = true;
+        dragStartWorld = GetMouseWorldPosition();
+    }
+    void OnMouseDrag(){
+        if (mesh_flex_spinal==null) return;
+        DeformMesh();
+    }
+    void OnMouseUp()
+    {
+        isDragging = false;
 
-        if (Input.GetMouseButton(0))
+        if (flex_spinal.GetComponent<Renderer>() != null)
+            flex_spinal.GetComponent<Renderer>().material.color = material;
+
+        if (mesh_flex_spinal != null)
         {
-            // Aggiorna la posizione del mouse nel mondo 3D e applica la deformazione
-            UpdateMouseWorldPosition();
-            DeformMesh();
-        }
-        else if (Input.GetMouseButton(1))
-        {
-            // Quando il mouse non è cliccato sull'oggetto, ritorna gradualmente alla posizione originale
-            ReturnToOriginalPosition();
+            mesh_flex_spinal.RecalculateBounds();
+            mesh_flex_spinal.RecalculateNormals();
         }
     }
+    private Vector3 GetMouseWorldPosition()
+    {
+        Vector3 mousePos = Input.mousePosition;
+        mousePos.z = Camera.main.WorldToScreenPoint(transform.position).z;
+        return Camera.main.ScreenToWorldPoint(mousePos);
+    }
 
-    
 
-    
 
 }
