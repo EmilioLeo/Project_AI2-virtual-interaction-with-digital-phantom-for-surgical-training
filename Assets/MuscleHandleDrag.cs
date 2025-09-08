@@ -22,6 +22,9 @@ public class MuscleHandleDrag : MonoBehaviour
     [Header("Highlight")]
     public Color highlightColor = Color.green; // nuovo campo per colore
 
+    [Header("Stato movimento")]
+    public bool isMoved = false; // diventa true quando la laringe viene spostata
+
     private Material originalMaterial;
     private Material highlightMatInstance;
     private bool isSelected = false;
@@ -163,6 +166,8 @@ public class MuscleHandleDrag : MonoBehaviour
 
         float delta = Vector3.Dot(desiredWorld - originWorld, axisVector);
         delta = Mathf.Clamp(delta, -maxRetractDistance, maxRetractDistance);
+
+        isMoved = true;
 
         return originWorld + axisVector * delta;
     }

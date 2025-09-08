@@ -43,6 +43,15 @@ public class TreatmentSetup : MonoBehaviour
         if (infoPanel != null)
             infoPanel.SetActive(false); // all’avvio pannello spento
 
+        for (int i = 0; i < dischi.Length; i++)
+        {
+            // esempio: coloriamo già il disco C4-5
+            if (i == 2 && dischi[i] != null)
+            {
+                dischi[i].GetComponent<Renderer>().material = redTransparent;
+            }
+        }
+
         // salva materiali originali vertebre
         originalVertebraMaterials = new Material[vertebre.Length];
         for (int i = 0; i < vertebre.Length; i++)
@@ -117,7 +126,7 @@ public class TreatmentSetup : MonoBehaviour
     // --------------------------
     // Gestione pannello messaggi
     // --------------------------
-    void ShowMessage(string msg)
+    public void ShowMessage(string msg)
     {
         if (infoPanel == null || infoText == null)
         {

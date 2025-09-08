@@ -262,7 +262,6 @@ MonoBehaviour:
   m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
-  m_Version: 2
   m_TaaSettings:
     m_Quality: 3
     m_FrameInfluence: 0.1
@@ -270,6 +269,7 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+  m_Version: 2
 --- !u!81 &125819404
 AudioListener:
   m_ObjectHideFlags: 0
@@ -413,8 +413,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -733,6 +733,58 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6936561362558385797, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
+--- !u!1 &344819219
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 344819221}
+  - component: {fileID: 344819220}
+  m_Layer: 0
+  m_Name: MouseRemovalTool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &344819220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344819219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7c66b046d6f6154487d02002a808c1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MouseRemovalTool
+  cam: {fileID: 1683823410}
+  removableMask:
+    serializedVersion: 2
+    m_Bits: 8
+  removalRatePerSecond: 0.35
+  maxDistance: 500
+  cursorRadius: 0.01
+  moveTowardsCamRate: 0.05
+--- !u!4 &344819221
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344819219}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.15443, y: 65.06342, z: -8.71457}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &469017071 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7165841384128576919, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
@@ -754,8 +806,9 @@ MonoBehaviour:
   messageText: {fileID: 221284079}
   useParentLocalSpace: 0
   dragAxis: 4
-  maxRetractDistance: 0.2
+  maxRetractDistance: 20
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  isMoved: 0
 --- !u!64 &469017080
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1400,7 +1453,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7165841384128576919, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -6945121635553091466, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
       propertyPath: m_IsActive
@@ -1482,6 +1535,10 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -803357299108230656, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -679871046497545482, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -1546,6 +1603,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6462239094343465161, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6479763508675162349, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1553,6 +1614,14 @@ PrefabInstance:
     - target: {fileID: 6666452871270236646, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6773039250295536799, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6773039250295536799, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8443344811535790516, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
       propertyPath: m_IsActive
@@ -1589,6 +1658,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6773039250295536799, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1384289136}
+    - targetCorrespondingSourceObject: {fileID: 6773039250295536799, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1384289140}
     - targetCorrespondingSourceObject: {fileID: -7567505094835022155, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
       insertIndex: -1
       addedObject: {fileID: 625574514}
@@ -2305,17 +2377,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Version: 4
   m_UsePipelineSettings: 1
   m_AdditionalLightsShadowResolutionTier: 2
-  m_LightLayerMask: 1
-  m_RenderingLayers: 1
   m_CustomShadowLayers: 0
-  m_ShadowLayerMask: 1
-  m_ShadowRenderingLayers: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!108 &1210945560
 Light:
   m_ObjectHideFlags: 0
@@ -2543,6 +2621,37 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1941140745444933751, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
+--- !u!23 &1384289137 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -346396941097268969, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
+  m_PrefabInstance: {fileID: 1076405524}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1384289139 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -2792236552175960388, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
+  m_PrefabInstance: {fileID: 1076405524}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1384289140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076405526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7516fd533a5dd6c4eafc8177333ff740, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RemovableDisc
+  integrity: 1
+  visualRoot: {fileID: 1384289139}
+  tissueRenderer: {fileID: 1384289137}
+  dissolveProperty: _DissolveAmount
+  minScale: 0.1
+  destroyWhenZero: 0
+  removalText: {fileID: 221284079}
+  messageDuration: 50
+  larynx: {fileID: 469017075}
 --- !u!1 &1439907390 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4057339907619863177, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}
@@ -2847,7 +2956,6 @@ MonoBehaviour:
   m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
-  m_Version: 2
   m_TaaSettings:
     m_Quality: 3
     m_FrameInfluence: 0.1
@@ -2855,6 +2963,7 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+  m_Version: 2
 --- !u!1 &1762503782
 GameObject:
   m_ObjectHideFlags: 0
@@ -3146,3 +3255,4 @@ SceneRoots:
   - {fileID: 283602802}
   - {fileID: 1098157314}
   - {fileID: 761704100}
+  - {fileID: 344819221}
