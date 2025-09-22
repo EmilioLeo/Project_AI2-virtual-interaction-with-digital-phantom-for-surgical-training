@@ -5,15 +5,17 @@ TagManager:
   serializedVersion: 3
   tags:
   - Structure
+  - DiscoTrascinabile
+  - TargetDisco
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - RemoveDisc
+  - Disc
   - Water
   - UI
-  - Liquid
-  - 
+  - Bone
+  - GhostDisc
   - 
   - 
   - 

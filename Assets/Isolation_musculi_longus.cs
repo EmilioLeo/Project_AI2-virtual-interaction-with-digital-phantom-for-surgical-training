@@ -6,7 +6,7 @@ public class Isolation_musculi_longus : MonoBehaviour
     public Color highlightColor = Color.green;
     //max offset
     public float maxOffset = 10.5f; 
-    private bool  isDragging=false;
+    private bool isDragging=false;
 
     // La velocità  con cui il mesh ritorna alla posizione originale
     //private float returnSpeed = 1.0f;
