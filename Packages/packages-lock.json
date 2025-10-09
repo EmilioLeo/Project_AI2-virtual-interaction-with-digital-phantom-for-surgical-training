@@ -304,7 +304,7 @@
       "url": "https://packages.unity.com"
     },
     "com.weart.sdk": {
-      "version": "file:C:/Users/emilio/Downloads/WEART_SDK_Unity_v2.0.0",
+      "version": "file:C:/Users/emilio/Desktop/Medical Robotics/WEART_SDK_Unity_v2.0.0",
       "depth": 0,
       "source": "local",
       "dependencies": {

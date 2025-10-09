@@ -1,0 +1,819 @@
+Using pre-set license
+Built from '6000.1/staging' branch; Version is '6000.1.9f1 (ed7b183fd33d) revision 15563544'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26100) 64bit Core' Language: 'it' Physical Memory: 16263 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+Date: 2025-10-09T10:38:25Z
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.1.9f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/emilio/MR_ProjectAI2
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+64284
+-job-worker-count
+5
+-background-job-worker-count
+8
+-gc-helper-count
+1
+-name
+AssetImport
+Successfully changed project path to: C:/Users/emilio/MR_ProjectAI2
+C:/Users/emilio/MR_ProjectAI2
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [18924]  Target information:
+
+Player connection [18924]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2881808054 [EditorId] 2881808054 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-U4SS03QQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [18924]  * "[IP] 169.254.182.183 [Port] 0 [Flags] 2 [Guid] 2881808054 [EditorId] 2881808054 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-U4SS03QQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [18924]  * "[IP] 10.10.133.62 [Port] 0 [Flags] 2 [Guid] 2881808054 [EditorId] 2881808054 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-U4SS03QQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [18924] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [18924] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 5
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 25.94 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.1.9f1 (ed7b183fd33d)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.1.9f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/emilio/MR_ProjectAI2/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f91)
+    Vendor:   NVIDIA
+    VRAM:     3949 MB
+    Driver:   31.0.15.3598
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.1.9f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.1.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.1.9f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56068
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.1.9f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.1.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003179 seconds.
+- Loaded All Assemblies, in  0.605 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.553 seconds
+Domain Reload Profiling: 1155ms
+	BeginReloadAssembly (214ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (57ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (69ms)
+	LoadAllAssembliesAndSetupDomain (243ms)
+		LoadAssemblies (211ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (238ms)
+			TypeCache.Refresh (236ms)
+				TypeCache.ScanAssembly (218ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (553ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (503ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (76ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (109ms)
+			ProcessInitializeOnLoadAttributes (218ms)
+			ProcessInitializeOnLoadMethodAttributes (93ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.698 seconds
+Refreshing native plugins compatible for Editor in 17.49 ms, found 10 plugins.
+Missing types referenced from component UniversalRenderPipelineGlobalSettings on game object UniversalRenderPipelineGlobalSettings:
+	UnityEngine.Rendering.RenderingDebuggerRuntimeResources, Unity.RenderPipelines.Core.Runtime (1 object)
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.NullReferenceException: Object reference not set to an instance of an object
+  at UnityEditor.XR.Interaction.Toolkit.Analytics.XRIAnalytics..cctor () [0x00000] in .\Library\PackageCache\com.unity.xr.interaction.toolkit@42ef3600567b\Editor\Analytics\XRIAnalytics.cs:32 
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-MR_ProjectAI2
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.884 seconds
+Domain Reload Profiling: 3570ms
+	BeginReloadAssembly (305ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (44ms)
+	RebuildCommonClasses (79ms)
+	RebuildNativeTypeToScriptingClass (25ms)
+	initialDomainReloadingComplete (72ms)
+	LoadAllAssembliesAndSetupDomain (1205ms)
+		LoadAssemblies (816ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (581ms)
+			TypeCache.Refresh (417ms)
+				TypeCache.ScanAssembly (381ms)
+			BuildScriptInfoCaches (124ms)
+			ResolveRequiredComponents (33ms)
+	FinalizeReload (1885ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1409ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (11ms)
+			BeforeProcessingInitializeOnLoad (307ms)
+			ProcessInitializeOnLoadAttributes (777ms)
+			ProcessInitializeOnLoadMethodAttributes (299ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (18ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 24.94 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 256 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7539 unused Assets / (5.3 MB). Loaded Objects now: 8250.
+Memory consumption went from 182.3 MB to 177.0 MB.
+Total: 21.765600 ms (FindLiveObjects: 2.117800 ms CreateObjectMapping: 2.516400 ms MarkObjects: 11.263800 ms  DeleteObjects: 5.865700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2977.591833 seconds.
+  path: Packages/com.weart.sdk/Runtime/Prefabs/MiddlewareStatusDisplay.prefab
+  artifactKey: Guid(2bd62a136f9cabf45aa65394b56ef967) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/Prefabs/MiddlewareStatusDisplay.prefab using Guid(2bd62a136f9cabf45aa65394b56ef967) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3be0891d663b58f69160b6d8fd829307') in 0.138808 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 321
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Packages/com.weart.sdk/Runtime/Prefabs/WEARTLeftHand.prefab
+  artifactKey: Guid(d96bc87e105609845a567ed410265443) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/Prefabs/WEARTLeftHand.prefab using Guid(d96bc87e105609845a567ed410265443) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cac87cb149f28239ba99f91a353cd22f') in 1.0000076 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 342
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Packages/com.weart.sdk/Runtime/Prefabs/WEART.prefab
+  artifactKey: Guid(b8dadcd16adf4f84a81c4b08f90a349a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/Prefabs/WEART.prefab using Guid(b8dadcd16adf4f84a81c4b08f90a349a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9114693096a26b976313b1b7cfe4ff7c') in 0.4236881 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4552
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.658710 seconds.
+  path: Packages/com.weart.sdk/Runtime/Components
+  artifactKey: Guid(245fd60bc030acf46960334a7983c443) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/Components using Guid(245fd60bc030acf46960334a7983c443) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ed083a8242bc02ecbb956789a727e3a0') in 0.001217 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.128471 seconds.
+  path: Packages/com.weart.sdk/Runtime/Prefabs
+  artifactKey: Guid(6e20eeb8e4ca6a34bb1c056a629fc1b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/Prefabs using Guid(6e20eeb8e4ca6a34bb1c056a629fc1b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '36fbc2357ba5570f3e13700201ff3fa0') in 0.0055253 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.057528 seconds.
+  path: Packages/com.weart.sdk/Runtime/PhysicalMaterials
+  artifactKey: Guid(793f21ea61f2ac8449c902b8af781491) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/PhysicalMaterials using Guid(793f21ea61f2ac8449c902b8af781491) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0c50141738b998d6fd68864dca04228c') in 0.0009087 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.432474 seconds.
+  path: Packages/com.weart.sdk/Runtime/PhysicalMaterials/WeArtPhysicalHandMaterial.physicMaterial
+  artifactKey: Guid(6577726f424415f4dbcc6490f2e77c8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/PhysicalMaterials/WeArtPhysicalHandMaterial.physicMaterial using Guid(6577726f424415f4dbcc6490f2e77c8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9314e6dbe7c0e01604876371f5505580') in 0.0011963 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.945965 seconds.
+  path: Packages/com.weart.sdk/Runtime/ScriptableObjects
+  artifactKey: Guid(8f1c07d102d0072409fd869cc2fe1882) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/ScriptableObjects using Guid(8f1c07d102d0072409fd869cc2fe1882) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a3c253602984de39900dc2714f6a32cd') in 0.000703 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.937023 seconds.
+  path: Packages/com.weart.sdk/Runtime/Shaders
+  artifactKey: Guid(85ff525bba2e20148916817950ee3274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/Shaders using Guid(85ff525bba2e20148916817950ee3274) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd25d77237b68952e0f7f4d89ebcc3e8c') in 0.0006196 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.705859 seconds.
+  path: Packages/com.weart.sdk/Runtime/ScriptableObjects/TextureTypeScriptableObject.asset
+  artifactKey: Guid(31548b3c5f3c0ed4fb641637329b49bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/ScriptableObjects/TextureTypeScriptableObject.asset using Guid(31548b3c5f3c0ed4fb641637329b49bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '377b62a101700331bbb7c8ead820415b') in 0.001272 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.451326 seconds.
+  path: Packages/com.weart.sdk/Runtime/Sprites
+  artifactKey: Guid(db66d75381ac7e8458b7fe863fd868be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/Sprites using Guid(db66d75381ac7e8458b7fe863fd868be) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4a0a12dc55891dd4822d3a6e70478691') in 0.0006799 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.998186 seconds.
+  path: Packages/com.weart.sdk/Runtime/Sprites/Actuations_On.png
+  artifactKey: Guid(a2b351b9001688947adbceef713715f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/Sprites/Actuations_On.png using Guid(a2b351b9001688947adbceef713715f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ca4dcfbe8a0d4e3a036255dfbb9c914a') in 0.0509642 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Packages/com.weart.sdk/Runtime/Sprites/reset.png
+  artifactKey: Guid(fc1244ccf5a5a20429db0332386be71b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/Sprites/reset.png using Guid(fc1244ccf5a5a20429db0332386be71b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dab6e550601cb85ea26612a282de1ce2') in 0.0222451 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Packages/com.weart.sdk/Runtime/Sprites/hand.png
+  artifactKey: Guid(fee92ba6289f2a44ea803dd74bea5b8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/Sprites/hand.png using Guid(fee92ba6289f2a44ea803dd74bea5b8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'db99fbcb85f3be923dc0d73725ff9320') in 0.0232207 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Packages/com.weart.sdk/Runtime/Sprites/handStatus.png
+  artifactKey: Guid(f87c54797254c264f8e94d8f32db9b1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/Sprites/handStatus.png using Guid(f87c54797254c264f8e94d8f32db9b1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd4fba0b84957e72f49339f93a2179230') in 0.0188309 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Packages/com.weart.sdk/Runtime/Sprites/handcalibration_vector.png
+  artifactKey: Guid(0524a4a71aa0b6b408ba36df1f8ed5b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/Sprites/handcalibration_vector.png using Guid(0524a4a71aa0b6b408ba36df1f8ed5b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bdb8c0655f5f68ffab79ebcd42ffb8d4') in 0.0240597 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Packages/com.weart.sdk/Runtime/Sprites/battery_mask.png
+  artifactKey: Guid(af392d146a8ce4a469f296735425f37d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/Sprites/battery_mask.png using Guid(af392d146a8ce4a469f296735425f37d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '84c1ca79b701eb473207f3a9c5f44235') in 0.026791 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Packages/com.weart.sdk/Runtime/Sprites/icon_error.png
+  artifactKey: Guid(a2a201df8ec6b694cb9db2ba586a8588) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/Sprites/icon_error.png using Guid(a2a201df8ec6b694cb9db2ba586a8588) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '449a527bef675f542846d22d0f1ffc77') in 0.0218745 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Packages/com.weart.sdk/Runtime/Sprites/ConnectionIssues.png
+  artifactKey: Guid(492b99dc7b4526b4eb90a5bb872e5a36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/Sprites/ConnectionIssues.png using Guid(492b99dc7b4526b4eb90a5bb872e5a36) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '978083fc4f1e91ced29f9f78cd280a55') in 0.0143133 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.960712 seconds.
+  path: Packages/com.weart.sdk/Runtime/Materials
+  artifactKey: Guid(a1b7b4467599b1c4cad820c5bb76a484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/Materials using Guid(a1b7b4467599b1c4cad820c5bb76a484) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '532ba19d0972208749c926e640a73708') in 0.0009018 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.113900 seconds.
+  path: Packages/com.weart.sdk/Runtime/Materials/BlackMaterial.mat
+  artifactKey: Guid(267d9e3b50d3bb04db6460cea045203f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/Materials/BlackMaterial.mat using Guid(267d9e3b50d3bb04db6460cea045203f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eacbc5f9af5789200f7e8791d238ac74') in 0.0481504 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Packages/com.weart.sdk/Runtime/Materials/hand_calibration_calibrating.mat
+  artifactKey: Guid(e197d2dd18d2e9c48ab06664b9eaf597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/Materials/hand_calibration_calibrating.mat using Guid(e197d2dd18d2e9c48ab06664b9eaf597) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a2e9074cfba34277d7eccdddaef17d93') in 0.0098542 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Packages/com.weart.sdk/Runtime/Materials/hand_calibration_success.mat
+  artifactKey: Guid(6285367c41702d94f84dc3e70004c930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/Materials/hand_calibration_success.mat using Guid(6285367c41702d94f84dc3e70004c930) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dff0385f088a5245e2f7d9841332396b') in 0.0085417 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Packages/com.weart.sdk/Runtime/Materials/GhostHandsMaterial.mat
+  artifactKey: Guid(ae1a2632024a96a4cb21240df9276dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/Materials/GhostHandsMaterial.mat using Guid(ae1a2632024a96a4cb21240df9276dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '919116f72528a5b365ba364d343e1434') in 0.0096012 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.382280 seconds.
+  path: Packages/com.weart.sdk/Runtime/Export
+  artifactKey: Guid(c34dc79d71f5e8249975b79d2144b3b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/Export using Guid(c34dc79d71f5e8249975b79d2144b3b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8447d0bbb4bc779c26b5a8d70f288b4f') in 0.0006067 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.508854 seconds.
+  path: Packages/com.weart.sdk/Runtime/Core
+  artifactKey: Guid(1aa9212263d7c4d4aa06583545f926e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/Core using Guid(1aa9212263d7c4d4aa06583545f926e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ea24490d0aeb4ea77d44ff2c19c54523') in 0.0005715 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.014160 seconds.
+  path: Packages/com.weart.sdk/Runtime/CalibrationArea
+  artifactKey: Guid(04b4db6306ca0344cb34ff5a57b13cd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/CalibrationArea using Guid(04b4db6306ca0344cb34ff5a57b13cd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ddd83a0c281bcefe10787d66fb963ead') in 0.0006738 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.243290 seconds.
+  path: Packages/com.weart.sdk/Runtime/Bluetooth
+  artifactKey: Guid(0202b84cf643c224089714cbf51cd9bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/Bluetooth using Guid(0202b84cf643c224089714cbf51cd9bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5de2f74c0f6dc3a664eabfcfb55064d3') in 0.0006058 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.494538 seconds.
+  path: Packages/com.weart.sdk/Runtime/AvatarMasks
+  artifactKey: Guid(a87a7e9a61c1aed49890e369c9701c81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/AvatarMasks using Guid(a87a7e9a61c1aed49890e369c9701c81) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '50a25d65f8489c3c75b7dc83e34cffe5') in 0.0006137 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.878601 seconds.
+  path: Packages/com.weart.sdk/Runtime/AvatarMasks/Index.mask
+  artifactKey: Guid(0e7e6dfac7dc0d940b5f25883fd35773) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/AvatarMasks/Index.mask using Guid(0e7e6dfac7dc0d940b5f25883fd35773) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a3097f78de556700b129a79fbf82b23f') in 0.0013607 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Packages/com.weart.sdk/Runtime/AvatarMasks/Ring.mask
+  artifactKey: Guid(9046d4b4dfdaa6247815d659947afd17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/AvatarMasks/Ring.mask using Guid(9046d4b4dfdaa6247815d659947afd17) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '886aca3728b768431462ef5a765e796e') in 0.0013202 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.531176 seconds.
+  path: Packages/com.weart.sdk/Runtime/Animations
+  artifactKey: Guid(19a48b3608cd4714c9f159950eb611b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/Animations using Guid(19a48b3608cd4714c9f159950eb611b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3e08d75a8a0b10babe5d44356684a1b7') in 0.0006461 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.270315 seconds.
+  path: Packages/com.weart.sdk/Runtime/Messages
+  artifactKey: Guid(5201848a885e80f429f91f93314b3849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/Messages using Guid(5201848a885e80f429f91f93314b3849) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0dca05abb72d970e055601335cc14f0f') in 0.0006375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.637152 seconds.
+  path: Packages/com.weart.sdk/Runtime/Utils
+  artifactKey: Guid(96adad9365cae9146bdfb5a3792a78a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/Utils using Guid(96adad9365cae9146bdfb5a3792a78a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd71c8d8c781cdc220ea7533cb8ba3eda') in 0.0005904 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.197774 seconds.
+  path: Packages/com.weart.sdk/package.json
+  artifactKey: Guid(0a16f818aec8653409ce76c155b888a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/package.json using Guid(0a16f818aec8653409ce76c155b888a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '342ed62c3bfb72359ab04c351a3fa509') in 0.0025767 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 43.786974 seconds.
+  path: Packages/com.weart.sdk/Editor
+  artifactKey: Guid(5c257727fc83c43408cb4fa868e98274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Editor using Guid(5c257727fc83c43408cb4fa868e98274) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '413526dfae78151dbfa15b69466c37b9') in 0.0008995 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.784603 seconds.
+  path: Packages/com.weart.sdk/Editor/WeArtSDK.Editor.asmdef
+  artifactKey: Guid(707a5a3268cea4440813cc96442b2dab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Editor/WeArtSDK.Editor.asmdef using Guid(707a5a3268cea4440813cc96442b2dab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '11256ab0506fd094fdb5e19da3ecaf7e') in 0.001301 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.323710 seconds.
+  path: Packages/com.weart.sdk/Editor/Components
+  artifactKey: Guid(d576a260f7dd009479692a7cab9b3c0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Editor/Components using Guid(d576a260f7dd009479692a7cab9b3c0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e66f7e66616c709c4bed1a696a6bd5c0') in 0.0054904 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.372391 seconds.
+  path: Packages/com.weart.sdk/Editor/Features
+  artifactKey: Guid(a2786c9144979bb439b04e6b8b112f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Editor/Features using Guid(a2786c9144979bb439b04e6b8b112f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b110b7a8de57aff401c3952590070b46') in 0.0006392 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.366707 seconds.
+  path: Packages/com.weart.sdk/Editor/Properties
+  artifactKey: Guid(30c6cc4a05220174fb257e15d7628f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Editor/Properties using Guid(30c6cc4a05220174fb257e15d7628f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '58af307d8a4ff4eb63aedf4be8ce3548') in 0.0006173 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.429622 seconds.
+  path: Packages/com.weart.sdk/Editor/Resources
+  artifactKey: Guid(7f837bfee80a647478503ab94f5b1c59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Editor/Resources using Guid(7f837bfee80a647478503ab94f5b1c59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1a9fb25674cc436c4007765f0be3ad47') in 0.000573 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.927815 seconds.
+  path: Packages/com.weart.sdk/Runtime
+  artifactKey: Guid(13d35ec0b4b149541b0f137f2b4647c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime using Guid(13d35ec0b4b149541b0f137f2b4647c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '76a0e2974b1a108a2779736f8fd309c6') in 0.0006066 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.135429 seconds.
+  path: Packages/com.weart.sdk/Runtime/G2DevelopmentMode
+  artifactKey: Guid(87c6826f43e304940a72ab33f6daf070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/G2DevelopmentMode using Guid(87c6826f43e304940a72ab33f6daf070) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '458ea955905c3df6e7cecf52d078ec66') in 0.000689 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.990898 seconds.
+  path: Packages/com.weart.sdk/Runtime/G2DevelopmentMode/Prefabs
+  artifactKey: Guid(504cfe87047c2d9468927ec7f05cbcd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/G2DevelopmentMode/Prefabs using Guid(504cfe87047c2d9468927ec7f05cbcd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5f22a2a352316aa02dae88a86c522713') in 0.0006517 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.062229 seconds.
+  path: Packages/com.weart.sdk/Runtime/G2DevelopmentMode/Prefabs/G2DevelopmentModePanel.prefab
+  artifactKey: Guid(4133b48d3537ac54d8fe50c8a2591908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/G2DevelopmentMode/Prefabs/G2DevelopmentModePanel.prefab using Guid(4133b48d3537ac54d8fe50c8a2591908) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '89514b01ba4e20ed486a4b37f26dd98a') in 0.0183566 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 69
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.617471 seconds.
+  path: Packages/com.weart.sdk/Runtime/Components/WeArtTouchableObject.cs
+  artifactKey: Guid(818fa9d7ef9470c4fabaccf234366b3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/Components/WeArtTouchableObject.cs using Guid(818fa9d7ef9470c4fabaccf234366b3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7fbf35fc140bc85519c7b36743ae58d8') in 0.0007761 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.233380 seconds.
+  path: Packages/com.weart.sdk/Runtime/Models
+  artifactKey: Guid(3a6f41197c9613f4490f8bf26c0d92cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/Models using Guid(3a6f41197c9613f4490f8bf26c0d92cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '187957abd4749c9d4bea7585472a2399') in 0.0010624 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.241093 seconds.
+  path: Packages/com.weart.sdk/Runtime/TouchUI
+  artifactKey: Guid(3269ed4d0378b0346a0e419516242b0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/TouchUI using Guid(3269ed4d0378b0346a0e419516242b0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '25df821c0ce057452a2775053a53ef16') in 0.0008142 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.428911 seconds.
+  path: Packages/com.weart.sdk/Runtime/TouchUI/Sprites
+  artifactKey: Guid(5006dd3e2adc2864a8846b6577c50816) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/TouchUI/Sprites using Guid(5006dd3e2adc2864a8846b6577c50816) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '282dfb04768bbefb21a2f393f73e5215') in 0.0006547 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.357529 seconds.
+  path: Packages/com.weart.sdk/Runtime/TouchUI/Scripts
+  artifactKey: Guid(19b0fab26a9ad3945af4085a87691e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/TouchUI/Scripts using Guid(19b0fab26a9ad3945af4085a87691e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '808734fa9c66fc11c228fe04c5a8768e') in 0.0005936 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.322198 seconds.
+  path: Packages/com.weart.sdk/Runtime/TouchUI/Prefabs
+  artifactKey: Guid(e6a5ccc48f094a04eb85b041f7012280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/TouchUI/Prefabs using Guid(e6a5ccc48f094a04eb85b041f7012280) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e70a375176294aa93129d7736d6a2b11') in 0.0005756 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.693693 seconds.
+  path: Packages/com.weart.sdk/Runtime/Models/cubeMesh.fbx
+  artifactKey: Guid(ff1767432af8aa44cb5670a1ecb6bd0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/Models/cubeMesh.fbx using Guid(ff1767432af8aa44cb5670a1ecb6bd0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7954208c93143f89540e13d16a0c9458') in 0.0948114 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Packages/com.weart.sdk/Runtime/Models/WeArtHandModel.fbx
+  artifactKey: Guid(b5d28bcb8a41b884b908805b51cc9a4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/Models/WeArtHandModel.fbx using Guid(b5d28bcb8a41b884b908805b51cc9a4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fb99da9b31ea81c587fd809f6fc2ece1') in 0.0268051 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 63
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.356177 seconds.
+  path: Packages/com.weart.sdk/Runtime/SceneManager
+  artifactKey: Guid(0da1da6bd2bcd39439f1dad7f0fbc056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/SceneManager using Guid(0da1da6bd2bcd39439f1dad7f0fbc056) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f2b3bd8750e8760ac63599d9e1199bfb') in 0.0006583 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.117184 seconds.
+  path: Packages/com.weart.sdk/Runtime/SceneManager/WeArtSceneManager.prefab
+  artifactKey: Guid(aff43c407ed2c2b43ae3ceaa2d64d91b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/SceneManager/WeArtSceneManager.prefab using Guid(aff43c407ed2c2b43ae3ceaa2d64d91b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ebbee7c43f8a0e4799d371cd9dd746fa') in 0.004237 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.635564 seconds.
+  path: Packages/com.weart.sdk/Runtime/TouchUI/Prefabs/BleConnectionPanel.prefab
+  artifactKey: Guid(ee3d34beb17136444ae9155884d880ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/TouchUI/Prefabs/BleConnectionPanel.prefab using Guid(ee3d34beb17136444ae9155884d880ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3ba22b4c8554061de85beac5dcfc7c2d') in 0.0365147 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 202
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Packages/com.weart.sdk/Runtime/TouchUI/Prefabs/WristPanel.prefab
+  artifactKey: Guid(76695bb5cce3fec498c11c135b0f1fe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/TouchUI/Prefabs/WristPanel.prefab using Guid(76695bb5cce3fec498c11c135b0f1fe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ef0841bcf7c6bbf2a08452c1da83b140') in 0.0039425 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 86
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.998108 seconds.
+  path: Packages/com.weart.sdk/Runtime/TouchUI/Prefabs/Elements
+  artifactKey: Guid(7348b2a984b1e4c4d96805026a4f7803) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/TouchUI/Prefabs/Elements using Guid(7348b2a984b1e4c4d96805026a4f7803) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1cdcc80867b2ca0b38250cb549319df9') in 0.0006421 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.066549 seconds.
+  path: Packages/com.weart.sdk/Runtime/TouchUI/Prefabs/Elements/TouchIconButton.prefab
+  artifactKey: Guid(dce2fdddfaf13054f843e8b1937491d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/TouchUI/Prefabs/Elements/TouchIconButton.prefab using Guid(dce2fdddfaf13054f843e8b1937491d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '42566c43153a85da35d7cc6ca52ef9b9') in 0.0024585 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Packages/com.weart.sdk/Runtime/TouchUI/Prefabs/Elements/TouchToggle.prefab
+  artifactKey: Guid(1b7312dd3c2bcf24cba81f816681bbc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/TouchUI/Prefabs/Elements/TouchToggle.prefab using Guid(1b7312dd3c2bcf24cba81f816681bbc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2e6d8294bb200b26a492416e87db6368') in 0.0169752 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 28
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.846891 seconds.
+  path: Packages/com.weart.sdk/Runtime/GestureInteractions
+  artifactKey: Guid(57f12b6364c607549819561646714403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/GestureInteractions using Guid(57f12b6364c607549819561646714403) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '59942edcdc2044443a750b6462eeb4f4') in 0.0006199 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.073366 seconds.
+  path: Packages/com.weart.sdk/Runtime/GestureInteractions/Core
+  artifactKey: Guid(e3ba21c11abe2bb48b58dcd4c9c98ff9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/GestureInteractions/Core using Guid(e3ba21c11abe2bb48b58dcd4c9c98ff9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '213e848139e15bab8a102f7fad4a470e') in 0.0006668 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.720137 seconds.
+  path: Packages/com.weart.sdk/Runtime/GestureInteractions/Teleportation
+  artifactKey: Guid(416b7d99cbd0ed640b26863e8c6a01ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/GestureInteractions/Teleportation using Guid(416b7d99cbd0ed640b26863e8c6a01ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '982021982c1587a39ad85ef07cefd291') in 0.0005925 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.124724 seconds.
+  path: Packages/com.weart.sdk/Runtime/GestureInteractions/Teleportation/Prefabs
+  artifactKey: Guid(5acc6065cce411143ae06e0050512a09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/GestureInteractions/Teleportation/Prefabs using Guid(5acc6065cce411143ae06e0050512a09) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3aa18036a66dada566e767487c30f409') in 0.0008694 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.053669 seconds.
+  path: Packages/com.weart.sdk/Runtime/GestureInteractions/Teleportation/Prefabs/TeleportationProvider.prefab
+  artifactKey: Guid(cb1094520b6d9bc42a3655b5252ab49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.weart.sdk/Runtime/GestureInteractions/Teleportation/Prefabs/TeleportationProvider.prefab using Guid(cb1094520b6d9bc42a3655b5252ab49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd3b79a9f968f29b97f77732e9e1f7df3') in 0.0176727 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 89
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.996862 seconds.
+  path: Assets/Samples/XR Interaction Toolkit
+  artifactKey: Guid(e06828da23825ce4092bacaa27e23bfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit using Guid(e06828da23825ce4092bacaa27e23bfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6edea3a5bf4c632e9c37f4b99ad3eb25') in 0.0010051 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 36.149919 seconds.
+  path: Assets/Samples/WEART SDK/2.0.0/Simple Temperature
+  artifactKey: Guid(19f157ba6abefdf4e819128a90d71e5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/WEART SDK/2.0.0/Simple Temperature using Guid(19f157ba6abefdf4e819128a90d71e5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '76f006d1966f125c6a4eafe92694606a') in 0.000584 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.417699 seconds.
+  path: Assets/Samples/WEART SDK
+  artifactKey: Guid(701eeab007e21864d80edf767db0967c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/WEART SDK using Guid(701eeab007e21864d80edf767db0967c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '54c0c5bf354c5f99ab1c5a8435481497') in 0.000635 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.931819 seconds.
+  path: Assets/Samples/WEART SDK/2.0.0
+  artifactKey: Guid(1ebf3a00e9bd2834f828f6c1237ae749) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/WEART SDK/2.0.0 using Guid(1ebf3a00e9bd2834f828f6c1237ae749) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '753599e94f6f4bead75c9a8885916295') in 0.0005641 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.720089 seconds.
+  path: Assets/Samples/WEART SDK/2.0.0/Simple Temperature/Prefabs
+  artifactKey: Guid(a6d1fd97844cb5f4c8b3965c2bbbf044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/WEART SDK/2.0.0/Simple Temperature/Prefabs using Guid(a6d1fd97844cb5f4c8b3965c2bbbf044) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4bb396662599976413f9a03020283924') in 0.0006321 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.100422 seconds.
+  path: Assets/Samples/WEART SDK/2.0.0/Simple Temperature/Prefabs/HapticFinger.prefab
+  artifactKey: Guid(8f2c6f134078631478d9ae01e79d62d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/WEART SDK/2.0.0/Simple Temperature/Prefabs/HapticFinger.prefab using Guid(8f2c6f134078631478d9ae01e79d62d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7ecf69673d2e73b2cf1064415f749b93') in 0.0213687 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 61.496308 seconds.
+  path: Assets/Samples/WEART SDK/2.0.0/Simple Temperature/Scenes
+  artifactKey: Guid(5b9200903555a2d49853d09782cf558f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/WEART SDK/2.0.0/Simple Temperature/Scenes using Guid(5b9200903555a2d49853d09782cf558f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ecf45d9ce18f428bea12ff6e220a0bfa') in 0.001157 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.929720 seconds.
+  path: Assets/Samples/WEART SDK/2.0.0/Simple Temperature/Materials
+  artifactKey: Guid(5c784b74b4917b04c87f767067acb724) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/WEART SDK/2.0.0/Simple Temperature/Materials using Guid(5c784b74b4917b04c87f767067acb724) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f55fc318bbd495a6bc1f7b373ba372dd') in 0.0008804 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.043551 seconds.
+  path: Assets/Samples/WEART SDK/2.0.0/Simple Temperature/Materials/Cold.mat
+  artifactKey: Guid(54ae78a575ee1374b85ac84450b31a4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/WEART SDK/2.0.0/Simple Temperature/Materials/Cold.mat using Guid(54ae78a575ee1374b85ac84450b31a4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'acc86e88826f099baaba80a4a2c925d1') in 0.012242 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000101 seconds.
+  path: Assets/Samples/WEART SDK/2.0.0/Simple Temperature/Materials/TouchableCubeMat.mat
+  artifactKey: Guid(32b324d77d498b94993ddd2d2ba4c4c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/WEART SDK/2.0.0/Simple Temperature/Materials/TouchableCubeMat.mat using Guid(32b324d77d498b94993ddd2d2ba4c4c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '978ab3dfb7e2fa2fdbc1c366a2e1eabd') in 0.0134071 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
