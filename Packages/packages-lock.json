@@ -152,7 +152,7 @@
     },
     "com.unity.textmeshpro": {
       "version": "3.0.9",
-      "depth": 1,
+      "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.unity.ugui": "1.0.0"
@@ -264,11 +264,11 @@
       "url": "https://packages.unity.com"
     },
     "com.weart.sdk": {
-      "version": "file:C:/Users/emilio/Desktop/Medical Robotics/WEART_SDK_Unity_v2.0.0",
+      "version": "file:C:/Users/emilio/Desktop/Medical Robotics/pacchetto weart passatto funzionante/WEART_SDK_Unity_v2.0.0",
       "depth": 0,
       "source": "local",
       "dependencies": {
-        "com.unity.textmeshpro": "3.0.9"
+        "com.unity.textmeshpro": "3.0.6"
       }
     },
     "com.unity.modules.ai": {

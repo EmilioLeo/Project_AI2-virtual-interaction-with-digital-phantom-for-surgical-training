@@ -15,7 +15,7 @@ C:/Users/emilio/MR_ProjectAI2
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-60252
+56960
 Successfully changed project path to: C:/Users/emilio/MR_ProjectAI2
 C:/Users/emilio/MR_ProjectAI2
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,19 +49,19 @@ C:/Users/emilio/MR_ProjectAI2
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [20132]  Target information:
+Player connection [23464]  Target information:
 
-Player connection [20132]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 908451412 [EditorId] 908451412 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-U4SS03QQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [23464]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 1939091631 [EditorId] 1939091631 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-U4SS03QQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [20132]  * "[IP] 169.254.182.183 [Port] 0 [Flags] 2 [Guid] 908451412 [EditorId] 908451412 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-U4SS03QQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [23464]  * "[IP] 169.254.182.183 [Port] 0 [Flags] 2 [Guid] 1939091631 [EditorId] 1939091631 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-U4SS03QQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [20132]  * "[IP] 10.10.133.62 [Port] 0 [Flags] 2 [Guid] 908451412 [EditorId] 908451412 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-U4SS03QQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [23464]  * "[IP] 10.10.133.62 [Port] 0 [Flags] 2 [Guid] 1939091631 [EditorId] 1939091631 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-U4SS03QQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [20132] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [20132] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [23464] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [23464] Host joined alternative multi-casting on [225.0.0.222:34997]...
 Input System module state changed to: Initialized.
 [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-Refreshing native plugins compatible for Editor in 140.48 ms, found 10 plugins.
+Refreshing native plugins compatible for Editor in 60.37 ms, found 10 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.62f1 (4af31df58517)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.62f1/Editor/Data/Resources/UnitySubsystems
@@ -77,44 +77,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.62f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.62f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.62f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56852
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56324
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.62f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.028237 seconds.
-- Loaded All Assemblies, in  1.366 seconds
+Registered in 0.011768 seconds.
+- Loaded All Assemblies, in  0.631 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.080 seconds
-Domain Reload Profiling: 2438ms
-	BeginReloadAssembly (418ms)
+- Finished resetting the current domain, in  0.505 seconds
+Domain Reload Profiling: 1134ms
+	BeginReloadAssembly (172ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (2ms)
-	RebuildCommonClasses (123ms)
-	RebuildNativeTypeToScriptingClass (33ms)
-	initialDomainReloadingComplete (204ms)
-	LoadAllAssembliesAndSetupDomain (577ms)
-		LoadAssemblies (392ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (56ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (95ms)
+	LoadAllAssembliesAndSetupDomain (287ms)
+		LoadAssemblies (168ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (572ms)
-			TypeCache.Refresh (567ms)
-				TypeCache.ScanAssembly (518ms)
-			ScanForSourceGeneratedMonoScriptInfo (2ms)
+		AnalyzeDomain (284ms)
+			TypeCache.Refresh (282ms)
+				TypeCache.ScanAssembly (257ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (1082ms)
+	FinalizeReload (506ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (858ms)
+		SetupLoadedEditorAssemblies (422ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (32ms)
-			SetLoadedEditorAssemblies (31ms)
+			InitializePlatformSupportModulesInManaged (16ms)
+			SetLoadedEditorAssemblies (13ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (8ms)
-			ProcessInitializeOnLoadAttributes (585ms)
-			ProcessInitializeOnLoadMethodAttributes (201ms)
+			BeforeProcessingInitializeOnLoad (4ms)
+			ProcessInitializeOnLoadAttributes (294ms)
+			ProcessInitializeOnLoadMethodAttributes (95ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -123,7 +123,7 @@ Domain Reload Profiling: 2438ms
 Worker process is ready to serve import requests
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  3.078 seconds
+- Loaded All Assemblies, in  1.208 seconds
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
@@ -136,62 +136,189 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  2.664 seconds
-Domain Reload Profiling: 5728ms
-	BeginReloadAssembly (512ms)
+- Finished resetting the current domain, in  1.317 seconds
+Domain Reload Profiling: 2518ms
+	BeginReloadAssembly (221ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (19ms)
+		DisableScriptedObjects (9ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (63ms)
-	RebuildCommonClasses (123ms)
-	RebuildNativeTypeToScriptingClass (36ms)
-	initialDomainReloadingComplete (142ms)
-	LoadAllAssembliesAndSetupDomain (2250ms)
-		LoadAssemblies (1424ms)
+		CreateAndSetChildDomain (31ms)
+	RebuildCommonClasses (53ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (67ms)
+	LoadAllAssembliesAndSetupDomain (842ms)
+		LoadAssemblies (544ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1137ms)
-			TypeCache.Refresh (905ms)
-				TypeCache.ScanAssembly (819ms)
-			ScanForSourceGeneratedMonoScriptInfo (158ms)
-			ResolveRequiredComponents (67ms)
-	FinalizeReload (2665ms)
+		AnalyzeDomain (424ms)
+			TypeCache.Refresh (340ms)
+				TypeCache.ScanAssembly (308ms)
+			ScanForSourceGeneratedMonoScriptInfo (58ms)
+			ResolveRequiredComponents (24ms)
+	FinalizeReload (1317ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (2002ms)
+		SetupLoadedEditorAssemblies (1020ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (23ms)
-			SetLoadedEditorAssemblies (24ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (10ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (404ms)
-			ProcessInitializeOnLoadAttributes (1222ms)
-			ProcessInitializeOnLoadMethodAttributes (314ms)
-			AfterProcessingInitializeOnLoad (15ms)
-			EditorAssembliesLoaded (1ms)
+			BeforeProcessingInitializeOnLoad (166ms)
+			ProcessInitializeOnLoadAttributes (633ms)
+			ProcessInitializeOnLoadMethodAttributes (191ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (24ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
-Refreshing native plugins compatible for Editor in 48.67 ms, found 10 plugins.
+		AwakeInstancesAfterBackupRestoration (15ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 26.31 ms, found 10 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 6832 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 87 unused Assets / (427.4 KB). Loaded Objects now: 7264.
-Memory consumption went from 255.7 MB to 255.3 MB.
-Total: 11.901600 ms (FindLiveObjects: 0.983900 ms CreateObjectMapping: 1.459200 ms MarkObjects: 8.708500 ms  DeleteObjects: 0.747900 ms)
+Unloading 87 unused Assets / (420.5 KB). Loaded Objects now: 7266.
+Memory consumption went from 256.3 MB to 255.8 MB.
+Total: 6.611800 ms (FindLiveObjects: 0.709900 ms CreateObjectMapping: 0.800100 ms MarkObjects: 4.750000 ms  DeleteObjects: 0.350600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/WeArtTrackingCalibrationEditor.cs: df1d6e79b08a4f03221e95228c36a7b4 -> 52ed591977da84e67eda9380ec306efd
+  custom:scripting/monoscript/fileName/WeArtHandController.cs: e6ac1c4be89d650413e6b1c869af8049 -> 6a5217ba5324906f1b7784d5b4864689
+  custom:scripting/monoscript/fileName/WeArtEasyGraspRecorderMenuItem.cs: d67f4e2773abe73c9680d83bdcc90572 -> 0ec9756d4c2934af400b9df747d7c06d
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/TouchButtonEditor.cs: 22912a5711a94b70efbbf8ff0b0311bb -> fa76c443fa1530b510e64413eb69f853
+  custom:scripting/monoscript/fileName/IWeArtEffect.cs: b4b993260876006de990fe19ed062991 -> 86c80179f5cbeb716e41585a9dd8be85
+  custom:scripting/monoscript/fileName/WeArtDeviceEditor.cs: 7acf5da430aee17c67420752f0e20d0c -> 6eb52f31896610ee478f2db83884bcd8
+  custom:scripting/monoscript/fileName/WeArtAbudction.cs: fa8cddfd871f32d31883ec2a21111e37 -> 7991bedb32e2fa545c7ba2e92b9722ac
+  custom:scripting/monoscript/fileName/BleConnectionPanel.cs: 8d4d49477b606e45a083b3eb3f287e2f -> 44de0103b919d0116dbbf5c886f641f7
+  custom:scripting/monoscript/fileName/WeArtGraspCheck.cs: f2f5d9fbf25552fb883bf610070d9415 -> aa95dccd53c6b862944b08c68e4e60c4
+  custom:scripting/monoscript/fileName/WeArtWristOrientationObjectEditor.cs: 036a1c7224cc7f7f374e025e34b274e9 -> ad22b7dfde6b5dfcca76c6909f68caae
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/TextureTypeScriptableObject.cs: 4e176907afa38032d16f66ba43a93609 -> 3500a8c0146e0aef7a221db4bccd252b
+  custom:scripting/monoscript/fileName/WeArtAnchoredObjectEditor.cs: 8579ff2da4c9073cd75181c29d3f7898 -> b6361ab84b7906a976e979930dda6269
+  custom:scripting/monoscript/fileName/TeleportationProviderEditor.cs: 8d157ad563973cac0a79d1d7fcd992a1 -> fac9de6797c5773d40954a8cb2fd5499
+  custom:scripting/monoscript/fileName/WeArtHandSurfaceExploration.cs: 72054261be5505b2107d29e40bec241a -> 40f06f99f5df8e4b91f055f95c4aa098
+  custom:scripting/monoscript/fileName/WeArtTemperature.cs: d3fe7ec7d8f5c3a3bdbe7a075ef9f999 -> d578f7eac40e75f809ee28f542b10367
+  custom:scripting/monoscript/fileName/G2ModeSwitcher.cs: 66a0bcc60cea40cd186483f60d16b5b5 -> b1eb570fea06d57b61aa7c350dea2418
+  custom:scripting/monoscript/fileName/BleDevice.cs: 937ab9ba07ba3affae423a3be342edca -> 9661d86df1f0cd415353ad1ab80a8b75
+  custom:scripting/monoscript/fileName/WeArtHapticObjectEditor.cs: 35c8c60ae3699bdd6aeb1f81182068bf -> 58a514479ea7b1304ff9c1447b5123b9
+  custom:scripting/monoscript/fileName/TouchButton.cs: 433175d74c20d7c1c230febfd31e40ca -> 614ab1d320fa8d96de5c35e0b0d9d80e
+  custom:scripting/monoscript/fileName/WeArtBillboard.cs: 5827274d223cd7c03044a8777d843e2c -> d564414ed2867776e3ce8f05badd35cd
+  custom:scripting/monoscript/fileName/WeArtTouchableObject.cs: 3b5d51dcbf5a2fa10eb106a4fc23bfed -> f822cdfa13eaf13adba6488e085c2549
+  custom:scripting/monoscript/fileName/WristPanel.cs: e3ec51c9a6366802857a047926485b3b -> f9939c45d1c1a9f072eb6fa10175d11b
+  custom:scripting/monoscript/fileName/WeArtShortcuts.cs: c42b225c9e8b37a81d20e5597487ae9e -> dce3c382342e215fff744a84be4e87bd
+  custom:scripting/monoscript/fileName/WeArtStatusDisplayEditor.cs: 1ab14499f8a326efea80dd025fb7f245 -> 7128aefb456728c8ebc9458342464bf0
+  custom:scripting/monoscript/fileName/BluetoothManager.cs: 9749457de1c10228e0b01c8548b73189 -> 582537518b34c35f9ea46c41d4fa50bb
+  custom:scripting/monoscript/fileName/WeArtDevice.cs: 9be51db2dd02614a7282db1da26f3d1d -> b66e3b7a587acdd4572fd4c7cb20b52f
+  custom:scripting/monoscript/fileName/LaserOrigin.cs: 267e39a6167accaae8829c81e8258533 -> 8461130c5fa98c17a7d79698ec7be722
+  custom:scripting/monoscript/fileName/TouchToggle.cs: 35c10879fe6a9b0866d09b63711625d6 -> d0dee2a1c0131323ae1028fb853cf2f9
+  custom:scripting/monoscript/fileName/RememberedDevice.cs: dae394be25eae900e64c1df7b1f4dc80 -> c1e0073bc5418cb275a5965c5a116a0f
+  custom:scripting/monoscript/fileName/WeArtMessageCustomSerializer.cs: 18c98cc6c633c56e6291131c06223ee1 -> 0f26db0b7468753701b29d813858af51
+  custom:scripting/monoscript/fileName/WeArtTouchableObjectMenuItem.cs: 50aae6ad4c2157827b08d016026db8b8 -> a98e97c7b672c8d52c05b59d9cd7af1e
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/WeArtInterpolateToPosition.cs: feadf12a9e28e60321468761938e3d54 -> 4ad5588665418a7c9bd72fcd029b74b7
+  custom:scripting/monoscript/fileName/WeArtThimbleSensorObject.cs: 16c7880a7aea4dff788cc862dca73587 -> 3727365032b0164d24ad09fc257c8401
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/WeArtShortcutsEditor.cs: 022c164693e06deb84f7f5ff8109cb10 -> 6bc14ddee24b16ec87ca01453527904e
+  custom:scripting/monoscript/fileName/WeArtNetwork.cs: 6b925051b0e2c1f751aa6b82c223d654 -> fef7a3167ff91fcf51c6f39d010c9216
+  custom:scripting/monoscript/fileName/WeArtGestureManager.cs: 6e4c4e35eb46e412d6c8a5a6ebc32a7e -> e7d8f98ad98b3b653cd4e0795cec07f3
   custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/DataReceivedCallback.cs: 98461cacca8c71c8a9dd7f7a43f14043 -> 55e26afe2b3610e28a34b7f1f8e88675
+  custom:scripting/monoscript/fileName/WeArtStatusTracker.cs: 4ff0b9ecc7a34743d6e8736c3e2803b3 -> 87c616d37d315033c395ba42e6870bd6
+  custom:scripting/monoscript/fileName/BuildFailTDPro.cs: 1fe979d75f35ad49e3cc3b4d282d0e41 -> 4f892fe5194ce826d8ab2d91fb9982fd
+  custom:scripting/monoscript/fileName/WeArtPlayerController.cs: a40854e03761a5d4112ff11b21cf0e38 -> 9864a477c0762da597442bf194783de5
+  custom:scripting/monoscript/fileName/WeArtHandGraspingSystemEditor.cs: ee7e8e83cb64f8795be9ebc834588088 -> 47c7cb5f7896fe7336dde7905074de8a
+  custom:scripting/monoscript/fileName/WeArtPropertyDrawer.cs: 036611413b0a7a9de11ca360d080eb00 -> dfac72f9042fb65b0cb32a41b7c24bae
+  custom:scripting/monoscript/fileName/WeArtDeviceTrackingObjectEditor.cs: a12265b9905d9bf45bc7e794489f456f -> 54f4594a9a82300e3f8342ef56a69a57
+  custom:scripting/monoscript/fileName/HandCalibrationState.cs: e02c30c6d10718a884b18afbae075229 -> 744c91e5e61bc77a7a9bd922e3f6d819
+  custom:scripting/monoscript/fileName/WeArtThimbleTrackingObjectEditor.cs: 916a330b68874143cc2502826d781bfa -> 2c7dcf3f8dd45600942872ca066cb8db
+  custom:scripting/monoscript/fileName/WeArtTexture.cs: 8f5a3f47f2dc7da0392decdaa356ddf7 -> a7775319790e69cdf8d035b83f5106f5
+  custom:scripting/monoscript/fileName/WeArtDeviceStatusDisplay.cs: 5137bd79e0b193053bf1a173cca4503c -> 433487426ddc8643c6903286da6e1504
+  custom:scripting/monoscript/fileName/FingerData.cs: 4d11c16bc6262c1a744d6326fffdcdeb -> f7d841969b16b291a51247082bedefcb
+  custom:scripting/monoscript/fileName/WeArtVolumeEffects.cs: 40dbcd95f9026e606673fd9aec76bef8 -> 739956927e21c038021a58a98aebf3cf
+  custom:scripting/monoscript/fileName/WeArtSceneManagerEditor.cs: 313630308a256e4769de25f39f855172 -> 6456e7a5fd07752d749b13a8aace348c
+  custom:scripting/monoscript/fileName/StartPanelEditor.cs: 915b4589bb2d4aa6d9e7c024f4407b69 -> d0b38b9d747d07d87eb86f208fef1382
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/WeArtFollowTargetEditor.cs: dc6ac3c99fcfb07e9d0ebe06e9ba68ea -> b7286f41fb1a6a08254ab1714480acf8
+  custom:scripting/monoscript/fileName/WeArtEasyGraspManager.cs: 70a93160813b8e9cf638f1f630dbb379 -> 76061707c2ebf9741b732802ff0aa0e7
+  custom:scripting/monoscript/fileName/WeArtHandSurfaceExplorationEditor.cs: 5d1d293c93c17e7f5735a4f246b9211a -> 23c7b15140d44be1094919f9871d7b62
+  custom:scripting/monoscript/fileName/ConnectionCallback.cs: 79463389a71c9810005a0b4c9d5f3edd -> 84563e32657ecc7bfde50180cdca4f44
+  custom:scripting/monoscript/fileName/WeArtAnchoredObject.cs: 55b7855cc31ba6a9920f75ea21c99c2b -> 95baf8b35fa13255aec790085f18a1c1
+  custom:scripting/monoscript/fileName/GestureEvents.cs: 87f49a9f635651ddf76e58746159a035 -> d3680e371c63c032e03e68c5d0be63a7
+  custom:scripting/monoscript/fileName/TeleportationProvider.cs: e49092910692a85717054dd44bf0ac3c -> 31674c9bc37cd6d72e7376db8e9545d4
+  custom:scripting/monoscript/fileName/WristPanelEditor.cs: 9e6af78a80993e7e442e4a2a084ef211 -> 4c00882f9dd9eb675f63f95631937f11
+  custom:scripting/monoscript/fileName/TouchDiverInfolEditor.cs: fd2c1e6d19dba95002e0f342de923d40 -> e396af94b52f828055d8afcc8867c13d
+  custom:scripting/monoscript/fileName/WeArtEasyGraspPoseEditor.cs: 6d979a11310d472e7ca50c29063f48ed -> 0f85e98ad0168cec4950ce846e40a7c9
+  custom:scripting/monoscript/fileName/WeArtSceneManager.cs: 0f2ce39836706be7e9e4f43ac7e9aca8 -> 4b879ebcec24061649bb28f9eafcb0d0
+  custom:scripting/monoscript/fileName/WeArtChildColliderEditor.cs: 029244274a9b00491ef9650057794f21 -> 6173d8f8a3dbb01fe594b07b542a9ae5
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/WeArtDeviceTrackingObject.cs: d0a5c0e90b56c984bd0ebe41d03635ff -> 0d4dd450ba752b966ac611d184d80fd1
+  custom:scripting/monoscript/fileName/GestureProvider.cs: 0e424283c4ccdd2b41bc9bec5416a2e7 -> 49d4540d991065e884658be992a90a05
+  custom:scripting/monoscript/fileName/WeArtFinderMenuItem.cs: e47f268ff608e96f8d5d4cc07cc01454 -> 438110dc8dad27f423e405790d863a79
+  custom:scripting/monoscript/fileName/WeArtControllerEditor.cs: ed8f493b07631003352c063aafc9c32c -> e4f71108aa114aaa1e8ce1434c99570d
+  custom:scripting/monoscript/fileName/LoadingUiController.cs: 5006c67a064b8d8a726a91e7dece0196 -> bc108c1b266d7f3c431b46ce3bb8a665
+  custom:scripting/monoscript/fileName/WeArtHandGraspingSystem.cs: de6c3d00e66a4f7664fe02cf4fa591e9 -> 1f6c7bd0c6b6408a2aeece80d577dc39
+  custom:scripting/monoscript/fileName/CalibrationInfoField.cs: b3ea7c7520cf15356dd02d693f983311 -> 2c53fda166a261b07798350dfaaa15b5
+  custom:scripting/monoscript/fileName/WeArtForce.cs: c3f1301930703d58e431103697d08ffd -> fda7da342fc0ccdad2f2b4d2041c8cd2
+  custom:scripting/monoscript/fileName/WeArtLog.cs: e42da0b6f228cd9f6f79ac1258d4818c -> bf3caad1f717c24fb2106f552aa93257
+  custom:scripting/monoscript/fileName/WeArtMessages.cs: 7e6129e528d21ad70fbf8fcccec96003 -> 11b8f74f9fcc1b36b13e63f49d26cebf
+  custom:scripting/monoscript/fileName/Gesture.cs: 9a721bfbd6c307a9f8144213a266bf0c -> 152ff192e60b00c269b9c79a95fa5241
+  custom:scripting/monoscript/fileName/WeArtClosurePropertyDrawer.cs: 36fc82bdc23e2c266ca804c97e22e41d -> 784da4eada2b7706dd025f8437852c2e
+  custom:scripting/monoscript/fileName/WeArtSpawnPoint.cs: 1886738b93ede6b9564cdbb0c4bb5692 -> 918433cbe4af1b3da313b4b842513b60
+  custom:scripting/monoscript/fileName/TouchToggleEditor.cs: 2135263fffb96de96c0f1759a446c6e0 -> b1c86fab4d192c88c718e3c4d84226e1
+  custom:scripting/monoscript/fileName/WeArtTemperaturePropertyDrawer.cs: 0553ecca21b37a3f726c70817fc989cf -> 1aafa6f0d08dc06e361b9a064f9811d0
+  custom:scripting/monoscript/fileName/BleConnectionPanelEditor.cs: 20fd64bb8e87b8bfd3e716a52ba1fde3 -> 77122c6172da9db54dc8d9f9baf2f051
+  custom:scripting/monoscript/fileName/WeArtClosure.cs: 6a61253c8240cde23b2406f1abd6312b -> 4ab69588a7807ef00daa76b65b096db2
+  custom:scripting/monoscript/fileName/WeArtBillboardEditor.cs: dc26a43b3965724e7133cead971b3369 -> 2a1487390be5cf7143cae78160840495
+  custom:scripting/monoscript/fileName/WeArtThimbleTrackingObject.cs: 05a7d9be3f73042daf1d4d2c65e697fd -> 63342ab44d3efde116b9cda2fd33b6a7
+  custom:scripting/monoscript/fileName/CalibrationAreaManager.cs: f294caac9c956cc7209cfccde2322138 -> 2949cc4e95641e9f0adda9f7a0310e9b
   custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/DeviceCommands.cs: a98a4c609695b1e496229deab203f86a -> 644da303039462349378f82210904afd
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/WeArtComparers.cs: ab4c3c3ce7dd388293b8d2f64f466eb0 -> 7b79607af0868fe6e5450318824e8955
+  custom:scripting/monoscript/fileName/WeArtDeviceStatusDisplayEditor.cs: f1043d6a9e8748ef028b322ef4a6d98b -> 348621e726c647cf25a0c2242fd67d58
+  custom:scripting/monoscript/fileName/WeArtTouchableObjectEditor.cs: e592ed439e4bd24d861e425fc98446db -> 85bd59cbea258bcc411da6d34590ef3c
+  custom:scripting/monoscript/fileName/CalibrationPhrases.cs: c7b3215e91a54dbaeb1ac5a07e94e32f -> 804170436c025ccb9edd5cd2861882fd
+  custom:scripting/monoscript/fileName/WeArtSpawnPointEditor.cs: 74b4bd715f9407d7a62e751f8efbb284 -> 077ce118dcebea816d8b834be54ba9a0
+  custom:scripting/monoscript/fileName/ErrorCallback.cs: 4556a0721ad2e8ddfe5376b136e919b1 -> 91ce26e00bdb78e3a8bceedeef52648d
+  custom:scripting/monoscript/fileName/WeArtVolumeEffectsEditor.cs: eedcc93736373f01eeeba881916508d1 -> d7d387133d416ee5183a72499c074436
+  custom:scripting/monoscript/fileName/WeArtUIToolkitExtensions.cs: 4cbf16435006323f70bc399fe367f5fb -> f2781702be5305e922634f08aa4cb83f
+  custom:scripting/monoscript/fileName/WeArtHapticActuationElement.cs: 0aad2d237cd05d77446dea8b987bb31d -> d87b0714e8f58e97c03e4163c344db6f
+  custom:scripting/monoscript/fileName/WeArtCommon.cs: 891c2fa39465ead33e6d3837421aa6af -> ee0de1a03446f394ecdc2ff694fff2d9
   custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:scripting/monoscript/fileName/GestureRecognizer.cs: 07c66eb977537d25cf023f0d54588046 -> ff7fa5c08ebd2eb3c9658ed0f2ac603f
+  custom:scripting/monoscript/fileName/CalibrationManager.cs: d7064fc50a0cb719bff8121c588d7778 -> 76dc33dbaf0e0b731413b49938c642d3
+  custom:scripting/monoscript/fileName/WeArtHapticObject.cs: c947496c81657d3288f5f6df9f94ac6e -> a97ba4118f5a5e15dabb98f3f04c5321
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/TeleportAnimation.cs: 12924b7d4ea315bb3bc5b2d008c9a610 -> 75d5ff7cafd8faab307f2a845c4823f0
+  custom:scripting/monoscript/fileName/WeArtCustomJsonConverters.cs: a53f96815da50de15010b1c479bc70cf -> 0cdf409b5aa8d4c25876d72b5c6a3b60
+  custom:scripting/monoscript/fileName/WeArtEasyGraspPose.cs: 04eb1e6f8b24e80e5a93ad3b9c0a1822 -> 0b3ae45abf357ddf1e0c0c356653044b
+  custom:scripting/monoscript/fileName/WeArtMessageSerializer.cs: 57ce8ff979591d03baae440b0d7f4597 -> 0a9792e17540810e5052a231f5b53e4c
+  custom:scripting/monoscript/fileName/WeArtPlayerControllerEditor.cs: 413de4a88f665ce79990765f35f77ec7 -> 09a0bf6f1c50841c14dbfa6e37cbfe56
+  custom:scripting/monoscript/fileName/WeArtHandControllerEditor.cs: a33a2333b0b9965165ae63ed8122a8f8 -> 4af1732edf987cc5329f50f78431ec0b
+  custom:scripting/monoscript/fileName/WeArtInterpolateFingers.cs: 7e3b8a1fe6af3abae5f8ac468974f408 -> 917842d11e0dcf4fa8507769e1791338
+  custom:scripting/monoscript/fileName/WeArtPrefabMenuItem.cs: c90c2e3e6fbc5f9357c7b43f15b50d0d -> 3dd73a5f52914f439732b6164f0dbf73
+  custom:scripting/monoscript/fileName/WeArtHapticActuationPanel.cs: e6bf17f05ee0cabe25c2485a031c36c1 -> 5387128d5a04a7c183b00f2a3c4fc2a1
+  custom:scripting/monoscript/fileName/StartPanel.cs: 32b4c4fedf7b94b361f769ad7c09be7b -> 92dec9526fb9568f87dba27297b5edec
+  custom:scripting/monoscript/fileName/ScanResultCallback.cs: 64f2af385cf3e81852ce3bd79f8498fd -> 0d7222ed9d0082c98816833ebc7e23c8
+  custom:scripting/monoscript/fileName/WeArtClient.cs: ebd149db9c90481cdbbba7725d56383b -> 9f85ad9534c235cf4b920135b93debee
+  custom:scripting/monoscript/fileName/ColliderHandle.cs: f681a239a4c87b13a06c1aab7f7e553f -> 8f578d973c4af14dbb28270bc38b70b1
+  custom:scripting/monoscript/fileName/WeArtGhostHandController.cs: 151d6f26a5d598600a77c7b6aeb4b4ca -> ae22990d46a39f449f011081b8b33d82
+  custom:scripting/monoscript/fileName/WeArtController.cs: a0ac317069de9d5364aa26491a9b8300 -> 61506766d4d1f2bccd7285111128b190
+  custom:scripting/monoscript/fileName/WeArtStatusDisplay.cs: ab4e72f5c2e6104c97611df6aa17d892 -> 7d55116a8d4d6e48670515ca725dbaf5
+  custom:scripting/monoscript/fileName/TouchDIVERInfo.cs: da9c91612ff2cc0c7252b92f4042a1f3 -> 1c56733b2eeddd3043c38b76589e6508
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/WeArtDebuggerMenuItem.cs: a78f176c443ae2c4f042c515adb6d401 -> b816e2617633ae8ac4dc6365fe18a242
+  custom:scripting/monoscript/fileName/WeArtGhostHandControllerEditor.cs: cfc6e2703f6ccdb85c178c5ae2654c8f -> 79aaaefdedc4770a36ee06e5af3bc644
+  custom:scripting/monoscript/fileName/WeArtThimbleSensorObjectEditor.cs: e3df870078956fe2fc28633ebe7b06fb -> 00de1e70ed1927be64c478a4e177064f
+  custom:scripting/monoscript/fileName/WeArtTouchEffect.cs: 70e5b8828f9700f36ca286263223cf9c -> b084fd2fa0297cbdaa4bbdc5335343f0
+  custom:scripting/monoscript/fileName/WeArtForcePropertyDrawer.cs: fc2695f48d7d24e942803ef9ea1cb0c4 -> 041b6cccad79ec86acfb6599cc1c3abc
+  custom:scripting/monoscript/fileName/WeArtComponentEditor.cs: 97b3aeb10ecfd659763c6b79e827f872 -> 0b555a2d2f325c2fa42f6cbeaa8fddf0
+  custom:scripting/monoscript/fileName/WeArtGraspPose.cs: c1fee4cb1e2699e7daa8337fff571310 -> af3606c62962159702d95eba46cd3ccb
+  custom:scripting/monoscript/fileName/WeArtStatusTrackerEditor.cs: 1e8ababd7c17116e8ed32b855a6fbef1 -> bac753ee976a4cc0144875a0ef2d7ba2
+  custom:scripting/monoscript/fileName/WeArtWristOrientationObject.cs: 4b0fe4d76511eb3baa5a1d0e072d9d41 -> a162163cd5eb76ccbcdc52c0ed6df307
+  custom:scripting/monoscript/fileName/WeArtFollowTarget.cs: 72d539bab35faccea92f067ed134f3b9 -> ba1ec717e1efb04a4ce9b231e88cc55d
+  custom:scripting/monoscript/fileName/WeArtTexturePropertyDrawer.cs: 355277dcd0822c832ad1f0f11f27863a -> 7cf2c26b6fce06dbc8e327bf5357ac46
+  custom:scripting/monoscript/fileName/WeArtTrackingCalibration.cs: 683bf92241d5f50543c7545836d0570e -> f3afa4bd9dd7dbf92b83512ea6176cdf
+  custom:scripting/monoscript/fileName/WeArtChildCollider.cs: 780b61c9f06bc9fb1c74d820bcd3bb57 -> 5d3489e498fd3660b88596fecc05933e
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: Operazione di I/O terminata a causa dell'uscita dal thread oppure della richiesta di un'applicazione.
 AssetImportWorker is now disconnected from the server

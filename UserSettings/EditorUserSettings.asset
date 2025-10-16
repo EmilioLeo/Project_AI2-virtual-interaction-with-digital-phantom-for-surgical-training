@@ -18,6 +18,12 @@ EditorUserSettings:
       value: 025303070653595f54585b7516215a4412154d7b2e2b75667b7d4a37b6e6373a
       flags: 0
     RecentlyUsedSceneGuid-3:
+      value: 0755075e01035d5a5e565d2149215b4447151c7a7a2e24357f7b1b63e0b86361
+      flags: 0
+    RecentlyUsedSceneGuid-4:
+      value: 5157040453000a0e5e5e557742760d444f15407f747f2764292d4863e3b76668
+      flags: 0
+    RecentlyUsedSceneGuid-5:
       value: 5a09555304560a59590b5f7516770f4412164f7d2a2e77362c28186ab1e6676c
       flags: 0
     UnityEditor.ShaderGraph.Blackboard:
@@ -48,4 +54,3 @@ EditorUserSettings:
   m_VCAllowAsyncUpdate: 1
   m_VCScanLocalPackagesOnConnect: 1
   m_ArtifactGarbageCollection: 1
-  m_CompressAssetsOnImport: 1
