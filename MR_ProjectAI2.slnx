@@ -1,0 +1,10 @@
+﻿<Solution>
+  <Project Path="WeArtSDK.Runtime.csproj" />
+  <Project Path="Unity.AI.Navigation.Samples.csproj" />
+  <Project Path="WeArtSDK.Editor.csproj" />
+  <Project Path="Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj" />
+  <Project Path="Unity.AI.Navigation.Samples.Initialization.Editor.csproj" />
+  <Project Path="Assembly-CSharp.csproj" />
+  <Project Path="Assembly-CSharp-Editor.csproj" />
+  <Project Path="Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj" />
+</Solution>
