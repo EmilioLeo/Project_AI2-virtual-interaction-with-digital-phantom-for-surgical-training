@@ -1,0 +1,83 @@
+{
+    "version": 1,
+    "name": "Pippoactions",
+    "maps": [
+        {
+            "name": "New action map",
+            "id": "51b17c6a-cca0-4c36-b9a0-26eab6dd8d5a",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "59fa38b3-d5b6-4606-86a3-a600cced4706",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "95799ea8-0050-4093-af57-8a8adf78a963",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "XRI Hand map",
+            "id": "abe520f2-2476-4e79-9b35-4ca4f9091bfb",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "1fe1b959-6467-4c52-95b3-6333ef201a1b",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "move",
+                    "type": "Value",
+                    "id": "a90a9422-d959-4793-a5b1-87ace661bbbf",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "7ed6de5a-ca99-4068-973f-1af8b6b3b32f",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d4b07bdc-3f62-45f9-9cbd-3d32ddeb46be",
+                    "path": "<XRController>{RightHand}/{Primary2DAxis}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
