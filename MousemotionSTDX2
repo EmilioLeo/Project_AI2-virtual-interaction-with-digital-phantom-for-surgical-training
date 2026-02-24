@@ -1,0 +1,139 @@
+using UnityEngine;
+using TMPro;
+using System.Net.Sockets;
+using System.IO;
+using System;
+
+[RequireComponent(typeof(MeshFilter), typeof(Renderer), typeof(Collider))]
+public class RetractMusclePython : MonoBehaviour
+{
+    [Header("Settings")]
+    public string structureName;
+
+    [Header("Network Settings")]
+    public string serverIP = "127.0.0.1";
+    public int serverPort = 65432;
+
+    [Header("Physics Interaction")]
+    // Con scala 100, potresti aver bisogno di una forza molto più alta
+    public float forceMultiplier = 500.0f; 
+
+    private MeshFilter mf;
+    private Mesh mesh;
+    private Vector3[] vertices;
+    private int vertexCount;
+
+    private TcpClient client;
+    private NetworkStream stream;
+    private BinaryReader reader;
+    private BinaryWriter writer;
+    private byte[] receiveBuffer;
+
+    private bool isDragging = false;
+
+    void Start()
+    {
+        mf = GetComponent<MeshFilter>();
+        if (mf != null)
+        {
+            mesh = mf.mesh; 
+            mesh.MarkDynamic(); 
+            vertexCount = mesh.vertexCount;
+            vertices = new Vector3[vertexCount];
+            receiveBuffer = new byte[vertexCount * 3 * 4];
+        }
+        ConnectToServer();
+    }
+
+    void ConnectToServer()
+    {
+        try {
+            client = new TcpClient(serverIP, serverPort);
+            client.NoDelay = true;
+            stream = client.GetStream();
+            reader = new BinaryReader(stream);
+            writer = new BinaryWriter(stream);
+            SendMeshToServer();
+        } catch (Exception e) { Debug.LogError($"Errore: {e.Message}"); }
+    }
+
+    void SendMeshToServer()
+    {
+        if (mesh == null) return;
+        try {
+            writer.Write(mesh.vertexCount);
+            Vector3[] localVerts = mesh.vertices;
+            foreach (Vector3 v in localVerts)
+            {
+                // Converte da locale (0-1) a mondo (0-100+)
+                Vector3 worldV = transform.TransformPoint(v); 
+                writer.Write(worldV.x);
+                writer.Write(worldV.y);
+                writer.Write(worldV.z);
+            }
+            int[] triangles = mesh.triangles;
+            writer.Write(triangles.Length);
+            foreach (int idx in triangles) writer.Write(idx);
+            writer.Flush();
+        } catch (Exception e) { Debug.LogError($"Errore invio mesh: {e.Message}"); }
+    }
+
+    void Update()
+    {
+        if (client == null || !client.Connected) return;
+
+        if (Input.GetMouseButtonDown(0)) isDragging = true;
+        if (Input.GetMouseButtonUp(0)) isDragging = false;
+
+        SendForceInput();
+        ReceiveMeshUpdate();
+    }
+
+    void SendForceInput()
+    {
+        Vector3 targetForce = Vector3.zero;
+        if (isDragging)
+        {
+            float mouseX = Input.GetAxis("Mouse X");
+            float mouseY = Input.GetAxis("Mouse Y");
+            // Forza calcolata in base alla telecamera (World Space)
+            targetForce = (Camera.main.transform.right * mouseX + Camera.main.transform.up * mouseY) * forceMultiplier;
+            
+            // Debug visivo della forza nel mondo
+            Debug.DrawRay(transform.position, targetForce, Color.red);
+        }
+        
+        try {
+            writer.Write(targetForce.x);
+            writer.Write(targetForce.y);
+            writer.Write(targetForce.z);
+            writer.Flush();
+        } catch {}
+    }
+
+    void ReceiveMeshUpdate()
+    {
+        if (!stream.DataAvailable) return;
+        try {
+            int payloadSize = reader.ReadInt32();
+            if (receiveBuffer.Length < payloadSize) receiveBuffer = new byte[payloadSize];
+            
+            int dataRead = 0;
+            while(dataRead < payloadSize) 
+                dataRead += stream.Read(receiveBuffer, dataRead, payloadSize - dataRead);
+
+            using (MemoryStream ms = new MemoryStream(receiveBuffer))
+            using (BinaryReader br = new BinaryReader(ms))
+            {
+                for (int i = 0; i < vertexCount; i++)
+                {
+                    Vector3 worldPos = new Vector3(br.ReadSingle(), br.ReadSingle(), br.ReadSingle());
+                    // Torna allo spazio locale (divide per 100 internamente)
+                    vertices[i] = transform.InverseTransformPoint(worldPos); 
+                }
+            }
+            mesh.vertices = vertices;
+            mesh.RecalculateBounds();
+        } catch {}
+    }
+}

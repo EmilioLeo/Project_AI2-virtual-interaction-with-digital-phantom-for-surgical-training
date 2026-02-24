@@ -52,6 +52,14 @@ public class TreatmentSetup : MonoBehaviour
             }
         }
 
+        for(int j=0;j<vertebre.Length;j++ )
+        {
+            if ((j==3  || j==4) && vertebre[j]!=null)
+            {
+                vertebre[j].GetComponent<Renderer>().material = yellowTransparent;
+
+            }
+        }
         // salva materiali originali vertebre
         originalVertebraMaterials = new Material[vertebre.Length];
         for (int i = 0; i < vertebre.Length; i++)
