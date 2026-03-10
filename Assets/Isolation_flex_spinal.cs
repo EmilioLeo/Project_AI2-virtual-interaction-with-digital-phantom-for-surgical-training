@@ -9,10 +9,11 @@ public class DeformerFlexSpinal : MonoBehaviour
     public float restoreSpeed = 5f;  // Velocità con cui il muscolo torna normale
 
     MeshFilter mf;
+    private int vertexCount;
     Mesh mesh;
     Vector3[] originalVertices;
     Vector3[] displacedVertices;
-    
+    Vector3[] vertices;
     // Per gestire il dito Weart
     Transform presser; 
 
@@ -24,6 +25,8 @@ public class DeformerFlexSpinal : MonoBehaviour
         mf.mesh = mesh;
         
         originalVertices = mesh.vertices;
+        vertexCount = mesh.vertexCount;
+        vertices=new Vector3[vertexCount];
         displacedVertices = new Vector3[originalVertices.Length];
         System.Array.Copy(originalVertices, displacedVertices, originalVertices.Length);
         
@@ -113,23 +116,21 @@ public class DeformerFlexSpinal : MonoBehaviour
     mesh.RecalculateBounds();
 }
 
-    /*void RestoreShape()
-    {
-        // Se nessun dito tocca, torna lentamente alla forma originale
-        bool isRestored = true;
-        for (int i = 0; i < displacedVertices.Length; i++)
+   public void ResetMeshflexspinal()
+   {
+
+        for (int i = 0; i < vertices.Length; i++)
         {
-            if (displacedVertices[i] != originalVertices[i])
-            {
-                displacedVertices[i] = Vector3.Lerp(displacedVertices[i], originalVertices[i], Time.deltaTime * restoreSpeed);
-                
-                // Ottimizzazione: se è quasi tornato, scatta alla fine
-                if (Vector3.Distance(displacedVertices[i], originalVertices[i]) > 0.0001f)
-                    isRestored = false;
-            }
+            vertices[i] = originalVertices[i];
         }
-        
-        mesh.vertices = displacedVertices;
-        if (!isRestored) mesh.RecalculateNormals();
-    }*/
+
+        mesh.vertices = vertices;
+        mesh.RecalculateNormals();
+        mesh.RecalculateBounds();
+
+   }
+
+
+
+
 }

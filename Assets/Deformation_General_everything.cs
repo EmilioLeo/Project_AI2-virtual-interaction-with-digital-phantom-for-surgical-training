@@ -12,10 +12,10 @@ public class SoftTissueDeformer : MonoBehaviour
     Mesh mesh;
     Vector3[] originalVertices;
     Vector3[] displacedVertices;
-    
+    private Vector3[] vertices;
     // Per gestire il dito Weart
     Transform presser; 
-
+    private int vertexCount;
     void Start()
     {
         mf = GetComponent<MeshFilter>();
@@ -24,6 +24,8 @@ public class SoftTissueDeformer : MonoBehaviour
         mf.mesh = mesh;
         
         originalVertices = mesh.vertices;
+        vertexCount = mesh.vertexCount;
+        vertices = new Vector3[vertexCount];
         displacedVertices = new Vector3[originalVertices.Length];
         System.Array.Copy(originalVertices, displacedVertices, originalVertices.Length);
         
@@ -112,4 +114,16 @@ public class SoftTissueDeformer : MonoBehaviour
         mesh.vertices = displacedVertices;
         if (!isRestored) mesh.RecalculateNormals();
     }*/
+    public void ResetMeshArteriesVeins()
+    {
+        for (int i = 0; i < vertices.Length; i++)
+        {
+            vertices[i] = originalVertices[i];
+        }
+
+        mesh.vertices = vertices;
+        mesh.RecalculateNormals();
+        mesh.RecalculateBounds();
+    }
+
 }

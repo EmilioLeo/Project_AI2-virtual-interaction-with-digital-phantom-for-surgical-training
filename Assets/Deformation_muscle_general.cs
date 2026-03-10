@@ -8,12 +8,12 @@ public class Deformation_muscle_general : MonoBehaviour
     public float force = 0.02f;      // Quanto va a fondo il dito
     public float radius = 0.15f;     // Quanto è larga l'area che si deforma
     public float restoreSpeed = 5f;  // Velocità con cui il muscolo torna normale
-
+    private int vertexCount;
     MeshFilter mf;
     Mesh mesh;
     Vector3[] originalVertices;
     Vector3[] displacedVertices;
-    
+    private Vector3[] vertices;
     // Per gestire il dito Weart
     Transform presser; 
 
@@ -23,7 +23,8 @@ public class Deformation_muscle_general : MonoBehaviour
         // Clona la mesh per non rompere l'originale
         mesh = Instantiate(mf.mesh);
         mf.mesh = mesh;
-        
+        vertexCount = mesh.vertexCount;
+        vertices = new Vector3[vertexCount];
         originalVertices = mesh.vertices;
         displacedVertices = new Vector3[originalVertices.Length];
         System.Array.Copy(originalVertices, displacedVertices, originalVertices.Length);
@@ -94,6 +95,16 @@ public class Deformation_muscle_general : MonoBehaviour
         mesh.RecalculateNormals(); // Aggiorna le luci/ombre
     }
 
-   
+    public void ResetMeshCarotides()
+    {
+        for (int i = 0; i < vertices.Length; i++)
+        {
+            vertices[i] = originalVertices[i];
+        }
+
+        mesh.vertices = vertices;
+        mesh.RecalculateNormals();
+        mesh.RecalculateBounds();
+    }
 
 }

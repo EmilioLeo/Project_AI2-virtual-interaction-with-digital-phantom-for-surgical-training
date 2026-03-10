@@ -109,39 +109,10 @@ public class WeArtPickableWithDebug : MonoBehaviour
             Debug.Log("[WeArtPickable] Oggetto rilasciato. Ritorno alla posizione originale.");
         }
     }
-    /*
-    private void TryInvokeWeArtMethod(string methodName, Component finger)
-    {
-        if (weartTouchable == null) return;
 
-        try
-        {
-            MethodInfo method = weartTouchable.GetType().GetMethod(methodName);
-            if (method != null)
-            {
-                ParameterInfo[] parameters = method.GetParameters();
-                
-                // Se il metodo non richiede parametri (es. Grab())
-                if (parameters.Length == 0)
-                {
-                    method.Invoke(weartTouchable, null);
-                }
-                // Se il metodo richiede un parametro (es. Grab(WeArtThimble))
-                else if (parameters.Length == 1)
-                {
-                    method.Invoke(weartTouchable, new object[] { finger });
-                }
-                else
-                {
-                    Debug.LogWarning($"[WeArtPickable] Il metodo {methodName} richiede {parameters.Length} parametri. Impossibile chiamarlo in automatico.");
-                }
-            }
-        }catch (System.Exception e)
-        {
-            // Se fallisce, catturiamo l'errore senza bloccare lo spostamento della trachea!
-            Debug.LogError($"[WeArtPickable] Errore interno WeArt durante {methodName}: " + e.Message);
-        }
+    public void ResetMotion(){
+        transform.position=initialPosition;
 
-
-    }*/
+    }
+    
 }

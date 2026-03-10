@@ -32,6 +32,7 @@ public class RetractMusclePython : MonoBehaviour
     private MeshFilter mf;
     private Mesh mesh;
     private Vector3[] vertices;
+    private Vector3[] originalVertices;
     private int vertexCount;
 
     private TcpClient client;
@@ -49,6 +50,7 @@ public class RetractMusclePython : MonoBehaviour
         {
             mesh = mf.mesh; 
             mesh.MarkDynamic(); 
+            originalVertices=mesh.vertices;
             vertexCount = mesh.vertexCount;
             vertices = new Vector3[vertexCount];
             receiveBuffer = new byte[vertexCount * 3 * 4];
@@ -223,6 +225,18 @@ public class RetractMusclePython : MonoBehaviour
             mesh.RecalculateBounds();
             mesh.RecalculateNormals(); // Utile per l'illuminazione
         } catch {}
+    }
+
+    public void ResetMesh()
+    {
+        for (int i = 0; i < vertices.Length; i++)
+        {
+            vertices[i] = originalVertices[i];
+        }
+
+        mesh.vertices = vertices;
+        mesh.RecalculateNormals();
+        mesh.RecalculateBounds();
     }
 
 

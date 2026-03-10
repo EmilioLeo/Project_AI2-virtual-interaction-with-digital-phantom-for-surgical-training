@@ -8,7 +8,8 @@ public class DragDropDisc : MonoBehaviour
     public float snapDistance = 0.3f;
     public float snapDuration = 0.2f;
     public string targetTag = "TargetDisco";
-
+    public ResetPhantom phantomReset;
+    public float resetDelay = 5f;
     private XRGrabInteractable grab;
     private Rigidbody rb;
     private bool isSnapping = false; // La nostra "chiave" di sicurezza
@@ -36,7 +37,7 @@ public class DragDropDisc : MonoBehaviour
             float dist = Vector3.Distance(transform.position, t.transform.position);
             
             // LOG PER DEBUG: Così vedi subito in console se lo rileva
-            Debug.Log($"Distanza da {t.name}: {dist}");
+            //Debug.Log($"Distanza da {t.name}: {dist}");
 
             if (dist <= snapDistance)
             {
@@ -81,5 +82,13 @@ public class DragDropDisc : MonoBehaviour
         
         // Se vuoi poterlo riprendere dopo lo snap, riabilita grab.enabled qui
         // grab.enabled = true; 
+        StartCoroutine(ResetPhantomAfterDelay());
+    }
+
+    IEnumerator ResetPhantomAfterDelay()
+    {
+        yield return new WaitForSeconds(resetDelay);
+
+        phantomReset.ResetDeformation();
     }
 }
