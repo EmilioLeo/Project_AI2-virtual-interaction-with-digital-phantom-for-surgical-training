@@ -95,25 +95,7 @@ public class SoftTissueDeformer : MonoBehaviour
         mesh.RecalculateNormals(); // Aggiorna le luci/ombre
     }
 
-    /*void RestoreShape()
-    {
-        // Se nessun dito tocca, torna lentamente alla forma originale
-        bool isRestored = true;
-        for (int i = 0; i < displacedVertices.Length; i++)
-        {
-            if (displacedVertices[i] != originalVertices[i])
-            {
-                displacedVertices[i] = Vector3.Lerp(displacedVertices[i], originalVertices[i], Time.deltaTime * restoreSpeed);
-                
-                // Ottimizzazione: se è quasi tornato, scatta alla fine
-                if (Vector3.Distance(displacedVertices[i], originalVertices[i]) > 0.0001f)
-                    isRestored = false;
-            }
-        }
-        
-        mesh.vertices = displacedVertices;
-        if (!isRestored) mesh.RecalculateNormals();
-    }*/
+   
     public void ResetMeshArteriesVeins()
     {
         for (int i = 0; i < vertices.Length; i++)

@@ -23,6 +23,6 @@ public class ResetPhantom : MonoBehaviour
         if (carotide_dx) {carotide_dx.enabled=false; carotide_dx.ResetMeshCarotides();}
         if (vagusNerve) {vagusNerve.enabled=false; vagusNerve.ResetMeshArteriesVeins();}
         if (flexor_spinal) {flexor_spinal.enabled=false; flexor_spinal.ResetMeshflexspinal();}
-        Debug.Log("Tessuti del phantom resettati.");
+        
     }
 }

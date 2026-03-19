@@ -3,10 +3,10 @@ using UnityEngine;
 [RequireComponent(typeof(MeshFilter), typeof(Collider))]
 public class DeformerFlexSpinal : MonoBehaviour
 {
-    [Header("Morbidezza")]
-    public float force = 0.02f;      // Quanto va a fondo il dito
-    public float radius = 0.15f;     // Quanto è larga l'area che si deforma
-    public float restoreSpeed = 5f;  // Velocità con cui il muscolo torna normale
+    [Header("Softness")]
+    public float force = 0.02f;      // force to retract anatomical component
+    public float radius = 0.15f;     // radius of deformation area
+    public float restoreSpeed = 5f;  //  velocity with muscle returns normal
 
     MeshFilter mf;
     private int vertexCount;
@@ -14,13 +14,13 @@ public class DeformerFlexSpinal : MonoBehaviour
     Vector3[] originalVertices;
     Vector3[] displacedVertices;
     Vector3[] vertices;
-    // Per gestire il dito Weart
+    
     Transform presser; 
 
     void Start()
     {
         mf = GetComponent<MeshFilter>();
-        // Clona la mesh per non rompere l'originale
+         // Clone mesh to avoid breaking the original
         mesh = Instantiate(mf.mesh);
         mf.mesh = mesh;
         
@@ -30,7 +30,7 @@ public class DeformerFlexSpinal : MonoBehaviour
         displacedVertices = new Vector3[originalVertices.Length];
         System.Array.Copy(originalVertices, displacedVertices, originalVertices.Length);
         
-        // Assicuriamoci che il collider sia Trigger per permettere la "penetrazione"
+         // Component should be collider with is trigger fixed
         GetComponent<Collider>().isTrigger = true;
     }
 
@@ -43,17 +43,17 @@ public class DeformerFlexSpinal : MonoBehaviour
 
     }
 
-    // Quando il dito entra nel muscolo
+    // when the finger get into muscle
     void OnTriggerEnter(Collider other)
     {
-        // Controlla se è il dito (Thimble) o la mano
+        
         if (other.gameObject.name.Contains("Thimble") || other.gameObject.name.Contains("Index"))
         {
             presser = other.transform;
         }
     }
 
-    // Quando il dito esce
+    // when the finger get out
     void OnTriggerExit(Collider other)
     {
         if (presser != null && other.transform == presser)
@@ -64,26 +64,25 @@ public class DeformerFlexSpinal : MonoBehaviour
 
     void Deform_flex_spinal()
 {
-    // Punto del dito in spazio locale
+    // We convert the position of the finger into the local space of the muscle
     Vector3 localPoint = transform.InverseTransformPoint(presser.position);
 
-    // Determina lato attivo in base al punto di contatto
+    // Determine active side based on contact point
     int activeSide = (localPoint.x < 0f) ? -1 : +1;
 
     for (int i = 0; i < displacedVertices.Length; i++)
     {
-        // Determina lato del vertice
+        // Distance between the vertex and the finger
         float vx = originalVertices[i].x;
         int vertSide = (vx < 0f) ? -1 : ((vx > 0f) ? +1 : 0);
 
-        // Se il vertice non appartiene al lato toccato → non deformarlo
+        // If the vertex does not belong to the touched side → don't deform it
         if (vertSide == 0 || vertSide != activeSide)
         {
-            //displacedVertices[i] = originalVertices[i];
             continue;
         }
 
-        // Distanza tra vertice e dito
+        // Distance between vertex and finger
         float distance = Vector3.Distance(originalVertices[i], localPoint);
 
         if (distance < radius)
@@ -100,15 +99,7 @@ public class DeformerFlexSpinal : MonoBehaviour
                 Time.deltaTime * 10f
             );
         }
-        else
-        {
-            // Se fuori raggio, torna alla posizione originale
-            /*displacedVertices[i] = Vector3.Lerp(
-                displacedVertices[i],
-                originalVertices[i],
-                Time.deltaTime * 5f
-            );*/
-        }
+        
     }
 
     mesh.vertices = displacedVertices;

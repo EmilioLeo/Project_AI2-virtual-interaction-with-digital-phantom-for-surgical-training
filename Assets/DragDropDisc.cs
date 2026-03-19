@@ -12,7 +12,7 @@ public class DragDropDisc : MonoBehaviour
     public float resetDelay = 5f;
     private XRGrabInteractable grab;
     private Rigidbody rb;
-    private bool isSnapping = false; // La nostra "chiave" di sicurezza
+    private bool isSnapping = false; 
 
     void Start()
     {
@@ -22,8 +22,8 @@ public class DragDropDisc : MonoBehaviour
 
     void Update()
     {
-        // Se si sta già agganciando o se lo stiamo tenendo in mano, non fare nulla
-        // (Nota: se vuoi che lo snap avvenga ANCHE mentre lo tieni, togli grab.isSelected)
+        // If it's already hooking or if we're holding it, don't do anything
+       
         if (isSnapping || grab.isSelected) return;
 
         CheckForNearestTarget();
@@ -36,13 +36,11 @@ public class DragDropDisc : MonoBehaviour
         {
             float dist = Vector3.Distance(transform.position, t.transform.position);
             
-            // LOG PER DEBUG: Così vedi subito in console se lo rileva
-            //Debug.Log($"Distanza da {t.name}: {dist}");
-
+           
             if (dist <= snapDistance)
             {
                 StartCoroutine(SmoothSnapRoutine(t.transform));
-                break; // Esci dal ciclo appena ne trovi uno valido
+                break; 
             }
         }
     }
@@ -51,9 +49,7 @@ public class DragDropDisc : MonoBehaviour
     {
         isSnapping = true;
 
-        Debug.Log($"<color=cyan>[SNAP START]</color> Mi muovo verso {target.name} a posizione: {target.position}");
-        
-        // Disabilitiamo l'interactable per evitare che la mano lo "rubi" durante il movimento
+
         grab.enabled = false;
         if (rb) rb.isKinematic = true;
 
@@ -65,23 +61,22 @@ public class DragDropDisc : MonoBehaviour
         {
             elapsed += Time.deltaTime;
             float t = Mathf.Clamp01(elapsed / snapDuration);
-            t = t * t * (3f - 2f * t); // Movimento fluido
+            t = t * t * (3f - 2f * t); 
 
-            // Usiamo target.position (World Space) per evitare l'errore del "va troppo su"
+            
             transform.position = Vector3.Lerp(startPos, target.position, t);
             transform.rotation = Quaternion.Slerp(startRot, target.rotation, t);
             
             yield return null;
         }
 
-        // Posizionamento finale perfetto
+        // Perfect final positioning
         transform.position = target.position;
         transform.rotation = target.rotation;
 
         Debug.Log("Aggancio completato!");
         
-        // Se vuoi poterlo riprendere dopo lo snap, riabilita grab.enabled qui
-        // grab.enabled = true; 
+       
         StartCoroutine(ResetPhantomAfterDelay());
     }
 

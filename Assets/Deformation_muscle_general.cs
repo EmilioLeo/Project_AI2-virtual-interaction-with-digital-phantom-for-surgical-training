@@ -4,23 +4,23 @@ using UnityEngine;
 
 public class Deformation_muscle_general : MonoBehaviour
 {
-   [Header("Morbidezza")]
-    public float force = 0.02f;      // Quanto va a fondo il dito
-    public float radius = 0.15f;     // Quanto è larga l'area che si deforma
-    public float restoreSpeed = 5f;  // Velocità con cui il muscolo torna normale
+   [Header("Softness")]
+    public float force = 0.02f;      // force to retract anatomical component
+    public float radius = 0.15f;     //radius of deformation area
+    public float restoreSpeed = 5f;  //  velocity with muscle returns normal
     private int vertexCount;
     MeshFilter mf;
     Mesh mesh;
     Vector3[] originalVertices;
     Vector3[] displacedVertices;
     private Vector3[] vertices;
-    // Per gestire il dito Weart
+    
     Transform presser; 
 
     void Start()
     {
         mf = GetComponent<MeshFilter>();
-        // Clona la mesh per non rompere l'originale
+        // Clone mesh to avoid breaking the original
         mesh = Instantiate(mf.mesh);
         mf.mesh = mesh;
         vertexCount = mesh.vertexCount;
@@ -29,7 +29,7 @@ public class Deformation_muscle_general : MonoBehaviour
         displacedVertices = new Vector3[originalVertices.Length];
         System.Array.Copy(originalVertices, displacedVertices, originalVertices.Length);
         
-        // Assicuriamoci che il collider sia Trigger per permettere la "penetrazione"
+        // Component should be collider with is trigger fixed
         GetComponent<Collider>().isTrigger = true;
     }
 
@@ -42,17 +42,17 @@ public class Deformation_muscle_general : MonoBehaviour
 
     }
 
-    // Quando il dito entra nel muscolo
+    // when the finger get into muscle
     void OnTriggerEnter(Collider other)
     {
-        // Controlla se è il dito (Thimble) o la mano
+        //control kind of finger 
         if (other.gameObject.name.Contains("Thimble") || other.gameObject.name.Contains("Index"))
         {
             presser = other.transform;
         }
     }
 
-    // Quando il dito esce
+    //when the finger get out
     void OnTriggerExit(Collider other)
     {
         if (presser != null && other.transform == presser)
@@ -63,36 +63,33 @@ public class Deformation_muscle_general : MonoBehaviour
 
     void Deform()
     {
-        // Convertiamo la posizione del dito nello spazio locale del muscolo
+        // We convert the position of the finger into the local space of the muscle
         Vector3 localPoint = transform.InverseTransformPoint(presser.position);
 
         for (int i = 0; i < displacedVertices.Length; i++)
         {
-            // Distanza tra il vertice e il dito
+            // Distance between the vertex and the finger
             float distance = Vector3.Distance(originalVertices[i], localPoint);
 
             if (distance < radius)
             {
-                // Calcola quanto deformare (più vicino = più deformazione)
-                // Usiamo una curva gaussiana per renderlo morbido
+                // Calculate how much to warp (closer = more warping)
                 float deformation = force * (radius - distance) / radius;
                 
-                // Direzione della deformazione: dal dito verso il vertice (o fissa verso l'interno)
-                // Qui spingiamo il vertice "dentro" lungo la normale inversa o via dal dito
+                // Deformation direction: from the finger towards the vertex (or fixed inwards)
+                // Here we push the vertex "in" along the inverse normal or away from the finger
                 Vector3 pushDir = (originalVertices[i] - localPoint).normalized;
-                
-                // Opzione B: Spingi sempre verso l'interno rispetto alla normale (più realistico per i muscoli)
-                // Vector3 pushDir = -mesh.normals[i]; 
+               
 
                 Vector3 targetPos = originalVertices[i] + (pushDir * deformation);
                 
-                // Applica movimento fluido
+                // Apply smooth motion
                 displacedVertices[i] = Vector3.Lerp(displacedVertices[i], targetPos, Time.deltaTime * 10f);
             }
         }
         
         mesh.vertices = displacedVertices;
-        mesh.RecalculateNormals(); // Aggiorna le luci/ombre
+        mesh.RecalculateNormals(); // Update the highlights/shadows
     }
 
     public void ResetMeshCarotides()

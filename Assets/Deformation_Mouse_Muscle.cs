@@ -15,16 +15,17 @@ public class RetractMusclePython : MonoBehaviour
     public int serverPort = 65432;
 
     [Header("Physics Interaction")]
-    // Con scala 100, potresti aver bisogno di una forza molto più alta
+    
     public float forceMultiplier = 1f; 
 
+    // physical variables for muscle deformation
     public float pitch = 0.02f;
     public float dt = 0.001f;
     public float youngsModulus = 5000.0f;
     public float poissonRatio = 0.45f;
     public float density = 1000.0f;
 
-    // Variabili di stato per la collisione
+    // state variables for collision
     private bool isTouched = false;
     private Vector3 currentForceVector = Vector3.zero;
     private Vector3 currentContactPoint = Vector3.zero;
@@ -78,11 +79,11 @@ public class RetractMusclePython : MonoBehaviour
             writer.Write(mesh.vertexCount);
             Vector3[] localVerts = mesh.vertices;
 
-           // Debug.Log($"[UNITY] Invio {localVerts.Length} vertici. Primo vertice (ID:0): {localVerts[0]}");
+           
 
             foreach (Vector3 v in localVerts)
             {
-                // Converte da locale (0-1) a mondo (0-100+)
+                // Converts from local (0-1) to world (0-100+)
                 Vector3 worldV = transform.TransformPoint(v); 
                 writer.Write(worldV.x);
                 writer.Write(worldV.y);
@@ -102,7 +103,7 @@ public class RetractMusclePython : MonoBehaviour
 
 
             writer.Flush();
-            //Debug.Log($"Mesh inviata. Scala rilevata:{transform.lossyScale}");
+            
         } catch (Exception e) { Debug.LogError($"Errore invio mesh: {e.Message}"); }
     }
 
@@ -110,74 +111,51 @@ public class RetractMusclePython : MonoBehaviour
     {
         if (client == null || !client.Connected) return;
 
-        /*
-        if (Input.GetMouseButtonDown(0)) isDragging = true;
-        if (Input.GetMouseButtonUp(0)) isDragging = false;
-        */
-
         SendForceInput();
         ReceiveMeshUpdate();
 
-        // Reset dello stato a fine frame: se il dito non è più in collisione, smette di applicare forza
+        // State reset at end of frame: if the finger is no longer colliding, it stops applying force
         isTouched = false;
     }
 
-    // Viene chiamato automaticamente da Unity finché il dito (con Rigidbody) tocca il muscolo
+    // Automatically called by Unity as long as the finger (with Rigidbody) touches the muscle
     void OnCollisionStay(Collision collision)
     {
-        // 1. Estraiamo il punto esatto di contatto nello spazio 3D
+        // We extract the exact contact point in 3D space
         ContactPoint contact = collision.GetContact(0);
         currentContactPoint = contact.point;
 
-        // 2. Calcoliamo la DIREZIONE della forza.
-        // La "normal" è il vettore che esce perpendicolare dal muscolo. 
-        // Il dito spinge nella direzione opposta (-normal).
+        // We calculate the DIRECTION of the force.
+        // The "normal" is the vector that comes out perpendicular to the muscle. 
+        // The finger pushes in the opposite direction (-normal).
         Vector3 pushDirection = contact.normal;
 
-        // 3. Calcoliamo la FORZA (Magnitudo).
-        // Usiamo la velocità di impatto o la massa del dito (se ha un Rigidbody dinamico).
-        // Se il dito è cinematico, possiamo usare un valore fisso moltiplicato per quanto affonda.
+        // Let's calculate the FORCE (Magnitude).
+        // We use the impact velocity or the mass of the finger (if it has a dynamic Rigidbody).
+        // If the finger is kinematic, we can use a fixed value multiplied by how much it sinks.
         float pushForce = 10.0f; 
         if (collision.rigidbody != null) {
-            // Se il dito si muove velocemente, applicherà più forza
+            // If the finger moves quickly, it will apply more force
             pushForce = collision.relativeVelocity.magnitude + 0.1f; 
         }
 
-        // Vettore finale: Direzione * Forza * Moltiplicatore
+        // Final vector: Direction * Force * Multiplier
         currentForceVector = pushDirection * (pushForce * forceMultiplier);
         
         isTouched = true;
 
-        // Debug visivo nell'editor di Unity (Disegna una linea rossa che mostra come spinge il dito)
-        //Debug.DrawRay(currentContactPoint, currentForceVector, Color.red);
     }
 
 
 
     void SendForceInput()
     {
-        //Vector3 targetForce = Vector3.zero;
+        
 
         Vector3 forceToSend = isTouched ? currentForceVector : Vector3.zero;
         Vector3 posToSend = isTouched ? currentContactPoint : Vector3.zero;
 
-        /*
-        if (isDragging)
-        {
-            float mouseX = Input.GetAxis("Mouse X");
-            float mouseY = Input.GetAxis("Mouse Y");
-            // Forza calcolata in base alla telecamera (World Space)
-            targetForce = (Camera.main.transform.right * mouseX + Camera.main.transform.up * mouseY) * forceMultiplier;
-            
-            // Debug visivo della forza nel mondo
-            Debug.DrawRay(transform.position, targetForce, Color.red);
-        }*/
-        
         try {
-            /*
-            writer.Write(targetForce.x);
-            writer.Write(targetForce.y);
-            writer.Write(targetForce.z);*/
 
             writer.Write(forceToSend.x);
             writer.Write(forceToSend.y);
@@ -209,21 +187,21 @@ public class RetractMusclePython : MonoBehaviour
                 for (int i = 0; i < vertexCount; i++)
                 {
                     Vector3 worldPos = new Vector3(br.ReadSingle(), br.ReadSingle(), br.ReadSingle());
-                    // Torna allo spazio locale (divide per 100 internamente)
-                    //Debug.Log($"[UNITY] Ricevuto aggiornamento. Primo vertice mondiale (ID:0): {worldPos}");
+
+                    //updated vertices
                     vertices[i] = transform.InverseTransformPoint(worldPos); 
                 }
             }
             mesh.vertices = vertices;
 
 
-            // Aggiorniamo anche il collider affinché il dito possa scivolare lungo la nuova curva del muscolo!
+            // We also update the collider so that your finger can slide along the new curve of the muscle!
             if (GetComponent<MeshCollider>() != null) {
                 GetComponent<MeshCollider>().sharedMesh = mesh;
             }
 
             mesh.RecalculateBounds();
-            mesh.RecalculateNormals(); // Utile per l'illuminazione
+            mesh.RecalculateNormals();
         } catch {}
     }
 
