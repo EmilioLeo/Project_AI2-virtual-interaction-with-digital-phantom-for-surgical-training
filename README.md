@@ -29,7 +29,9 @@ operator grasps a 3D model of an interbody cage `Assets/Disco intervertebrale.fb
 ## 📁 Repository structure
 
 The project follows the standard Unity architecture, enriched with specific modules for this medical application:
-📦 Project_AI2-virtual-interaction-with-digital-phantom-for-surgical-training
+
+
+📦Project_AI2-virtual-interaction-with-digital-phantom-for-surgical-training
  ┣ 📂 Assets/
  ┣ 📂 Cervical Workflow treatment/
  ┣ 📂 Deformation/
@@ -47,7 +49,7 @@ The project follows the standard Unity architecture, enriched with specific modu
 * `Server/`: Client-Server  and multithreading logic to deform sternocleidomastoid muscles.
 * `AI2 Project.pptx`:  presentation of the project and its 5 development phases.
 
-## 🛠️ Requirements
+## ⚙️ Requirements
 
 To run this project correctly, you must have:
 
@@ -56,9 +58,7 @@ To run this project correctly, you must have:
 * **Oculus software** and compatible headset (if you want to test in VR).
 * **WEART Middleware** (for haptic tracking and feedback).
 
-## 🚀 Installazione e Setup
-
-🚀 Installation and Setup
+## 🔧 Installation and Setup
 
 1. **Clone the repository**, making sure you have Git LFS installed:
 ```bash
