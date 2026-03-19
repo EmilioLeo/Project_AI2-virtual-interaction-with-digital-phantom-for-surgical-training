@@ -30,7 +30,7 @@ operator grasps a 3D model of an interbody cage `Assets/Disco intervertebrale.fb
 
 The project follows the standard Unity architecture, enriched with specific modules for this medical application:
 
-
+```text
 📦Project_AI2-virtual-interaction-with-digital-phantom-for-surgical-training
  ┣ 📂 Assets/
  ┣ 📂 Cervical Workflow treatment/
@@ -40,6 +40,7 @@ The project follows the standard Unity architecture, enriched with specific modu
  ┣ 📂 Server/
  ┣ 📜 mesh_simplified.obj
  ┗ 📜 Progetto AI2.pptx
+```
 
 * `Assets/`: Contains all C# scripts, 3D models (such as `mesh_simplified.obj`), prefabs, and main scenes.
 * `Cervical Workflow treatment/`: Modules and specific logic for the simulated surgical procedure phases.
