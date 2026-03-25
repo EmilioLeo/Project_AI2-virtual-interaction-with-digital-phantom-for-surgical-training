@@ -2,6 +2,7 @@ using UnityEngine;
 using TMPro;
 using System.Net.Sockets;
 using System.IO;
+using System.Collections;
 using System;
 
 [RequireComponent(typeof(MeshFilter), typeof(Renderer), typeof(Collider))]
@@ -30,6 +31,9 @@ public class RetractMusclePython : MonoBehaviour
     private Vector3 currentForceVector = Vector3.zero;
     private Vector3 currentContactPoint = Vector3.zero;
 
+    //control flag for oscillation
+    private bool isResetting = false;
+
     private MeshFilter mf;
     private Mesh mesh;
     private Vector3[] vertices;
@@ -43,7 +47,7 @@ public class RetractMusclePython : MonoBehaviour
     private byte[] receiveBuffer;
 
     private bool isDragging = false;
-
+    System.Diagnostics.Stopwatch stopwatch = new System.Diagnostics.Stopwatch();
     void Start()
     {
         mf = GetComponent<MeshFilter>();
@@ -111,8 +115,16 @@ public class RetractMusclePython : MonoBehaviour
     {
         if (client == null || !client.Connected) return;
 
+        // start to compute RTT
+        stopwatch.Restart();
+        
         SendForceInput();
         ReceiveMeshUpdate();
+        
+        //finish to compute RTT
+        stopwatch.Stop();
+        float rtt_ms = stopwatch.ElapsedMilliseconds;
+        Debug.Log($"Round Trip Time: {rtt_ms} ms");
 
         // State reset at end of frame: if the finger is no longer colliding, it stops applying force
         isTouched = false;
@@ -204,7 +216,7 @@ public class RetractMusclePython : MonoBehaviour
             mesh.RecalculateNormals();
         } catch {}
     }
-
+    /*
     public void ResetMesh()
     {
         for (int i = 0; i < vertices.Length; i++)
@@ -215,6 +227,50 @@ public class RetractMusclePython : MonoBehaviour
         mesh.vertices = vertices;
         mesh.RecalculateNormals();
         mesh.RecalculateBounds();
+    }*/
+
+
+    public void StartResetAnimation()
+    {
+        if (!isResetting)
+        {
+            StartCoroutine(ResetMesh());
+        }
+    }
+
+
+    public IEnumerator ResetMesh()
+    {
+        float duration = 2f;
+        float elapsed = 0f;
+        isResetting = true;
+        Vector3[] startVertices = (Vector3[])vertices.Clone();
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            float t = elapsed / duration;
+            
+
+            // Effetto molla
+            float oscillation = Mathf.Sin(t * Mathf.PI * 6) * Mathf.Exp(-3 * t);
+            float smoothT = Mathf.Clamp01(t + oscillation * 0.2f);
+
+            for (int i = 0; i < vertices.Length; i++)
+            {
+                vertices[i] = Vector3.Lerp(startVertices[i], originalVertices[i], smoothT);
+            }
+
+            mesh.vertices = vertices;
+            mesh.RecalculateNormals();
+
+            yield return null;
+        }
+
+
+            mesh.vertices = originalVertices;
+            mesh.RecalculateNormals();
+            mesh.RecalculateBounds();
+            isResetting = false;
     }
 
 

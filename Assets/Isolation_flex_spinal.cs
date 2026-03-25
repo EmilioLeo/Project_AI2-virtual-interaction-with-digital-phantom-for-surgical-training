@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 [RequireComponent(typeof(MeshFilter), typeof(Collider))]
 public class DeformerFlexSpinal : MonoBehaviour
@@ -7,6 +8,7 @@ public class DeformerFlexSpinal : MonoBehaviour
     public float force = 0.02f;      // force to retract anatomical component
     public float radius = 0.15f;     // radius of deformation area
     public float restoreSpeed = 5f;  //  velocity with muscle returns normal
+    public bool isResetting = false;
 
     MeshFilter mf;
     private int vertexCount;
@@ -107,7 +109,7 @@ public class DeformerFlexSpinal : MonoBehaviour
     mesh.RecalculateBounds();
 }
 
-   public void ResetMeshflexspinal()
+   /*public void ResetMeshflexspinal()
    {
 
         for (int i = 0; i < vertices.Length; i++)
@@ -119,7 +121,49 @@ public class DeformerFlexSpinal : MonoBehaviour
         mesh.RecalculateNormals();
         mesh.RecalculateBounds();
 
-   }
+   }*/
+   public void StartResetAnimationF()
+    {
+        if (!isResetting)
+        {
+            StartCoroutine(ResetMeshflexspinal());
+        }
+    }
+
+
+    public IEnumerator ResetMeshflexspinal()
+    {
+        float duration = 2f;
+        float elapsed = 0f;
+        isResetting = true;
+        Vector3[] startVertices = (Vector3[])displacedVertices.Clone();
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            float t = elapsed / duration;
+            
+
+            // Effetto molla
+            float oscillation = Mathf.Sin(t * Mathf.PI * 6) * Mathf.Exp(-3 * t);
+            float smoothT = Mathf.Clamp01(t + oscillation * 0.2f);
+
+            for (int i = 0; i < displacedVertices.Length; i++)
+            {
+                displacedVertices[i] = Vector3.Lerp(startVertices[i], originalVertices[i], smoothT);
+            }
+
+            mesh.vertices = displacedVertices;
+            mesh.RecalculateNormals();
+
+            yield return null;
+        }
+
+
+            mesh.vertices = originalVertices;
+            mesh.RecalculateNormals();
+            mesh.RecalculateBounds();
+            isResetting = false;
+    }
 
 
 

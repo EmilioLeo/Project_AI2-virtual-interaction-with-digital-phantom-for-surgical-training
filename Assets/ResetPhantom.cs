@@ -16,13 +16,13 @@ public class ResetPhantom : MonoBehaviour
 
     public void ResetDeformation()
     {
-        if (sternoLeft) {sternoLeft.enabled=false; sternoLeft.ResetMesh(); }
-        if (sternoRight) {sternoRight.enabled=false; sternoRight.ResetMesh();}
+        if (sternoLeft) {sternoLeft.enabled=false; sternoLeft.StartResetAnimation(); }
+        if (sternoRight) {sternoRight.enabled=false; sternoRight.StartResetAnimation();}
         if (trachea) {trachea.enabled=false; trachea.ResetMotion();}
-        if (veins_dx) {veins_dx.enabled=false; veins_dx.ResetMeshArteriesVeins();}
-        if (carotide_dx) {carotide_dx.enabled=false; carotide_dx.ResetMeshCarotides();}
-        if (vagusNerve) {vagusNerve.enabled=false; vagusNerve.ResetMeshArteriesVeins();}
-        if (flexor_spinal) {flexor_spinal.enabled=false; flexor_spinal.ResetMeshflexspinal();}
+        if (veins_dx) {veins_dx.enabled=false; veins_dx.StartResetAnimationV();}
+        if (carotide_dx) {carotide_dx.enabled=false; carotide_dx.StartResetAnimationC();}
+        if (vagusNerve) {vagusNerve.enabled=false; vagusNerve.StartResetAnimationV();}
+        if (flexor_spinal) {flexor_spinal.enabled=false; flexor_spinal.StartResetAnimationF();}
         
     }
 }

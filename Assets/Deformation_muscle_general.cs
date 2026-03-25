@@ -14,6 +14,7 @@ public class Deformation_muscle_general : MonoBehaviour
     Vector3[] originalVertices;
     Vector3[] displacedVertices;
     private Vector3[] vertices;
+    public bool isResetting = false;
     
     Transform presser; 
 
@@ -92,7 +93,7 @@ public class Deformation_muscle_general : MonoBehaviour
         mesh.RecalculateNormals(); // Update the highlights/shadows
     }
 
-    public void ResetMeshCarotides()
+    /*public void ResetMeshCarotides()
     {
         for (int i = 0; i < vertices.Length; i++)
         {
@@ -102,6 +103,48 @@ public class Deformation_muscle_general : MonoBehaviour
         mesh.vertices = vertices;
         mesh.RecalculateNormals();
         mesh.RecalculateBounds();
+    }*/
+    public void StartResetAnimationC()
+    {
+        if (!isResetting)
+        {
+            StartCoroutine(ResetMeshCarotides());
+        }
+    }
+
+
+    public IEnumerator ResetMeshCarotides()
+    {
+        float duration = 2f;
+        float elapsed = 0f;
+        isResetting = true;
+        Vector3[] startVertices = (Vector3[])displacedVertices.Clone();
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            float t = elapsed / duration;
+            
+
+            // Effetto molla
+            float oscillation = Mathf.Sin(t * Mathf.PI * 6) * Mathf.Exp(-3 * t);
+            float smoothT = Mathf.Clamp01(t + oscillation * 0.2f);
+
+            for (int i = 0; i < displacedVertices.Length; i++)
+            {
+                displacedVertices[i] = Vector3.Lerp(startVertices[i], originalVertices[i], smoothT);
+            }
+
+            mesh.vertices = displacedVertices;
+            mesh.RecalculateNormals();
+
+            yield return null;
+        }
+
+
+            mesh.vertices = originalVertices;
+            mesh.RecalculateNormals();
+            mesh.RecalculateBounds();
+            isResetting = false;
     }
 
 }

@@ -2686,29 +2686,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2fbdcf88a29beb4c881e3e770e2c6b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  structureName: Membrana Giugulare-Carotide sinistra
-  highlightColor:
-    r: 0
-    g: 1
-    b: 0
-    a: 1
-  uiText: {fileID: 0}
-  dragAxis: {x: 1, y: 0, z: 0}
-  dragSensitivity: 0.01
-  maxOffset: 0.02
-  falloff: 1.5
-  rend: {fileID: 0}
-  originalColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
-  mf: {fileID: 0}
-  mesh: {fileID: 0}
-  originalVertices: []
-  vertices: []
-  isDragging: 0
-  dragStartWorld: {x: 0, y: 0, z: 0}
 --- !u!64 &554431495
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5872,29 +5849,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2fbdcf88a29beb4c881e3e770e2c6b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  structureName: Membrana Giugulare-Carotide destra
-  highlightColor:
-    r: 0
-    g: 1
-    b: 0
-    a: 1
-  uiText: {fileID: 0}
-  dragAxis: {x: 1, y: 0, z: 0}
-  dragSensitivity: 0.01
-  maxOffset: 0.02
-  falloff: 1.5
-  rend: {fileID: 0}
-  originalColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
-  mf: {fileID: 0}
-  mesh: {fileID: 0}
-  originalVertices: []
-  vertices: []
-  isDragging: 0
-  dragStartWorld: {x: 0, y: 0, z: 0}
 --- !u!64 &1994040502
 MeshCollider:
   m_ObjectHideFlags: 0

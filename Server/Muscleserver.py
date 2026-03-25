@@ -8,7 +8,7 @@ import trimesh
 from scipy.spatial import cKDTree
 import time
 import threading
-
+import csv
 import warnings
 
 
@@ -364,7 +364,9 @@ def handle_client(conn, addr):
     This function runs in a parallel, independent thread.
     """
     print(f"[Client {addr}] Nuovo muscolo connesso!")
-    
+    #collection samples_time and rtt data
+    max_samples = 300
+    rtt_data = []
 
     #Connection between Client and server using TCP protocol
     try:
@@ -420,6 +422,9 @@ def handle_client(conn, addr):
             
             #simulation loop
             while True:
+                
+                #start process_start collection 
+                process_start = time.perf_counter()
 
                 #receive contact force and contact point
                 data = recvall(conn, 24)
@@ -484,6 +489,25 @@ def handle_client(conn, addr):
                 verts_bytes = verts_cpu.tobytes()
                 header = struct.pack('<I', len(verts_bytes))
                 conn.sendall(header + verts_bytes)
+
+                #collection of process end
+                process_end = time.perf_counter()
+
+                duration_ms = (process_end - process_start) * 1000
+                rtt_data.append(duration_ms)
+
+                """
+                if len(rtt_data) >= max_samples:
+       
+                    with open('performance_log.csv', 'w', newline='') as f:
+
+                        writer = csv.writer(f)
+                        writer.writerow(["Frame", "ProcessingTime_ms"])
+                        for i, val in enumerate(rtt_data):
+                            writer.writerow([i, val])
+
+                    print("Dati salvati in performance_log.csv!")"""
+                    
                 
     except Exception as e:
         print(f"[Client {addr}] Errore loop: {e}")
