@@ -191,6 +191,7 @@ MonoBehaviour:
   force: 0.05
   radius: 6
   restoreSpeed: 5
+  isResetting: 0
 --- !u!114 &97530441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -907,6 +908,7 @@ MonoBehaviour:
   force: 0.05
   radius: 6
   restoreSpeed: 5
+  isResetting: 0
 --- !u!114 &327175666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3009,6 +3011,7 @@ MonoBehaviour:
   force: 0.05
   radius: 2.4
   restoreSpeed: 5
+  isResetting: 0
 --- !u!1001 &647812457
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3268,6 +3271,7 @@ MonoBehaviour:
   force: 0.05
   radius: 6
   restoreSpeed: 5
+  isResetting: 0
 --- !u!1 &717865169
 GameObject:
   m_ObjectHideFlags: 0
@@ -3516,6 +3520,7 @@ MonoBehaviour:
   force: 0.05
   radius: 6
   restoreSpeed: 5
+  isResetting: 0
 --- !u!138 &1059362785
 FixedJoint:
   m_ObjectHideFlags: 0
@@ -4747,6 +4752,7 @@ MonoBehaviour:
   force: 0.2
   radius: 0.15
   restoreSpeed: 5
+  isResetting: 0
 --- !u!114 &1126008732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5385,6 +5391,7 @@ MonoBehaviour:
   force: 0.05
   radius: 6
   restoreSpeed: 5
+  isResetting: 0
 --- !u!114 &1439907402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5981,6 +5988,7 @@ MonoBehaviour:
   force: 0.05
   radius: 6
   restoreSpeed: 5
+  isResetting: 0
 --- !u!1 &2056792966 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: cc2bd507364024b4b90d5d56d02b6224, type: 3}

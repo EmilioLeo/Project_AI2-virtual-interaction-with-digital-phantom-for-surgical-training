@@ -3,6 +3,8 @@ using TMPro;
 using System.Net.Sockets;
 using System.IO;
 using System.Collections;
+using System.Collections.Generic;
+using System.IO; 
 using System;
 
 [RequireComponent(typeof(MeshFilter), typeof(Renderer), typeof(Collider))]
@@ -48,6 +50,9 @@ public class RetractMusclePython : MonoBehaviour
 
     private bool isDragging = false;
     System.Diagnostics.Stopwatch stopwatch = new System.Diagnostics.Stopwatch();
+    private List<float> rttValues = new List<float>();
+    private string filePath;
+    
     void Start()
     {
         mf = GetComponent<MeshFilter>();
@@ -60,7 +65,7 @@ public class RetractMusclePython : MonoBehaviour
             vertices = new Vector3[vertexCount];
             receiveBuffer = new byte[vertexCount * 3 * 4];
         }
-
+        filePath = Path.Combine(Application.dataPath, "RTT_Log.txt");
         ConnectToServer();
     }
 
@@ -124,8 +129,8 @@ public class RetractMusclePython : MonoBehaviour
         //finish to compute RTT
         stopwatch.Stop();
         float rtt_ms = stopwatch.ElapsedMilliseconds;
-        Debug.Log($"Round Trip Time: {rtt_ms} ms");
-
+        //Debug.Log($"Round Trip Time: {rtt_ms} ms");
+        rttValues.Add(rtt_ms);
         // State reset at end of frame: if the finger is no longer colliding, it stops applying force
         isTouched = false;
     }
@@ -271,6 +276,33 @@ public class RetractMusclePython : MonoBehaviour
             mesh.RecalculateNormals();
             mesh.RecalculateBounds();
             isResetting = false;
+    }
+
+
+    //write file when quit the application
+    void OnApplicationQuit()
+    {
+        SaveDataToFile();
+    }
+
+    private void SaveDataToFile()
+    {
+       
+        if (rttValues.Count == 0) return;
+
+        
+        using (StreamWriter writer = new StreamWriter(filePath))
+        {
+            writer.WriteLine("RTT_ms"); // Intestazione del file 
+            
+
+            foreach (float rtt in rttValues)
+            {
+                writer.WriteLine(rtt);
+            }
+        }
+
+        Debug.Log($"Salvataggio completato! Scritti {rttValues.Count} valori in: {filePath}");
     }
 
 
