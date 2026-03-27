@@ -65,7 +65,7 @@ public class RetractMusclePython : MonoBehaviour
             vertices = new Vector3[vertexCount];
             receiveBuffer = new byte[vertexCount * 3 * 4];
         }
-        filePath = Path.Combine(Application.dataPath, "RTT_Log.txt");
+        filePath = Path.Combine(Application.dataPath, "RTT_Log_rk4.txt");
         ConnectToServer();
     }
 
@@ -221,18 +221,7 @@ public class RetractMusclePython : MonoBehaviour
             mesh.RecalculateNormals();
         } catch {}
     }
-    /*
-    public void ResetMesh()
-    {
-        for (int i = 0; i < vertices.Length; i++)
-        {
-            vertices[i] = originalVertices[i];
-        }
-
-        mesh.vertices = vertices;
-        mesh.RecalculateNormals();
-        mesh.RecalculateBounds();
-    }*/
+   
 
 
     public void StartResetAnimation()

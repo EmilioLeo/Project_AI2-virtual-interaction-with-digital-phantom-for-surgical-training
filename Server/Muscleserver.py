@@ -456,6 +456,7 @@ def handle_client(conn, addr):
                     
                     #execute deformation muscle with (Runge-Kutta integration method)
                     u, v = solver.update_rk4(u, v, f_ext)
+                    #u, v = solver.update_euler(u, v, f_ext)
                      
                     #Constraint of max deformation distance
                     MAX_DEFORMATION = length * 0.2
@@ -496,17 +497,17 @@ def handle_client(conn, addr):
                 duration_ms = (process_end - process_start) * 1000
                 rtt_data.append(duration_ms)
 
-                """
+                
                 if len(rtt_data) >= max_samples:
        
-                    with open('performance_log.csv', 'w', newline='') as f:
+                    with open('performance_log_rk4.csv', 'w', newline='') as f:
 
                         writer = csv.writer(f)
                         writer.writerow(["Frame", "ProcessingTime_ms"])
                         for i, val in enumerate(rtt_data):
                             writer.writerow([i, val])
 
-                    print("Dati salvati in performance_log.csv!")"""
+                    #print("Dati salvati in performance_log_euler121.csv!")
                     
                 
     except Exception as e:

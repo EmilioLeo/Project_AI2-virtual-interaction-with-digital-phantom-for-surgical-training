@@ -75,16 +75,13 @@ public class SoftTissueDeformer : MonoBehaviour
 
             if (distance < radius)
             {
-                // Calcola quanto deformare (più vicino = più deformazione)
-                // Usiamo una curva gaussiana per renderlo morbido
+              
                 float deformation = force * (radius - distance) / radius;
                 
-                // Direzione della deformazione: dal dito verso il vertice (o fissa verso l'interno)
-                // Qui spingiamo il vertice "dentro" lungo la normale inversa o via dal dito
+                
                 Vector3 pushDir = (originalVertices[i] - localPoint).normalized;
                 
-                // Opzione B: Spingi sempre verso l'interno rispetto alla normale (più realistico per i muscoli)
-                // Vector3 pushDir = -mesh.normals[i]; 
+               
 
                 Vector3 targetPos = originalVertices[i] + (pushDir * deformation);
                 
@@ -98,17 +95,7 @@ public class SoftTissueDeformer : MonoBehaviour
     }
 
    
-    /*public void ResetMeshArteriesVeins()
-    {
-        for (int i = 0; i < vertices.Length; i++)
-        {
-            vertices[i] = originalVertices[i];
-        }
-
-        mesh.vertices = vertices;
-        mesh.RecalculateNormals();
-        mesh.RecalculateBounds();
-    }*/
+    
     public void StartResetAnimationV()
     {
         if (!isResetting)

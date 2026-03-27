@@ -93,17 +93,7 @@ public class Deformation_muscle_general : MonoBehaviour
         mesh.RecalculateNormals(); // Update the highlights/shadows
     }
 
-    /*public void ResetMeshCarotides()
-    {
-        for (int i = 0; i < vertices.Length; i++)
-        {
-            vertices[i] = originalVertices[i];
-        }
-
-        mesh.vertices = vertices;
-        mesh.RecalculateNormals();
-        mesh.RecalculateBounds();
-    }*/
+   
     public void StartResetAnimationC()
     {
         if (!isResetting)
